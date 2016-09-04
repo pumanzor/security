@@ -1,0 +1,6 @@
+What are these timestamps anyway?
+
+Timestamps are an optional addition to the TCP layer to provide information on round-trip times and to help with sequencing – see RFC 1323. The side-e
+ffect of supporting TCP timestamps (I’ll drop the IP now) is that in certain situations the uptime of the server can be estimated. The most likely imp
+act of this is that an attacker could try to determine the host’s patch status as certain updates require a reboot
+
