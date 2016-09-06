@@ -4,3 +4,5 @@ Timestamps are an optional addition to the TCP layer to provide information on r
 ffect of supporting TCP timestamps (I’ll drop the IP now) is that in certain situations the uptime of the server can be estimated. The most likely imp
 act of this is that an attacker could try to determine the host’s patch status as certain updates require a reboot
 
+hping3 -p 80 -S --tcp-timestamp www.uchile.cl
+
