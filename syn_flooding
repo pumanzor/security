@@ -9,3 +9,8 @@ hping3 -c 10000 -d 120 -S -w 64 -p 21 --flood --rand-source ip_victima
     -p 21 = Destination port (21 being FTP port). You can use any port here.
     --flood = Sending packets as fast as possible, without taking care to show incoming replies. Flood mode.
     --rand-source = Using Random Source IP Addresses. You can also use -a or –spoof to hide hostnames.
+
+
+iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW -m recent --set --name WEBSERVER
+iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW -s -m recent --update --rttl --seconds 3 --hitcount 10 --name WEBSERVER -j REJECT
+iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW -j ACCEPT
