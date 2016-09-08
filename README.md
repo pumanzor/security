@@ -1,2 +1,4 @@
-# security , pentest and others useful info 
+# security
+
+commands, pentests and others useful info related to net security 
 
