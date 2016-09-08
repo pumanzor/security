@@ -1,0 +1,1 @@
+netstat -n -p -t | grep SYN_RECV |wc -l
