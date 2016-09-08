@@ -16,6 +16,7 @@ iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW -s -m recent --up
 iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW -j ACCEPT
 
 
+====== comandos para mitigar el ataque en modo input ====
 
 iptables -N defendsynflood
 iptables -A INPUT  -p tcp --syn -j defendsynflood
