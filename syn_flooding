@@ -20,5 +20,5 @@ iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW -j ACCEPT
 iptables -N defendsynflood
 iptables -A INPUT  -p tcp --syn -j defendsynflood
 iptables -A defendsynflood -m limit --limit 2/s --limit-burst 6 -m comment --comment "Limit TCP SYN rate" -j RETURN
-iptables -A defendsynflood -m limit --limit 6/h --limit-burst 1 -j LOG --log-prefix "Firewall>Probable syn flood "
+iptables -A defendsynflood -m limit --limit 2/s --limit-burst 1 -j LOG --log-prefix "Firewall>Probable syn flood "
 iptables -A defendsynflood -m recent --name blacklist_180 --set -m comment --comment "Blacklist source IP" -j DROP
