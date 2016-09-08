@@ -14,3 +14,11 @@ hping3 -c 10000 -d 120 -S -w 64 -p 21 --flood --rand-source ip_victima
 iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW -m recent --set --name WEBSERVER
 iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW -s -m recent --update --rttl --seconds 3 --hitcount 10 --name WEBSERVER -j REJECT
 iptables -A INPUT -p tcp --dport 80 -m conntrack --ctstate NEW -j ACCEPT
+
+
+
+iptables -N defendsynflood
+iptables -A INPUT  -p tcp --syn -j defendsynflood
+iptables -A defendsynflood -m limit --limit 2/s --limit-burst 6 -m comment --comment "Limit TCP SYN rate" -j RETURN
+iptables -A defendsynflood -m limit --limit 6/h --limit-burst 1 -j LOG --log-prefix "Firewall>Probable syn flood "
+iptables -A defendsynflood -m recent --name blacklist_180 --set -m comment --comment "Blacklist source IP" -j DROP
