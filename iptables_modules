@@ -1,0 +1,6 @@
+modprobe ip_conntrack
+modprobe ipt_recent
+
+
+cat /proc/net/ip_conntrack
+
