@@ -1,0 +1,31 @@
+    =========== Field details ==========
+    
+    Protocol name.
+    Protocol number. (6 = TCP. 17 = UDP.)
+    Seconds until this entry expires.
+    TCP only: TCP connection state.
+    Source address of “original”-side packets (packets from the side that initiated the connection).
+    Destination address of original-side packets.
+    Source port of original-side packets.
+    Destination port of original-side packets.
+    “[UNREPLIED]”, if this connection has not seen traffic in both directions. Otherwise not present.
+    Source address of “reply”-side packets (packets from the side that received the connection).
+    Destination address of reply-side packets.
+    Source port of reply-side packets.
+    Destination port of reply-side packets.
+    “[ASSURED]”, if this connection has seen traffic in both directions (for UDP) or an ACK in an ESTABLISHED connection (for TCP). Otherwise not present.
+    Use count of this connection structure. 
+
+
+#Show connection events together with the timestamp
+conntrack -E -o timestamp
+
+Natively filter the output without using grep
+
+conntrack -L -p tcp --dport 22
+tcp      6 431999 ESTABLISHED src=10.187.39.84 dst=10.187.38.118 sport=37047 dport=22 src=10.187.38.118 dst=10.187.39.84 sport=22 dport=37047 [ASSURED] mark=0 use=1
+conntrack v1.2.1 (conntrack-tools): 1 flow entries have been shown.
+
+Display the connection tracking events
+
+# conntrack -E
