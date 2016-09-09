@@ -1,1 +1,7 @@
+==== mostrar tabla de conexiones, ip origen , ip destino , estado y aplicacion ========
+
+netstat -n -p -t 
+
+======= contar conexiones ===
+
 netstat -n -p -t | grep SYN_RECV |wc -l
