@@ -4,6 +4,6 @@
 
 #3way-Handshake
 
-![alt tag](https://github.com/pumanzor/security/blob/master/protocol/tcpip/300px-Tcp-handshake.png)
+![alt tag](https://github.com/pumanzor/security/blob/master/protocol/tcpip/img/300px-Tcp-handshake.png)
 
 
