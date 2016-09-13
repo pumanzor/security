@@ -2,7 +2,7 @@
 
 ##Provides Layer 3 security (RFC 2401)
 - Transparent to applications (no need for integrated IPSec support)
-- A set of protocols and algorithms used to secure IP data at the network layer
+##A set of protocols and algorithms used to secure IP data at the network layer
 ##Combines different components:
 - Security associations (SA)
 - Authentication headers (AH)
