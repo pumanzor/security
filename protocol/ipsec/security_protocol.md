@@ -26,7 +26,7 @@
   - 3DES
   - AES
 - Uses IP protocol 50
-- Provides all that is offered by AH, plus data confidentiality
+- Provides all that is offered by AH, plus data confidentiality (by encrytion)
   - It uses symmetric key encryption
 - Must encrypt and/or authenticate in each packet
   - Encryption occurs before authentication
