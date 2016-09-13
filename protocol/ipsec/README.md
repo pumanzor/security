@@ -6,7 +6,7 @@
   - Header authentication
   - Encrypting Content
 
-###Benefits of IPsec
+###IPsec features & benefits
 - Confidentiality
   - By encrypting data (cifrado)
 - Integrity
