@@ -2,6 +2,9 @@
 
 ![alt tag](https://github.com/pumanzor/security/blob/master/protocol/ipsec/img/ah_header_v1.jpg)
 
+![alt tag](https://github.com/pumanzor/security/blob/master/protocol/ipsec/img/ah_protocol_header.jpg)
+
+
 ###AH provides:
 - data integrity (intacto, entero) 
 - authentication
