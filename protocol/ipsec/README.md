@@ -1,8 +1,14 @@
 ##Security at the Network Layer: IPSec
 
+###Objetives
+
+- Protect the IP header content against active or passive attacks using:
+  - Header authentication
+  - Encrypting Content
+
 ###Benefits of IPsec
 - Confidentiality
-  - By encrypting data
+  - By encrypting data (cifrado)
 - Integrity
   - Routers at each end of a tunnel calculates the checksum or hash value of the data
 - Authentication
