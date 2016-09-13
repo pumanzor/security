@@ -1,0 +1,41 @@
+test4@host:~$ssh-keygen 
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/test4/.ssh/id_rsa): 
+Created directory '/home/test4/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/test4/.ssh/id_rsa.
+Your public key has been saved in /home/test4/.ssh/id_rsa.pub.
+The key fingerprint is:
+87:8d:03:c0:0d:d6:81:4a:33:5e:66:79:b7:d3:b8:b3 test4@satan4
+The key's randomart image is:
++---[RSA 2048]----+
+|   .+*..         |
+|  +.B.+ .        |
+| o B ... +       |
+|  o    .++.      |
+|        Soo      |
+|        oo       |
+|         o       |
+|        E        |
+|                 |
++-----------------+
+test4@host:~$ cd .ssh/
+test4@host:~/.ssh$ ls -al
+total 16
+drwx------ 2 test4 test4 4096 sep 12 21:38 .
+drwxr-xr-x 3 test4 test4 4096 sep 12 21:38 ..
+-rw------- 1 test4 test4 1679 sep 12 21:38 id_rsa
+-rw-r--r-- 1 test4 test4  394 sep 12 21:38 id_rsa.pub
+
+test4@host:~$file *
+id_rsa:     PEM RSA private key
+id_rsa.pub: OpenSSH RSA public key
+
+scp id_rsa.pub user@host:/home/user
+
+ssh host -luser
+
+mkdir .ssh
+cd .ssh
+cat ../id_rsa.pub > authorized_keys
