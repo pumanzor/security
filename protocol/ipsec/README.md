@@ -1,5 +1,14 @@
 ##Security at the Network Layer: IPSec
 
+###Benefits of IPsec
+- Confidentiality
+  - By encrypting data
+- Integrity
+  - Routers at each end of a tunnel calculates the checksum or hash value of the data
+- Authentication
+  - Signatures and certificates
+  - All these while still maintaining the ability to route through existing IP networks
+
 ###Provides Layer 3 security (RFC 2401)
 - Transparent to applications (no need for integrated IPSec support)
 
