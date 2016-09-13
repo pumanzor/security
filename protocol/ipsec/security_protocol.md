@@ -6,7 +6,7 @@
 
 > Does not provide encryption
 
-- Uses one-way has function (also called an HMAC) to guarantee data integrity and origin of the packet.
+- Uses one-way hash function (also called an HMAC) to guarantee data integrity and origin of the packet.
 - Entire IP packet put through one-way hash.
 - Includes IP header which could lead to problems.
 - TTL must be “zeroized: to give a “standard header”
