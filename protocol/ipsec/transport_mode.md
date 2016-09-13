@@ -4,7 +4,7 @@
 * Used for Peer to Peer communication security
 * Data is encrypted
 
-###Transport Mode (AH Authentication)
+###Transport Mode 
 
 
 
