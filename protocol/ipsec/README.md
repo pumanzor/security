@@ -28,7 +28,7 @@
 
 ##IPSEC Modes
 
-###Transport Mode
+[Transport Mode](https://github.com/pumanzor/security/blob/master/protocol/ipsec/transport_mode.md)
 
-###Tunnel Mode
+[Tunnel Mode](https://github.com/pumanzor/security/blob/master/protocol/ipsec/tunnel_mode.md)
 
