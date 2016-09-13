@@ -1,5 +1,8 @@
 ##Security at the Network Layer: IPSec
 
+###Provides Layer 3 security (RFC 2401)
+- Transparent to applications (no need for integrated IPSec support)
+
 ###Objetives
 
 - Protect the IP header content against active or passive attacks using:
@@ -14,9 +17,6 @@
 - Authentication
   - Signatures and certificates
   - All these while still maintaining the ability to route through existing IP networks
-
-###Provides Layer 3 security (RFC 2401)
-- Transparent to applications (no need for integrated IPSec support)
 
 ###A set of protocols and algorithms used to secure IP data at the network layer
 
