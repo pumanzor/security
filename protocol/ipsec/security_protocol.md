@@ -16,3 +16,12 @@
 
 
 #Security protocol ESP Encapsulating Security Payload
+
+###ESP is primarily used to provide payload encryption.
+###With current revisions of the RFC, it also includes the ability for authentication and integrity.
+###Because ESP can include all three services, authentication, integrity, and encryption, most implementations do not include an AH options.
+###IPSec can use different algorithms for payload encryption such as:
+- DES
+- 3DES
+- AES
+
