@@ -16,6 +16,7 @@
 ###Crear una llave privada
 
 * openssl genrsa -out server.key 2048
+
 ###Crear un CSR (Certificate Signing Request)
 
 Un CSR es la base para un certificado SSL, en el se definen datos como el dominio, organización, ubicación, información de contacto, entre otros.
