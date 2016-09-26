@@ -15,15 +15,15 @@
 
 ###Crear una llave privada
 
-* openssl genrsa -out server.key 2048
+* openssl genrsa -out server1.key 2048
 
 ###Crear un CSR (Certificate Signing Request)
 
 Un CSR es la base para un certificado SSL, en el se definen datos como el dominio, organización, ubicación, información de contacto, entre otros.
 
-* openssl req -new -key server.key -out server.csr
+* openssl req -new -key server1.key -out server1.csr
 
 ###Generar el certificado
 
-* openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+* openssl x509 -req -days 365 -in server1.csr -signkey server1.key -out server1.crt
 
