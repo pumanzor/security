@@ -8,3 +8,7 @@ targeting a victim with DNS amplification attacks) the default behavior was chan
 Since 9.4.1-P1, unless an ACL is explicitly specified in the "allow-recursion" statement, the default access list
 is set to "localnets; localhost;" (in other words, the local server machine and those broadcast domains for which 
 the server has a network interface configured at the time named is started.)
+
+* recursion yes;
+* allow-recursion { internals; };
+
