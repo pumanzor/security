@@ -1,0 +1,3 @@
+dig dnskey . @a.root-servers.net +noall +answer > root-zone-dnssec.key 
+
+dnssec-dsfromkey -2 root-zone-dnssec.key
