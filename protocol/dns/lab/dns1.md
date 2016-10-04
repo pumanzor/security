@@ -1,6 +1,6 @@
 ##Laboratorio DNS
 
-###Instalar Bind9: apt-get install bind9
+####Instalar Bind9: apt-get install bind9
 
 ###Verificar que el server dns se encuentra listando en el puerto 53/udp
 ** Comprobar que otros programas esten usando el mismo puerto ej. dnsmasq
