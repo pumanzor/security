@@ -10,5 +10,6 @@
 
 ####Configurar Bind para sirva como dns recursivo cache
 - Editar el archivo /etc/bind/named.conf.options y agregar la directiva
+
 > recursion yes;
 
