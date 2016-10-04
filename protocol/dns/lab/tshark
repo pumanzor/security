@@ -1,0 +1,1 @@
+tshark -T fields -e frame.number -e frame.protocols -e dns.qry.name -e http.host -Y "dns.qry.name or http.host"
