@@ -32,4 +32,7 @@
 
 - Escoja una direccion de algun sitio que no haya utilizado antes.
 - Prepare el sniffer a eleccion y realice una resolucion de nombre desde el cliente por ej con nslookup
+- Capture el trafico DNS en un archivo .cap o .pcap para analizarlo, en wireshark puede usar el filtro
+
+> dns.qry.name == "www.example.com".
 
