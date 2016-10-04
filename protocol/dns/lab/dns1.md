@@ -28,4 +28,8 @@
 192.168.126.0/24; 192.168.7.0/24; 192.168.1.0/24; localhost;
 };
 
+####En el servidor DNS realizar una captura con wireshark , tshark o tcpdump con el objeto de comprobar el QueryID o TXID de cada paso en una resolucion de nombre.
+
+- Escoja una direccion de algun sitio que no haya utilizado antes.
+- Prepare el sniffer a eleccion y realice una resolucion de nombre desde el cliente por ej con nslookup
 
