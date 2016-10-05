@@ -54,5 +54,6 @@
 ####Configurar un dominio
 
 * Activar configuracion en named.conf, crear zona example.com
+https://github.com/pumanzor/security/blob/master/protocol/dns/lab/named.conf_zona
 
 
