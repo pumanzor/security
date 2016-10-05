@@ -57,5 +57,11 @@
 https://github.com/pumanzor/security/blob/master/protocol/dns/lab/named.conf_zona
 
 * Crear archivo de zona para dominio example.com
+https://github.com/pumanzor/security/blob/master/protocol/dns/lab/db.ex.cl
+
+* Guarde los cambios reinicie servicio y verifique:
+  - Autoridad del dominio desde algun cliente (nslookup)
+  - Pruebas de consultas usando el dns recursivo
+* Active politicas de consultas restrictivas por segmento de red o por una ip especifica , con allow-query
 
 
