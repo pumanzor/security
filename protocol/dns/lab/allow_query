@@ -1,0 +1,4 @@
+allow-query { address_match_list };
+allow-query { address_match_list };
+allow-query {10.0/16;};
+allow-query-on {192.168.2.1;};
