@@ -89,7 +89,7 @@ wget https://raw.githubusercontent.com/pumanzor/security/master/protocol/dns/kam
 * Determine si con la accion anterior es suficiente para reducir los daños o requiere de otras acciones a realizar.
 * Mida el trafico consumido en la tarjeta de red con y sin un metodo de defensa, comente resultados.
 
-####Informe debe contener capturas, explicacion de las acciones realizadas para mitigar el ataque y comentarios de otras formas que podrian ser aplicadas para minimizar el impacto que pueden llegar a causar este tipo vulnerabilidades.
+####Informe debe contener capturas, explicacion de las acciones realizadas tanto a nivel de configuraciones de servicios y de las acciones realizas para mitigar el ataque , agregar comentarios de otras tecnicas de defenza que podrian ser aplicadas para minimizar el impacto o la degradacion del servicio.
 
 
 
