@@ -1,5 +1,11 @@
 ##Laboratorio DNS
 
+###Objetivos:
+
+* Comprender el funcionamiento la resolucion de nombres en Internet utilanzo software Bind
+* Analizar el flujo de las consultas entre los distintos entes involucrados en el sistema
+* Instalar desde 0 un servidor DNS autoritativo, un servidor DNS Recursivo y cache
+
 ####Instalar Bind9: apt-get install bind9
 
 ####Verificar que el server dns se encuentra listando en el puerto 53/udp
