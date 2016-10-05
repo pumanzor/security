@@ -51,5 +51,11 @@
 
 > dns.qry.name == "www.example.com".
 
+####Configurar un dominio
 
+* Activar configuracion en named.conf, crear zona
+> zone "example.cl" {
+        type master;
+        file "/etc/bind/db.ex.cl";
+};
 
