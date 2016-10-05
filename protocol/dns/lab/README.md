@@ -71,4 +71,22 @@ https://github.com/pumanzor/security/blob/master/protocol/dns/lab/allow_query
 
 * Copie el siguiente archivo en su equipo:
 
+wget https://raw.githubusercontent.com/pumanzor/security/master/protocol/dns/kaminsky.c
+
+* desde PC cliente/atacante compile con las opciones que aparecen en el mismo archivo
+* ejecute desde este mismo PC (atacante) el archivo binario resultante con los siguientes parametros:
+
+./kaminsky 192.168.125.2 192.168.125.X 192.168.125.Y 1234 www example.cl. 1.1.1.1 33 1
+
+  - donde 192.168.125.X es la ip origen
+  - donde 192.168.125.Y es la ip del server dns recursivo
+  
+* En el servidor dns recursivo capture los paquetes udp 53 dns mediante tcpdump o wireshark
+* determine si la acccion anterior con el archivo binario constituye una ataque, se sugiere utilizar otras herramientas de medicion tales como iptraf, htop , mida el trafico y cpu del server dns recursivo que genera el ataque.
+* busque algun metodo de defensa para mitigarlo en el lado del servidor.
+* una vez aplicada la defensa en el server dns recursivo, mida los resultas realizando nuevamente el ataque
+
+
+
+
 
