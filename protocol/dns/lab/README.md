@@ -65,6 +65,6 @@ https://github.com/pumanzor/security/blob/master/protocol/dns/lab/db.ex.cl
 * Active politicas de consultas restrictivas por segmento de red o por una ip especifica , con allow-query
 https://github.com/pumanzor/security/blob/master/protocol/dns/lab/allow_query
 
-* Crear ACL para directivas allow-recursion y allow-query
+* Crear ACL para directivas allow-recursion y allow-query, https://github.com/pumanzor/security/blob/master/protocol/dns/lab/acl
 
 
