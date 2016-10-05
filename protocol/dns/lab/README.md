@@ -5,6 +5,7 @@
 * Comprender el funcionamiento la resolucion de nombres en Internet utilizando software Bind
 * Analizar el flujo de las consultas entre los distintos entes involucrados en el sistema
 * Instalar desde 0 un servidor DNS autoritativo, un servidor DNS Recursivo y cache
+* Atacar un dns recursivo y conocer las consecuencias que esto implica , implementar metodos de defensa en el lado del servidor.
 
 ###Elementos a utilizar
 
