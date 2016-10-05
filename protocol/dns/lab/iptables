@@ -1,0 +1,2 @@
+iptables -v -A INPUT -p udp --dport 53 -m recent --set --name dnsanyquery
+iptables -v -A INPUT -p udp --dport 53 -m recent --name dnsanyquery --rcheck --seconds 1 --hitcount 10 -j DROP
