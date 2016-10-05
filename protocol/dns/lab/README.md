@@ -68,7 +68,7 @@ https://github.com/pumanzor/security/blob/master/protocol/dns/lab/allow_query
 
 * Crear ACL para directivas allow-recursion y allow-query, https://github.com/pumanzor/security/blob/master/protocol/dns/lab/acl
 
-####Ataques como comunes
+####Ataques comunes
 
 * Copie el siguiente archivo en su equipo:
 
