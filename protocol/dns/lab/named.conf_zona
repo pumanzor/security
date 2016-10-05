@@ -1,0 +1,4 @@
+> zone "example.cl" {
+        type master;
+        file "/etc/bind/db.ex.cl";
+};
