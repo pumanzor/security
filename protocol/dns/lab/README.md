@@ -21,11 +21,12 @@
 - Para buscar use este comando, ej:  ps -fea|grep dns
 
 ####Configurar un cliente dns que apunte a la direccion ip que se acaba de crear como server
+
 - Comprobar politicas por default de Bind.
 - Realizar resoluciones de nombres desde el pc cliente
 - Porque Bind9 se comporta de esta manera? ver https://github.com/pumanzor/security/blob/master/protocol/dns/recursion.md
 
-####Configurar Bind para sirva como dns recursivo cache
+####Configurar Bind en modo recursivo.
 - Editar el archivo /etc/bind/named.conf.options y agregar la directiva
 
 > recursion yes;
