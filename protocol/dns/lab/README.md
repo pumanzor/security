@@ -56,4 +56,6 @@
 * Activar configuracion en named.conf, crear zona example.com
 https://github.com/pumanzor/security/blob/master/protocol/dns/lab/named.conf_zona
 
+* Crear archivo de zona para dominio example.com
+
 
