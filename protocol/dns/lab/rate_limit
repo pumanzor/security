@@ -1,0 +1,3 @@
+          rate-limit {
+              responses-per-second 5;
+          };
