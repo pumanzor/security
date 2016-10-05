@@ -2,9 +2,17 @@
 
 ###Objetivos:
 
-* Comprender el funcionamiento la resolucion de nombres en Internet utilanzo software Bind
+* Comprender el funcionamiento la resolucion de nombres en Internet utilizando software Bind
 * Analizar el flujo de las consultas entre los distintos entes involucrados en el sistema
 * Instalar desde 0 un servidor DNS autoritativo, un servidor DNS Recursivo y cache
+
+###Elementos a utilizar
+
+* Computador con Linux conectado a la red LAN (cable) , rol servidor DNS recursivo cache
+* Computador con Linux conectado a la red LAN (cable) , rol servidor DNS primario (autoritativo)
+* Computador cliente para hacer las consultas y generar trafico DDoS
+* Herramientas y software para "sniffear" y decodificar los flujos de datos (wireshark, tcpdump)
+* Software DNS server y cliente, bind9, dnstools, nslookup, dig, host
 
 ####Instalar Bind9: apt-get install bind9
 
