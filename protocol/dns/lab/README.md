@@ -85,6 +85,10 @@ wget https://raw.githubusercontent.com/pumanzor/security/master/protocol/dns/kam
 * determine si la acccion anterior con el archivo binario constituye una ataque, se sugiere utilizar otras herramientas de medicion tales como iptraf, htop , mida el trafico y cpu del server dns recursivo que genera el ataque.
 * busque algun metodo de defensa para mitigarlo en el lado del servidor.
 * una vez aplicada la defensa en el server dns recursivo, mida los resultas realizando nuevamente el ataque
+* Determine si con la accion anterior es suficiente para reducir los daños o requiere de otras acciones a realizar.
+* Mida el trafico consumido en la tarjeta de red con y sin un metodo de defensa, comente resultados.
+
+####Informe debe contener capturas, explicacion de las acciones realizadas para mitigar el ataque y comentarios de otras formas que podrian ser aplicadas para minimizar el impacto que pueden llegar a causar este tipo vulnerabilidades.
 
 
 
