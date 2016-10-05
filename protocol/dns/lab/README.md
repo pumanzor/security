@@ -53,9 +53,6 @@
 
 ####Configurar un dominio
 
-* Activar configuracion en named.conf, crear zona
-> zone "example.cl" {
-        type master;
-        file "/etc/bind/db.ex.cl";
-};
+* Activar configuracion en named.conf, crear zona example.com
+
 
