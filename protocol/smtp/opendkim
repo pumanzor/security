@@ -1,0 +1,1 @@
+opendkim-genkey -b 2048 -d example.com -s example.com.dkim
