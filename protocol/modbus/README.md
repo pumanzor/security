@@ -42,10 +42,14 @@ temporizadores, registros de desplazamientos y operaciones matemáticas.
 
 3. Texto estructurado (ST) - Un lenguaje de texto de alto nivel que fomenta la programación estructurada. Tiene una estructura de lenguaje (sintaxis) que se parece mucho a PASCAL y es compatible con una amplia gama de funciones y operadores estándar. Por ejemplo;
 
- If Speed1 > 100.0 then
- Flow_Rate: = 50.0 + Offset_A1;
- Else
- Flow_Rate: = 100.0; Steam: = ON
- End_If;
+> If Speed1 > 100.0 then
+
+> Flow_Rate: = 50.0 + Offset_A1;
+
+> Else
+
+> Flow_Rate: = 100.0; Steam: = ON
+ 
+> End_If;
  
  
