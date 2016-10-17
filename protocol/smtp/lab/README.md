@@ -80,6 +80,6 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
   - y verifique que todo esta correctamente configurado en el registro TXT que acaba de configurar.
 
-* en todos las computadores y server a utilizar use como dns la direccion IP del server que acaba de configurar , en Linux /etc/resolv.conf
+* en todos las computadores y server a utilizar use como dns primario la direccion IP del server que acaba de configurar , en Linux /etc/resolv.conf
 
 
