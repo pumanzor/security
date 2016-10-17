@@ -109,5 +109,18 @@ Los primeros PLC fueron diseñados y desarrollados por le empresa Modicon (Modul
 Es el protocolo estándar serial que más se utiliza en la industria desde 1979 y que continúa permitiendo a millones de dispositivos de automatización comunicarse. Hoy en día, el apoyo y soporte a esta estructura simple y elegante de MODBUS sigue creciendo de hecho se puede acceder desde Internet a un nodo o dispositivo que hable ModBus mediante el puerto reservado
 502 del stack TCP / IP.
 
-MODBUS es un protocolo en el formato “solicitud/respuesta” y que ofrece servicios especificados por códigos de función.
-Modbus es un protocolo de capa de aplicación de mensajería para comunicación cliente/servidor entre dispositivos conectados en diferentes tipos de buses o redes.
+MODBUS es un protocolo en el formato “solicitud/respuesta” y que ofrece servicios especificados por códigos de función. Entre los dispositivos que lo utilizan podemos mencionar: PLC, HMI, RTU, Drives, sensores
+y actuadores remotos conectados en diferentes tipos de buses o redes. 
+
+El protocolo establece como los mensajes se intercambian en forma ordenada y la de deteccion de errores.
+
+#### Principales Caracter´ısticas
+
+- Control de acceso al medio tipo Maestro/Esclavo.
+- El protocolo especifica: formato de trama, secuencias y control de errores.
+- Existen dos variantes en el formato: ASCII y RTU
+- Solo especifica la capa de enlace del modelo ISO/OSI. ´
+- A cada esclavo se le asigna una direccion fija y unica en el rango de 1 a 247. ´
+- La direccion 0 esta reservada para mensajes de difusion sin respuesta.
+
+
