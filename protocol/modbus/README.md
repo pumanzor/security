@@ -19,3 +19,14 @@ Los primeros PLC fueron diseñados y desarrollados por le empresa Modicon (Modul
 * Comunicarse con otros dispositivos, que pueden incluir dispositivos I/O, dispositivos de programación, redes, e incluso otros PLC.
 
 * Realizar actividades de mantenimiento, tales como comunicaciones, diagnóstico interno, etc.
+
+### Como Opera un PLC
+  Hay cuatro pasos básicos en el funcionamiento de todos los PLC; exploración de entrada, Ejecución de programa, Exploración de salida y mantenimiento. Estos pasos se llevan a cabo continuamente en un bucle de repetición.
+
+1. Input scan: detecta el estado de todos los dispositivos de entrada que están conectados al PLC
+
+2. Program Scan: Ejecuta el programa creado por el usuario
+
+3. Outpunt Scan: Energiza o Des-Energiza todos los dispositivos de salida que están conectados al PLC
+
+4. HouseKeeping: Este paso incluye la comunicación con terminales de programacio, diagnostico interno, etc.
