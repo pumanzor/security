@@ -20,7 +20,7 @@
 * apt-get install postfix postfix-policyd-spf-perl
 * apt-get install bsdmailx
 
-* Configuracionde SPF en postfix (del servidor que recepcionara los correos electronicos)
+####Configuracionde SPF en postfix (del servidor que recepcionara los correos electronicos, dstdomain.com)
 
   - en /etc/postfix/main.cf
 
@@ -28,7 +28,7 @@
 
 > policy-spf_time_limit = 3600
 
-> mydestination = localhost, dominio.cl
+> mydestination = localhost, dstdomain.com
 
 > mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 192.168.X.Y/24
 
@@ -42,11 +42,11 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
 * Revisar que el servicio smtp se encuentra activo mediante "netstar -atn" o ps -aef|grep postfix
 
-* Configurar el servidor smtp que enviara los email.
+####Configurar el servidor smtp que enviara los email. (srcdomain.com)
 
   - en el archivo /etc/postfix/main.cf
 
-> myhostname = dominio.tld
+> myhostname = srcdomain.com
 
   - lo anterior es el dominio con el cual los email vendran marcados como el origen, es decir debe ser el mismo dominio de correo que sera configurado en el servidor DNS apuntando al registro TXT en donde se hace la comprobacion dominio con IP origen
 
@@ -63,6 +63,10 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 * dentro de las configuraciones de la zona del dominio origen (srcdomain) se debe crear el siguiente registro TXT
 
 > IN	TXT	"v=spf1 mx -all"
+
+* y crear el RR correspondiente al registro MX con la direccion IP del servidor de correo de origen
+
+* ej 
 
 * Incremente el numero serial y guarde los cambios, luego reinicie bind9
 
