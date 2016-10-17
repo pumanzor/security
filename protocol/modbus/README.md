@@ -30,3 +30,22 @@ Los primeros PLC fueron diseñados y desarrollados por le empresa Modicon (Modul
 3. Outpunt Scan: Energiza o Des-Energiza todos los dispositivos de salida que están conectados al PLC
 
 4. HouseKeeping: Este paso incluye la comunicación con terminales de programacio, diagnostico interno, etc.
+
+### Que lenguaje de programación es usado para programar un PLC?
+
+  Mientras que Ladder Logic es el mas comúnmente lenguaje usado para programar PLC’s, no es el único, a continuación, se describen algunos:
+
+1. Ladder Diagram (LD) es un lenguaje de programación grafico tradicional inicialmente programado con contactos simples que simulan la apertura o cierre de reles, Ladder Logic Programming a sido ampliado para incluir funciones tales como contadores,
+temporizadores, registros de desplazamientos y operaciones matemáticas.
+
+2. Function Block Diagram (FBD): es un lenguaje grafico para representar señales y flujos de datos a través de bloques de funciones re-utilizables. FBD también es muy útil para expresar la interconexión de algoritmos de sistema de control y la lógica.
+
+3. Texto estructurado (ST) - Un lenguaje de texto de alto nivel que fomenta la programación estructurada. Tiene una estructura de lenguaje (sintaxis) que se parece mucho a PASCAL y es compatible con una amplia gama de funciones y operadores estándar. Por ejemplo;
+
+ If Speed1 > 100.0 then
+ Flow_Rate: = 50.0 + Offset_A1;
+ Else
+ Flow_Rate: = 100.0; Steam: = ON
+ End_If;
+ 
+ 
