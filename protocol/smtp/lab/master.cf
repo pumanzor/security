@@ -1,0 +1,2 @@
+policy-spf  unix  -       n       n       -       -       spawn
+     user=policyd-spf argv=/usr/bin/policyd-spf
