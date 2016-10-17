@@ -50,4 +50,7 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
   - lo anterior es el dominio con el cual los email vendran marcados como el origen, es decir debe ser el mismo dominio de correo que sera configurado en el servidor DNS apuntando al registro TXT en donde se hace la comprobacion dominio con IP origen
 
+* reiniciar el servicio:
+
+> service postfix restart 
 
