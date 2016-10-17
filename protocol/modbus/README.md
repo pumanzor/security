@@ -67,3 +67,6 @@ temporizadores, registros de desplazamientos y operaciones matemáticas.
 
 > ST   A_X43
 
+5. Sequential Function Chart (SFC): Un programa en SFC es una visión general del sistema de control, en el que los bloques de construcción básicos son archivos completos del programa. Cada archivo de programa se ha creado usando uno de los otros tipos de
+lenguajes de programación. El enfoque de SFC es coordinar las tareas de programación grandes y complicados en tareas más pequeñas y manejables
+
