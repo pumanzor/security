@@ -113,3 +113,7 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 * Agregue la nueva direccion IP al listado de direccion que estan permitidas para el dominio a comprobar
 
 * Modifique las configuraciones del registro SPF segun el sitio oficial http://www.openspf.org/SPF_Record_Syntax y compare resultados.
+
+* lo anterior debe ser complementado con los parametros que aparecen en este link https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/policyd-spf.conf y que se encuentran en el directorio:
+
+> /etc/postfix-policyd-spf-python
