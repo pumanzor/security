@@ -66,7 +66,7 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
 * y crear el RR correspondiente al registro MX con la direccion IP del servidor de correo de origen
 
-* ej 
+* ej https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/db.srcdomain.com
 
 * Incremente el numero serial y guarde los cambios, luego reinicie bind9
 
