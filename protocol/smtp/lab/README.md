@@ -11,8 +11,8 @@
 
 ####Servidores a utilizar
 
-* 2 Servidores SMTP postfix
-* 1 Servidor DNS bind9
+* 2 Servidores SMTP postfix (1 como servidor que recibira el email y realizara la comprobacion con SPF , 1 servidor para enviar email desde algun cliente)
+* 1 Servidor DNS bind9 (para configurar los registros TXT)
 * 1 cliente de email (win, mailx)
 
 ####Instalacion de postfix y mailx
@@ -20,7 +20,7 @@
 * apt-get install postfix postfix-policyd-spf-perl
 * apt-get install bsdmailx
 
-* Configuracionde SPF en postfix
+* Configuracionde SPF en postfix (del servidor que recepcionara los correos electronicos)
 
   - en /etc/postfix/main.cf
 
@@ -41,5 +41,13 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 > service postfix restart 
 
 * Revisar que el servicio smtp se encuentra activo mediante "netstar -atn" o ps -aef|grep postfix
+
+* Configurar el servidor smtp que enviara los email.
+
+  - en el archivo /etc/postfix/main.cf
+
+> myhostname = dominio.tld
+
+  - lo anterior es el dominio con el cual los email vendran marcados como el origen, es decir debe ser el mismo dominio de correo que sera configurado en el servidor DNS apuntando al registro TXT en donde se hace la comprobacion dominio con IP origen
 
 
