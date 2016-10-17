@@ -59,7 +59,9 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 * Crear dos zonas en el dns primario
   
   - ej. scrdomain.com y dstdomain.com
-  
+
+#####zona srcdomain
+
 * dentro de las configuraciones de la zona del dominio origen (srcdomain) se debe crear el siguiente registro TXT
 
 > IN	TXT	"v=spf1 mx -all"
