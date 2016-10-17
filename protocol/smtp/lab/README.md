@@ -88,3 +88,27 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
 * Aqui se deben configurar los datos de la zona a la cual se enviara el correo electronico y por lo tanto el registro MX debe apuntar el servidor SMTP que esta haciendo la comprobacion del origen mediante SPF (*)
 
+
+####Envios de email y revision del sistema
+
+* Desde el server smtp srcdomain.com enviar un email hacia dstdomain.com utilizando algun cliente o desde la linea de comando 
+
+> mail user@dstdomain.com -v
+
+> Subject: test1
+
+> -
+
+> Cc:  (presionar Enter)
+
+* Verificar que el chequeo mediante SPF este operando normalmente en el server SMTP dstdomain.com
+
+> tail -f /var/log/mail.log
+
+* Si todo se encuentra correctamente configurado podremos revisar el email y verificar en la cabecera que el SPF comprobo la direccion IP origen junto con el dominio
+
+* dado lo anterior, modifique la direccion IP del server SMTP origen , reinicie el servicio smtp y vuelva a enviar el email; compare resultados
+
+* Agregue la nueva direccion IP al listado de direccion que estan permitidas para el dominio a comprobar
+
+* Modifique las configuraciones del registro SPF segun el sitio oficial http://www.openspf.org/SPF_Record_Syntax y compare resultados.
