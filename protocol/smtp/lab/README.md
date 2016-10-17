@@ -20,7 +20,7 @@
 * apt-get install postfix postfix-policyd-spf-perl
 * apt-get install bsdmailx
 
-####Configuracionde SPF en postfix (del servidor que recepcionara los correos electronicos, dstdomain.com)
+####Configuracionde SPF en postfix (del servidor que recepcionara los correos electronicos, dstdomain.com) (*)
 
   - en /etc/postfix/main.cf
 
@@ -84,4 +84,7 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
 * en todos las computadores y server a utilizar use como dns primario la direccion IP del server que acaba de configurar , en Linux /etc/resolv.conf
 
+#####zona dstdomain
+
+* Aqui se deben configurar los datos de la zona a la cual se enviara el correo electronico y por lo tanto el registro MX debe apuntar el servidor SMTP que esta haciendo la comprobacion del origen mediante SPF (*)
 
