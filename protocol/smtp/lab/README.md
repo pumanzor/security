@@ -19,7 +19,8 @@
 * apt-get install postfix postfix-policyd-spf-perl
 * apt-get install bsdmailx
 
-> Configuracionde SPF en postfix
+* Configuracionde SPF en postfix
 
->en /etc/postfix/main.cf
-smtpd_recipient_restrictions = reject_unauth_destination, check_policy_service unix:private/policy-spf
+> en /etc/postfix/main.cf
+
+> smtpd_recipient_restrictions = reject_unauth_destination, check_policy_service unix:private/policy-spf
