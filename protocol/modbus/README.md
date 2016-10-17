@@ -51,5 +51,18 @@ temporizadores, registros de desplazamientos y operaciones matemáticas.
 > Flow_Rate: = 100.0; Steam: = ON
  
 > End_If;
- 
- 
+
+4. Instruction List (IL) : es un lenguaje de bajo nivel del tipo "assembler" que se basa en un listado de instrucciones los cuales se encuentran en una amplica gama de PLCs de hoy en dia:
+
+> LD   R1
+
+> MPC  RESET
+
+> LD   PRESS_1
+
+> ST   MAX_PRESS
+
+> RESET:  LD 0
+
+> ST   A_X43
+
