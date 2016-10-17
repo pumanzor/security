@@ -26,3 +26,7 @@
 > smtpd_recipient_restrictions = reject_unauth_destination, check_policy_service unix:private/policy-spf
 
 > policy-spf_time_limit = 3600
+
+> mydestination = localhost, dominio.cl
+
+> mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 192.168.X.Y/24
