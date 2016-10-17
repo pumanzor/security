@@ -54,3 +54,26 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
 > service postfix restart 
 
+####Configuracion del registro TXT en server DNS
+
+* Crear dos zonas en el dns primario
+  
+  - ej. dominio1.com y otrodominio.com
+  
+* dentro de las configuraciones de la zona del dominio origen se debe crear el siguiente registro TXT
+
+> IN	TXT	"v=spf1 mx -all"
+
+* Incremente el numero serial y guarde los cambios, luego reinicie bind9
+
+* Desde algun cliente ejecute el comando
+
+> nslookup - ip_del_servidor_dns
+
+> set q=txt
+
+> dominio-origen.tld
+
+
+
+
