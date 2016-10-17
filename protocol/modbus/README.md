@@ -100,3 +100,13 @@ Los primeros PLC fueron diseñados y desarrollados por le empresa Modicon (Modul
 - ¿El PLC será capaz de gestionar el número de entradas y salidas que mi aplicación requiere?
 - ¿Si es requerido por su aplicación, puede manejar el PLC entradas y salidas analógicas, o tal vez una combinación de ambas entradas y salidas analógicas y binarias?
 - ¿Cómo se va comunicar el PLC?
+
+### Protocolo ModBus
+  
+  Modbus es un protocolo de capa de aplicación de mensajería, posicionado en el nivel 7 del modelo OSI, que provee la comunicación cliente/servidor entre dispositivos conectados a diferentes tipos de buses o redes.
+
+Es el protocolo estándar serial que más se utiliza en la industria desde 1979 y que continúa permitiendo a millones de dispositivos de automatización comunicarse. Hoy en día, el apoyo y soporte a esta estructura simple y elegante de MODBUS sigue creciendo de hecho se puede acceder desde Internet a un nodo o dispositivo que hable ModBus mediante el puerto reservado
+502 del stack TCP / IP.
+
+MODBUS es un protocolo en el formato “solicitud/respuesta” y que ofrece servicios especificados por códigos de función.
+Modbus es un protocolo de capa de aplicación de mensajería para comunicación cliente/servidor entre dispositivos conectados en diferentes tipos de buses o redes.
