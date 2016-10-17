@@ -5,6 +5,7 @@
 Un Programmable Logic Controller es un sistema de computo de control industrial que
 supervisa continuamente el estado de sus dispositivos de entrada y toma decisiones en base
 a un programa personalizado para controlar el estado de los dispositivos de salida.
+
 Casi cualquier línea de producción las funciones de una máquina o de algún proceso puede
 ser mejorado al utilizar este tipo de sistema de control. Sin embargo, el mayor beneficio en
 el uso de un PLC es la capacidad de cambiar y replicar la operación o proceso mientras se
