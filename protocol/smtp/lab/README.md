@@ -33,7 +33,6 @@
 
   - en /etc/postfix/master.cf (al final del archivo)
 
-> policy-spf  unix  -       n       n       -       -       spawn
-    
+    > policy-spf  unix  -       n       n       -       -       spawn
     > user=policyd-spf argv=/usr/bin/policyd-spf
 
