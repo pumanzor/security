@@ -117,3 +117,6 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 * lo anterior debe ser complementado con los parametros que aparecen en este link https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/policyd-spf.conf y que se encuentran en el directorio:
 
 > /etc/postfix-policyd-spf-python
+
+> directiva: HELO_reject = False
+
