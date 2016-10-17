@@ -22,4 +22,4 @@
 > Configuracionde SPF en postfix
 
 >en /etc/postfix/main.cf
->smtpd_recipient_restrictions = reject_unauth_destination, check_policy_service unix:private/policy-spf
+smtpd_recipient_restrictions = reject_unauth_destination, check_policy_service unix:private/policy-spf
