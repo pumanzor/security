@@ -67,5 +67,26 @@ Los primeros PLC fueron diseñados y desarrollados por le empresa Modicon (Modul
 
 > ST   A_X43
 
-* Sequential Function Chart (SFC): Un programa en SFC es una visión general del sistema de control, en el que los bloques de construcción básicos son archivos completos del programa. Cada archivo de programa se ha creado usando uno de los otros tipos de lenguajes de programación. El enfoque de SFC es coordinar las tareas de programación grandes y complicados en tareas más pequeñas y manejables
+* Sequential Function Chart (SFC): Un programa en SFC es una visión general del sistema de control, en el que los bloques de construcción básicos son archivos completos del programa. Cada archivo de programa se ha creado usando uno de los otros tipos de lenguajes de programación. El enfoque de SFC es coordinar las tareas de programación grandes y complicados en tareas más pequeñas y manejables.
+
+### Dispositivos de entrada
+
+* Switches, botones, pulsadores
+* Sensores, fotoeléctricos, de proximidad, de temperatura, humedad, presión
+* Interruptores de flotador
+* Switch de nivel
+
+### Dispositivos de salida
+
+* Valvulas
+* Partidores de motor
+* Solenoides
+* Actuadores
+* Alarmas, luces
+* Reles de control
+* Bombas
+* Impresoras
+* FANs
+
+
 
