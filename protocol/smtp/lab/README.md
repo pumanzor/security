@@ -74,6 +74,8 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
 > dominio-origen.tld
 
+  - y verifique que todo esta correctamente configurado en el registro TXT que acaba de configurar.
 
+* 
 
 
