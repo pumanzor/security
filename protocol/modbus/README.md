@@ -89,4 +89,14 @@ Los primeros PLC fueron diseñados y desarrollados por le empresa Modicon (Modul
 * FANs
 
 
+### ¿Que se debe tener en cuenta para elegir un PLC?
 
+  Hay muchos sistemas PLC en el mercado hoy en día. Aparte de los costos, se debe tener en cuenta lo siguiente cuando se decida cuál va a adaptarse mejor a las necesidades de la aplicación
+
+- ¿El sistema será alimentado por voltaje AC o DC?
+- ¿El PLC tiene suficiente memoria para ejecutar el programa de usuario?
+- ¿El sistema funciona lo suficientemente rápido como para satisfacer los requerimientos de la solución?
+- ¿Qué tipo de software se utiliza para programar el PLC?
+- ¿El PLC será capaz de gestionar el número de entradas y salidas que mi aplicación requiere?
+- ¿Si es requerido por su aplicación, puede manejar el PLC entradas y salidas analógicas, o tal vez una combinación de ambas entradas y salidas analógicas y binarias?
+- ¿Cómo se va comunicar el PLC?
