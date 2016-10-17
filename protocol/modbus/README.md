@@ -21,7 +21,8 @@ Los primeros PLC fueron diseñados y desarrollados por le empresa Modicon (Modul
 * Realizar actividades de mantenimiento, tales como comunicaciones, diagnóstico interno, etc.
 
 ### Como Opera un PLC
-  Hay cuatro pasos básicos en el funcionamiento de todos los PLC; exploración de entrada, Ejecución de programa, Exploración de salida y mantenimiento. Estos pasos se llevan a cabo continuamente en un bucle de repetición.
+ 
+ Hay cuatro pasos básicos en el funcionamiento de todos los PLC; exploración de entrada, Ejecución de programa, Exploración de salida y mantenimiento. Estos pasos se llevan a cabo continuamente en un bucle de repetición.
 
 1. Input scan: detecta el estado de todos los dispositivos de entrada que están conectados al PLC
 
@@ -35,12 +36,11 @@ Los primeros PLC fueron diseñados y desarrollados por le empresa Modicon (Modul
 
   Mientras que Ladder Logic es el mas comúnmente lenguaje usado para programar PLC’s, no es el único, a continuación, se describen algunos:
 
-1. Ladder Diagram (LD) es un lenguaje de programación grafico tradicional inicialmente programado con contactos simples que simulan la apertura o cierre de reles, Ladder Logic Programming a sido ampliado para incluir funciones tales como contadores,
-temporizadores, registros de desplazamientos y operaciones matemáticas.
+* Ladder Diagram (LD) es un lenguaje de programación grafico tradicional inicialmente programado con contactos simples que simulan la apertura o cierre de reles, Ladder Logic Programming a sido ampliado para incluir funciones tales como contadores, temporizadores, registros de desplazamientos y operaciones matemáticas.
 
-2. Function Block Diagram (FBD): es un lenguaje grafico para representar señales y flujos de datos a través de bloques de funciones re-utilizables. FBD también es muy útil para expresar la interconexión de algoritmos de sistema de control y la lógica.
+* Function Block Diagram (FBD): es un lenguaje grafico para representar señales y flujos de datos a través de bloques de funciones re-utilizables. FBD también es muy útil para expresar la interconexión de algoritmos de sistema de control y la lógica.
 
-3. Texto estructurado (ST) - Un lenguaje de texto de alto nivel que fomenta la programación estructurada. Tiene una estructura de lenguaje (sintaxis) que se parece mucho a PASCAL y es compatible con una amplia gama de funciones y operadores estándar. Por ejemplo;
+* Texto estructurado (ST) - Un lenguaje de texto de alto nivel que fomenta la programación estructurada. Tiene una estructura de lenguaje (sintaxis) que se parece mucho a PASCAL y es compatible con una amplia gama de funciones y operadores estándar. Por ejemplo;
 
 > If Speed1 > 100.0 then
 
@@ -53,7 +53,7 @@ temporizadores, registros de desplazamientos y operaciones matemáticas.
 > End_If;
 
 
-4. Instruction List (IL) : es un lenguaje de bajo nivel del tipo "assembler" que se basa en un listado de instrucciones los cuales se encuentran en una amplica gama de PLCs de hoy en dia:
+* Instruction List (IL) : es un lenguaje de bajo nivel del tipo "assembler" que se basa en un listado de instrucciones los cuales se encuentran en una amplica gama de PLCs de hoy en dia:
 
 > LD   R1
 
@@ -67,6 +67,5 @@ temporizadores, registros de desplazamientos y operaciones matemáticas.
 
 > ST   A_X43
 
-5. Sequential Function Chart (SFC): Un programa en SFC es una visión general del sistema de control, en el que los bloques de construcción básicos son archivos completos del programa. Cada archivo de programa se ha creado usando uno de los otros tipos de
-lenguajes de programación. El enfoque de SFC es coordinar las tareas de programación grandes y complicados en tareas más pequeñas y manejables
+* Sequential Function Chart (SFC): Un programa en SFC es una visión general del sistema de control, en el que los bloques de construcción básicos son archivos completos del programa. Cada archivo de programa se ha creado usando uno de los otros tipos de lenguajes de programación. El enfoque de SFC es coordinar las tareas de programación grandes y complicados en tareas más pequeñas y manejables
 
