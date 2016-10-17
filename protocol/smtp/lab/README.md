@@ -24,4 +24,4 @@
 > en /etc/postfix/main.cf
 
 > smtpd_recipient_restrictions = reject_unauth_destination, check_policy_service unix:private/policy-spf
-- policy-spf_time_limit = 3600
+>> policy-spf_time_limit = 3600
