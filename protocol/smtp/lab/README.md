@@ -1,6 +1,7 @@
 ##Email Security Lab
 
 ###Objetivos
+* Aplicar reglas basicas de configuracion en un server smtp (restringir redes, no openrelay)
 * Implementar un sistema de transporte de email con soporte SPF (Sender Policy Framework)
 * Utilizar un servidor DNS Primario master para configurar registros TXT & SPF
 
@@ -38,4 +39,7 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 * reiniciar el servicio:
 
 > service postfix restart 
+
+* Revisar que el servicio smtp se encuentra activo mediante "netstar -atn" o ps -aef|grep postfix
+
 
