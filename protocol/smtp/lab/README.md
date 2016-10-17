@@ -8,6 +8,7 @@
 ###Entregables
 * Descripcion del laboratorio y los elementos utilizados (esquema, topologia)
 * Configuraciones de los sistemas empleados
+* Resultados de los experimentos con las diferentes configuraciones de SPF
 
 ####Servidores a utilizar
 
