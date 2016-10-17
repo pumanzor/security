@@ -35,3 +35,7 @@
 
 https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
+* reiniciar el servicio:
+
+> service postfix restart 
+
