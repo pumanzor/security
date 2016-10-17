@@ -9,9 +9,11 @@ Casi cualquier línea de producción las funciones de una máquina o de algún p
 ser mejorado al utilizar este tipo de sistema de control. Sin embargo, el mayor beneficio en
 el uso de un PLC es la capacidad de cambiar y replicar la operación o proceso mientras se
 recoge y comunica información vital al sistema.
+
 Otra de las ventajas de un sistema que usa PLC es que es modular. Es decir, se puede
 mezclar y combinar varios tipos de dispositivos de entrada y salida para adaptarse mejor a
 su aplicación.
+
 Los primeros PLC fueron diseñados y desarrollados por le empresa Modicon (Modular Digital
 CONtrol Boston MA.) en el año 1968 el primer PLC fue inventado por Dick Morley en 1969
 modelo 084 y comercialmente el primer modelo que salió a la venta fue el 184 en 1973 y fue
