@@ -32,6 +32,7 @@
 > mynetworks = 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128 192.168.X.Y/24
 
   - en /etc/postfix/master.cf (al final del archivo)
+
 > policy-spf  unix  -       n       n       -       -       spawn
-     user=policyd-spf argv=/usr/bin/policyd-spf
+  >     user=policyd-spf argv=/usr/bin/policyd-spf
 
