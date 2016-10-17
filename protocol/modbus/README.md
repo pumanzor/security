@@ -52,6 +52,7 @@ temporizadores, registros de desplazamientos y operaciones matemáticas.
  
 > End_If;
 
+
 4. Instruction List (IL) : es un lenguaje de bajo nivel del tipo "assembler" que se basa en un listado de instrucciones los cuales se encuentran en una amplica gama de PLCs de hoy en dia:
 
 > LD   R1
