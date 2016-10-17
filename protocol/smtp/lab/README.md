@@ -58,9 +58,9 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
 * Crear dos zonas en el dns primario
   
-  - ej. dominio1.com y otrodominio.com
+  - ej. scrdomain.com y dstdomain.com
   
-* dentro de las configuraciones de la zona del dominio origen se debe crear el siguiente registro TXT
+* dentro de las configuraciones de la zona del dominio origen (srcdomain) se debe crear el siguiente registro TXT
 
 > IN	TXT	"v=spf1 mx -all"
 
@@ -72,7 +72,7 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
 > set q=txt
 
-> dominio-origen.tld
+> srcdomain.com
 
   - y verifique que todo esta correctamente configurado en el registro TXT que acaba de configurar.
 
