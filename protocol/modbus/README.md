@@ -1,6 +1,6 @@
-###Modbus Security
+##Modbus Security
 
-#### Que es un PLC
+### Que es un PLC
 
 Un Programmable Logic Controller es un sistema de computo de control industrial que
 supervisa continuamente el estado de sus dispositivos de entrada y toma decisiones en base
