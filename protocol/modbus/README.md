@@ -114,7 +114,7 @@ y actuadores remotos conectados en diferentes tipos de buses o redes.
 
 El protocolo establece como los mensajes se intercambian en forma ordenada y la de deteccion de errores.
 
-#### Principales Caracter´ısticas
+#### Principales Caracterısticas
 
 - Control de acceso al medio tipo Maestro/Esclavo.
 - El protocolo especifica: formato de trama, secuencias y control de errores.
