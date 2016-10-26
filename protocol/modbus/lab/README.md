@@ -50,9 +50,36 @@
   - led catodo a pin GND Arduino
   
 
-###Instalacion de sketch en Arduino
+###Instalacion de libreria en Arduino
 
 > bajar la libreria simplemodbus e instalar bajo el directorio Arduino/libraries
+
+- https://github.com/pumanzor/security/blob/master/protocol/modbus/lab/simplemodbus/SimpleModbusSlaveV10.zip
+- https://github.com/pumanzor/security/blob/master/protocol/modbus/lab/simplemodbus/SimpleModbusMasterV2rev2.zip
+
+> Reiniciar el IDE de arduino para que se actualice el repositorio de librerias
+
+###Instalacion de Sketch en Arduino Master
+
+- Subir el siguiente sketck en el Arduino Master
+
+  - https://github.com/pumanzor/security/blob/master/protocol/modbus/lab/rs485_smodbus_master.ino
+  
+- Modificar el SlaveID
+- Compilar y subir el sketch al arduino
+
+###Instalacion de Sketch en Arduino Slave
+
+- - Subir el siguiente sketck en el Arduino Master
+
+  - https://github.com/pumanzor/security/blob/master/protocol/modbus/lab/rs485_smodbus_slave.ino
+  
+- Modificar el SlaveID
+- Compilar y subir el sketch al arduino
+
+###Conexion al bus RS485
+
+
 
 
 
