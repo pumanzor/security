@@ -93,6 +93,11 @@
 * Agregue mas Arduino slave al mismo bus y realice en envio de datos utilizando el mismo ID 0.
 * Compare resultados.
 
+###Prueba utilizando 2 Master en el mismo bus
+
+* Conecte otro Arduino Master en el mismo bus de datos y realice pruebas de envio de registros.
+* que sucede con la comunicacion?
+
 
 
 
