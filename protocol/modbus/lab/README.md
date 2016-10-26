@@ -79,6 +79,14 @@
 
 ###Conexion al bus RS485
 
+* Rs485 Master Module Pin A a Pin A RS485 Slave module
+* Rs485 Master Module Pin B a Pin B RS485 Slave module
+
+###Prueba de envio de datos desde Arduino Master hacia Slave
+
+* El potenciometro en el Master enviara datos entre 0 y 255 a traves del bus de datos, este valor debe llegar al slave y con ello modificar los valores del delay en el encendido del led.
+
+
 
 
 
