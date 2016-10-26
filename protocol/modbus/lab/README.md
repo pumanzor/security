@@ -86,6 +86,12 @@
 
 * El potenciometro en el Master enviara datos entre 0 y 255 a traves del bus de datos, este valor debe llegar al slave y con ello modificar los valores del delay en el encendido del led.
 
+###Prueba de envio de datos utilizando el ID 0
+
+* Modifique el sketch y cambie el valor de slave ID por el valor 0
+* Compare resultados con el paso anterior-
+* Agregue mas Arduino slave al mismo bus y realice en envio de datos utilizando el mismo ID 0.
+* Compare resultados.
 
 
 
