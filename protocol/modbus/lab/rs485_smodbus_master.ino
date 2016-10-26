@@ -7,9 +7,12 @@
 #define TxEnablePin 2 
 #define LED 9
 //ID slave node 
-#define ID 10
+#define SLAVEID 10
+#define SLAVEADDREG 1
+#define rnoreg 1
 
-#define TOTAL_NO_OF_REGISTERS 1
+
+#define TOTAL_NO_OF_REGISTERS 2
 
 enum
 {
@@ -24,8 +27,8 @@ unsigned int regs[TOTAL_NO_OF_REGISTERS];
 
 void setup()
 {
-  modbus_construct(&packets[PACKET1], 1, READ_HOLDING_REGISTERS, 0, 1, 0);
-  modbus_construct(&packets[PACKET2], ID, PRESET_MULTIPLE_REGISTERS, 1, 1, 0);
+  modbus_construct(&packets[PACKET1], SLAVEID, READ_HOLDING_REGISTERS, 0, 1, 0);
+  modbus_construct(&packets[PACKET2], SLAVEID, PRESET_MULTIPLE_REGISTERS, SLAVEADDREG, 1, 0);
   modbus_configure(&Serial, baud, SERIAL_8N1, timeout, polling, retry_count, TxEnablePin, packets, TOTAL_NO_OF_PACKETS, regs);
   
   pinMode(LED, OUTPUT);
