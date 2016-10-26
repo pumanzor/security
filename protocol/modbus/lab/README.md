@@ -50,6 +50,10 @@
   - led catodo a pin GND Arduino
   
 
+###Instalacion de sketch en Arduino
+
+> bajar la libreria simplemodbus e instalar bajo el directorio Arduino/libraries
+
 
 
 
