@@ -5,7 +5,7 @@
 #define polling 2000
 #define retry_count 10
 #define TxEnablePin 2 
-#define LED 9
+#define ERRORLED 13
 //ID slave node 
 #define SLAVEID 10
 #define SLAVEADDREG 1
@@ -31,7 +31,7 @@ void setup()
   modbus_construct(&packets[PACKET2], SLAVEID, PRESET_MULTIPLE_REGISTERS, SLAVEADDREG, 1, 0);
   modbus_configure(&Serial, baud, SERIAL_8N1, timeout, polling, retry_count, TxEnablePin, packets, TOTAL_NO_OF_PACKETS, regs);
   
-  pinMode(LED, OUTPUT);
+  pinMode(ERRORLED, OUTPUT);
 }
 
 void loop()
