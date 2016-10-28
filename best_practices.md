@@ -7,4 +7,9 @@ de los sistemas de informacion. Esto hara que sea mas facil idear medidas de seg
 
 Este mapa debe incluir, como mínimo, los siguientes elementos:
 
-  - Una lista de equipos indicando modelo y software utilizado. Obviamente, esta lista debe ser lo más preciso posible. Como punto de partida para este proceso, es posible que desee crear una lista de las máquinas utilizadas a lo largo de primer lugar
+  - Una lista de todos los equipos (PC usuario y servidores) indicando modelo y software utilizado. Obviamente, esta lista debe ser lo más precisa posible. Como punto de partida para este proceso, es posible que desee crear una lista de las máquinas utilizadas indicando:
+   
+    - Direccion IP y MAC address
+    - Software utilizado y sus correspondientes versiones
+    
+
