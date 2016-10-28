@@ -11,5 +11,8 @@ Este mapa debe incluir, como mínimo, los siguientes elementos:
    
     - Direccion IP y MAC address
     - Software utilizado y sus correspondientes versiones
+
+  - La arquitectura de red, la identificacion de todos los puntos de conexion, accesos Internet, switches, servidores de backup
+  storages, access point y otros sistemas que cuentan con direccionamiento.
     
 
