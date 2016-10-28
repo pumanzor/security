@@ -13,6 +13,8 @@ Este mapa debe incluir, como mínimo, los siguientes elementos:
     - Software utilizado y sus correspondientes versiones
 
   - La arquitectura de red, la identificacion de todos los puntos de conexion, accesos Internet, switches, servidores de backup
-  storages, access point y otros sistemas que cuentan con direccionamiento. Una vez realizado este mapa debe ser actualizado con los roles 
+  storages, access point y otros sistemas que cuentan con direccionamiento. Una vez realizado este mapa debe ser actualizado con los roles y servicios que cada uno prestan.
+  
+Ahora realizar todo lo anterior no es tarea facil de ejectuar si nos encontramos con una red informatica ya montada y de tiempo funcionando y operando 
     
 
