@@ -1,4 +1,4 @@
-##Mejore practicas de seguridad en una red de computadores
+##Mejores practicas de seguridad en una red de computadores
 
 1.- Tener un mapa de la arquitectura de red actualizado y lo mas preciso posible
 
