@@ -5,4 +5,6 @@
 La preparacion de un mapa de la arquitectura de red es el primer paso para adquirir un mayor y extensivo conocimiento 
 de los sistemas de informacion. Esto hara que sea mas facil idear medidas de seguridad que se adaptaran y se ajustaran a los sistemas instalados y garantizara que ningún elemento se pase por alto en la aplicación de una medida de seguridad y para facilitar una respuesta en el caso de un incidente
 
-2.- 
+Este mapa debe incluir, como mínimo, los siguientes elementos:
+
+  - Una lista de equipos indicando modelo y software utilizado. Obviamente, esta lista debe ser lo más preciso posible. Como punto de partida para este proceso, es posible que desee crear una lista de las máquinas utilizadas a lo largo de primer lugar
