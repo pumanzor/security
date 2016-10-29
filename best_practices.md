@@ -112,7 +112,14 @@ Esta política debe incluir:
 A tener en cuentos los siguientes puntos:
 
   - Una herramienta dedicada debe ser usada, como por ejemplo WSUS para entornos microsoft que permite gestionar cambios a aplicar de manera uniforme en todo el parque informatico.
+  
+Teniendo en cuenta el articulo 6, es vital que ningun equipo pc, computador o componente de la red sea excluido de la politica de actualizacion.
 
+Desafortunadamente, sin embargo , el departamento de TI frecuentemente mantiene sistemas obsoletos que ya no son soportados por lo fabricantes y por lo cual no se dispone de parches o actualizaciones, estos sistemas obsoletos son ciertas aplicaciones que se usan de forma diaria y que lamentablemente forman parte de la cadena de operacion. En este caso es vital que dichos sistemas sean aislados:
+
+  - A nivel de red, usando un filtro muy estricta que sólo autorize el acceso a las aplicaciones necesarias.
+  - En el ámbito de la autenticación, asegurar que no haya ninguna contraseña (ya sea para el sistema o para el software) sea compartida con el resto de los sistemas de información.
+  - En el ámbito de aplicación, asegurando que estos sistemas no utilizan recursos compartido con el resto de los sistemas de información
 
 
 
