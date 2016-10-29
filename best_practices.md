@@ -15,6 +15,12 @@ Este mapa debe incluir, como mínimo, los siguientes elementos:
   - La arquitectura de red, la identificacion de todos los puntos de conexion, accesos Internet, switches, servidores de backup
   storages, access point y otros sistemas que cuentan con direccionamiento. Una vez realizado este mapa debe ser actualizado con los roles y servicios que cada uno prestan.
   
-Ahora realizar todo lo anterior no es tarea facil de ejectuar si nos encontramos con una red informatica ya montada y de tiempo funcionando y operando 
+Ahora realizar todo lo anterior no es tarea facil de ejecutar si nos encontramos con una red informatica ya montada y de tiempo funcionando y operando. Para estos casos lo ideal es apoyarse en algun software de inventario de red que nos pueda sistematizar la recogida de informacion.
+
+Paralelamente es muy util activar las opciones de administracion remotos de todos los equipos que la soporten, es el caso del protocolo SNMP el cual nos permitira conocer ademas de lo anterior, otros parametros y variables en el tiempo de estos equipos.
+
+Tambien en lo posible disponer de un servidor syslog en donde se vayan reportando las acciones configuradas en los dispositivos de red que lo soporten.
+
+
     
 
