@@ -25,6 +25,11 @@ Tambien en lo posible disponer de un servidor syslog en donde se vayan reportand
 
 ####2.- Mantener un inventario exhaustivo de las cuentas con privilegios y garantizar que esto se actualiza
 
+- Como mínimo, es importante tener una lista de:
+
+  - Los usuarios con una cuenta de administrador (o con privilegios superiores a los de un usuario estándar) en el sistema de información.
+  - Los usuarios con privilegios suficientes para acceder a los directorios de trabajo de los administradores o, en particular, de todos los usuarios;
+  - Los usuarios con una máquina que no es administrado por el departamento de TI y por lo tanto no se gestiona de acuerdo con la seguridad general de la organización política.
 
     
 
