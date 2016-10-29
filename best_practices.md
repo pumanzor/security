@@ -78,4 +78,4 @@ La conexión de dispositivos personales sólo se permitirá en las redes o segme
 
 Los dispositivos personales tales como teléfonos inteligentes, tablets, memorias USB son realmente difíciles de controlar para una organización en el sentido de que los propios usuarios tienen que  determinar el nivel de seguridad que poseen sus dispositivos.
 
-Las medidas de seguridad en una organización o empresa, por lo tanto, no pueden por su propia naturaleza, ser aplicados a este tipo de dispositivos.
+Las medidas de seguridad en una organización o empresa, por lo tanto, no pueden por su propia naturaleza, ser aplicados a este tipo de dispositivos. De todas formas existen aplicaciones propietarias que se pueden instalar en smartphone de manera de ser integrados al sistema de seguridad de la organizacion y ser conscientes de que estan conectados y autorizados para ingresar a la red.
