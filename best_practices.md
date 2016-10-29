@@ -159,4 +159,10 @@ Si existe un gran número de contraseñas que obligan a usar una solución de al
 
 Las configuraciones por default se conocen de forma sistematica por los atacantes, por lo general son bastantes triviales;  ejemplo clave igual al nombre de usuario, claves compartida por varios dispositivos en el mismo rango, etc).
 
-###SECURE COMPUTER TERMINALS
+###Seguridad en terminales cliente.
+
+A pesar de que hasta hace pocos años, los piratas informáticos tenian como objetivo a los servidores antes que nada, una de las maneras más fáciles de penetrar en una red de hoy es por la piratería en una máquina cliente. No es infrecuente que las máquinas cliente son de hecho menos seguro y sobre todo menos supervisadas que los servidores.
+
+####14.- Implementar un nivel uniforme de seguridad en todo el parque informático.
+
+En concreto, como mínimo, es vital desactivar los servicios innecesarios y restringir los privilegios de las cuenta de usuario. El uso de un firewall personal en cada máquina cliente, configurado como mínimo para bloquear las conexiones entrantes no solicitados, es en general indispensable.
