@@ -90,3 +90,9 @@ En la mayor medida posible, esta prohibicion debe ser complementada por medidas 
 
 Donde hay una necesidad de trabajar en forma remota, la organizacion debe proporcionar la medios profesionales para permitir este tipo de uso. La transferencia de email desde cuentas de correos institucionales hacia cuentas personales, sin embargo, debe ser explicitamente prohibido.
 
+###Actualizacion de software
+
+Diariamente, las vulnerabilidades se revelan en un gran numero de paquetes de software ampliamente utilizado.
+
+A veces solo unas pocas horas son suficientes para que el malware explote estas vulnerabilidades para comenzar a circular sobre Internet. Por eso es muy importante priorizar el uso de tecnologias establecidas, para lo cual se garantiza el soporte; para evitar tecnologias que su equipo de TI no es totalmente competente. 
+
