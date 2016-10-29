@@ -195,3 +195,9 @@ Si hay alguna diferencia en la forma de como las máquinas de escritorio y port�
 
 Los equipos portatiles necesitaran ser administrados usando al  menos las mismas medidas de seguridad que los equipos de escritorio (actualizaciones, restriccion de privilegios, etc). Las condiciones bajo cuales equipos portatiles son usados frecuentemente hacen tambien necesario mejorar ciertas funciones de seguridad pero la implementacion de tales funciones en equipos fijos es tambien una buena practica para una defensa en profundidad.
 
+####18.- Siempre que sea posible, prohibir las conexiones remotas a máquinas cliente
+
+####19.- Cifrar los datos sensibles, especialmente en las máquinas móviles y medios que pueden perderse.
+
+La pérdida o robo de un dispositivo móvil o de un equipo portátil (o medios) puede tener graves consecuencias para la empresa u organizacion: a menos que este cifrada, los datos almacenados en estos equipos (activos tecnológicos de la empresa, base de datos del cliente), en efecto pueden verse comprometidos, aun cuando la máquina está apagada o el usuario haya terminado la sesión. Por esta razón, es importante cifrar los datos sensibles.
+
