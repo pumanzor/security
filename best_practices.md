@@ -150,3 +150,14 @@ Los siguientes métodos permiten reglas de autenticación y contraseñsa que se 
 Para simplificar las cosas, los usuarios y los administradores frecuentemente suelen escribir sus contraseñas a la vista en los archivos almacenados en sus ordenadores o se envian a sí mismos a través de correo electrónico. Estas practicas deben ser prohibidas. 
 
 Claves e información secreta almacenada en maquinas de usuarios son la primera cosa que los hackers buscarán y utilizaran.
+
+Es también importante no utilizar los mecanismos automáticos de almacenamiento de la contraseña (por ejemplo, el botón de un navegador "siempre recordar contraseña"). 
+
+Si existe un gran número de contraseñas que obligan a usar una solución de almacenamiento centralizada, un sistema cuya seguridad ha sido validado debe ser utilizado para tal fin.
+
+####12.- Sistemáticamente cambiar la configuración de autenticación predeterminada (contraseña, certificados)
+en los dispositivos de red (switches, routers, servidores, impresoras).
+
+Las configuraciones por default se conocen de forma sistematica por los atacantes, por lo general son bastantes triviales;  ejemplo clave igual al nombre de usuario, claves compartida por varios dispositivos en el mismo rango, etc).
+
+###SECURE COMPUTER TERMINALS
