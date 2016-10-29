@@ -31,14 +31,32 @@ Tambien en lo posible disponer de un servidor syslog en donde se vayan reportand
   - Los usuarios con privilegios suficientes para acceder a los directorios de trabajo de los administradores o, en particular, de todos los usuarios;
   - Los usuarios con una máquina que no es administrado por el departamento de TI y por lo tanto no se gestiona de acuerdo con las politicas de seguridad de la organizacion. (ejemplo, un equipo que no se encuentra dentro del dominio por lo tanto no cuenta con actualizaciones de AV, parches, actualizaciones, etc)
   
-- Esta lista debe mantenerse actualizada.
+> Esta lista debe mantenerse actualizada.
 
 También es importante contar con una lista de usuarios con privilegios suficientes para leer los mensajes de correo electrónico de gestión de la empresa o particular de todos los usuarios. 
 
 Sin embargo, la compilación de una lista de las personas que en realidad tienen acceso a esta información puede ser a veces extremadamente difícil. Si dicha lista no se puede compilar de forma fiable, se necesita un registro de acceso al buzón que se creará y la lista de los usuarios que acudieron a los buzones más sensibles verificandolo periódicamente.
 
-En un sistema Windows, la mayor parte de esta información se puede obtener mediante el análisis de la configuración de Active Directory
+En un sistema Windows, la mayor parte de esta información se puede obtener mediante el análisis de la configuración de Active Directory.
+
+También es muy recomendable que utilice una nomenclatura clara para el nombre de la cuenta (cuentas de administradores con algun prefijo como ADM, cuentas con el prefijo SRV indicando que se trata de servicios, etc)
   
+####3.- Crear y aplicar procedimientos para la llegada y salida de los usuarios (personal, pasantes, etc.)
+
+
+Estos procedimientos tienen por objeto garantizar que los derechos concedidos en el sistema de información se aplicó la forma más racional posible. Es particularmente importante que todos los derechos asignados a un individuo son revocado cuando se van. 
+
+Los procedimientos deben como mínimo establecer:
+
+  - gestión (creación / eliminación) de TI representa (y sus correspondientes buzones) y la asignación de los derechos asociados a estas cuentas en el sistema de información, incluyendo los socios externos y proveedores de servicios
+
+  - gestión de acceso a los locales (en particular, la recepción y la devolución de tarjetas magnéticas a las instalaciones);
+
+  - gestión de las máquinas portátiles
+
+  - gestión de documentos sensibles (posesión, todas las autorizaciones la eliminación de los locales);
+
+  - gestión del control de las autorizaciones de personal.
 
     
 
