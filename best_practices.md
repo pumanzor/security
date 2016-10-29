@@ -29,7 +29,8 @@ Tambien en lo posible disponer de un servidor syslog en donde se vayan reportand
 
   - Los usuarios con una cuenta de administrador (o con privilegios superiores a los de un usuario estándar) en el sistema de información.
   - Los usuarios con privilegios suficientes para acceder a los directorios de trabajo de los administradores o, en particular, de todos los usuarios;
-  - Los usuarios con una máquina que no es administrado por el departamento de TI y por lo tanto no se gestiona de acuerdo con la seguridad general de la organización política.
+  - Los usuarios con una máquina que no es administrado por el departamento de TI y por lo tanto no se gestiona de acuerdo con las politicas de seguridad de la organizacion. (ejemplo, un equipo que no se encuentra dentro del dominio por lo tanto no cuenta con actualizaciones de AV, parches, actualizaciones, etc)
+  
 
     
 
