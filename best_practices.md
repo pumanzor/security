@@ -193,5 +193,5 @@ Usted tendrá que incluir el mayor número posible de máquinas de TI dentro de 
 
 Si hay alguna diferencia en la forma de como las máquinas de escritorio y portátiles son administrados, el actual nivel de seguridad de la red será la del eslabón más débil.
 
-Los equipos portatiles
+Los equipos portatiles necesitaran ser administrados usando al  menos las mismas medidas de seguridad que los equipos de escritorio (actualizaciones, restriccion de privilegios, etc). Las condiciones bajo cuales equipos portatiles son usados frecuentemente hacen tambien necesario mejorar ciertas funciones de seguridad pero la implementacion de tales funciones en equipos fijos es tambien una buena practica para una defensa en profundidad.
 
