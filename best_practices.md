@@ -74,3 +74,8 @@ Usted debe ser capaz de identificar con precisión los puntos de acceso a Intern
 
 ####5.- Prohibir la conexión de dispositivos personales al sistema de información de la organización.
 
+La conexión de dispositivos personales sólo se permitirá en las redes o segmentos de red que contienen absolutamente ninguna información sensible de la organizacion.
+
+Los dispositivos personales tales como teléfonos inteligentes, tablets, memorias USB son realmente difíciles de controlar para una organización en el sentido de que los propios usuarios tienen que  determinar el nivel de seguridad que poseen sus dispositivos.
+
+Las medidas de seguridad en una organización o empresa, por lo tanto, no pueden por su propia naturaleza, ser aplicados a este tipo de dispositivos.
