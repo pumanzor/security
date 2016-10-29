@@ -218,3 +218,11 @@ En redes donde es complejo realizar segmentacion se recomienda:
   - Tener en cuenta y aprovechar la instancia para realizarla en cualquier posterior ampliación o modificacion de red.
   - Participar en el planeamiento estratégico con respecto a la arquitectura de la red, que en sentido estricto, queda fuera de ambito.
   
+####22.- Evitar el uso de infraestructuras inalambricas WIFI. Si el uso de estas tecnologias no puede ser evitadas, segmentar la red de acceso WIFI del resto de las redes donde se encuentan los sistemas de informacion.
+
+El uso de tecnologias inalambricas dentro de una red de una organizacion no se recomienda. Si es necesario el uso de ella, la segmentacion debe ser capaz de limitar las consecuencias de la instruccion via RF hasta un perimetro dado. La segmentacion de la red acceso inalambrico del resto de la red es muy recomendable: la interconexion con la red principal debe ser a traves de un gateway controlado que permita el seguimiento de los accesos y tener la capacidad de restringir el trafico a lugares especificos.
+
+Ademas, es importante dar prioridad al uso de cifrado WIFI que se basa en WPA Empresarial (WPA2 EAP-TLS con cifrado CCMP), que permite a los equipos ser autenticados por medio de certificados y 802.1X.
+
+Mecanismos de proteccion basados en clave compartida deben ser prohibidos donde proveedores externos de servicios o un excesivo numero de usuarios han requerido acceso a esta red WIFI
+  
