@@ -87,3 +87,6 @@ De hecho, por cada cien dispositivos personales conectados a la red de una empre
 Por lo tanto, es importante prohibir o prevenir el acceso a la red y a los sistemas de informacion. Esta prohibicion debe aplicarse en primer lugar a un nivel organizacional, incluso si no hay reglas tecnicas para prevenirlas, los usuarios deberian adoptar este tipo de practicas, por ejemplo a traves de una carta que determine el uso de los recursos de TI.
 
 En la mayor medida posible, esta prohibicion debe ser complementada por medidas tecnicas, sin embargo a veces puede resultar dificil de implementar (ej, control sistematico de acceso a la red, la desactivacion de los puertos USB).
+
+Donde hay una necesidad de trabajar en forma remota, la organizacion debe proporcionar la medios profesionales para permitir este tipo de uso. La transferencia de email desde cuentas de correos institucionales hacia cuentas personales, sin embargo, debe ser explicitamente prohibido.
+
