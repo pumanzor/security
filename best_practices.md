@@ -96,3 +96,24 @@ Diariamente, las vulnerabilidades se revelan en un gran numero de paquetes de so
 
 A veces solo unas pocas horas son suficientes para que el malware explote estas vulnerabilidades para comenzar a circular sobre Internet. Por eso es muy importante priorizar el uso de tecnologias establecidas, para lo cual se garantiza el soporte; para evitar tecnologias que su equipo de TI no es totalmente competente. 
 
+####6.- Conocer los procedimientos de cómo se actualizan todos los componentes de software y mantenerse al día sobre las vulnerabilidades de estos componentes y sus actualizaciones necesarias.
+
+Es crucial determinar cómo los componentes de software utilizados por la organizacion deben ser actualizados. Si un componente de software no se puede actualizar, no debe ser utilizado (véase el pto 7. la forma de gestionar las excepciones en este sentido).
+
+Además, las actualizaciones de software sólo deben ser descargados desde sitios de confianza (por lo general desde sitios del fabricante)
+
+####7.- Definir y aplicar estrictamente una política de actualización.
+
+Esta política debe incluir:
+  - Los items a ser actualizados.
+  - Las responsabilidades de los diferentes actores en el proceso de actualización;
+  - Los medios utilizados para obtener y evaluar los cambios.
+
+A tener en cuentos los siguientes puntos:
+
+  - Una herramienta dedicada debe ser usada, como por ejemplo WSUS para entornos microsoft que permite gestionar cambios a aplicar de manera uniforme en todo el parque informatico.
+
+
+
+
+
