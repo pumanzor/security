@@ -48,11 +48,11 @@ Estos procedimientos tienen por objeto garantizar que los derechos concedidos en
 
 Los procedimientos deben como mínimo establecer:
 
-  - gestión (creación / eliminación) de TI representa (y sus correspondientes buzones) y la asignación de los derechos asociados a estas cuentas en el sistema de información, incluyendo los socios externos y proveedores de servicios
+  - gestión (creación / eliminación) de cuentas TI  (y sus correspondientes buzones) y la asignación de los derechos asociados a estas cuentas en el sistema de información, incluyendo los usuarios externos y proveedores de servicios.
 
-  - gestión de acceso a los locales (en particular, la recepción y la devolución de tarjetas magnéticas a las instalaciones);
+  - gestión de acceso a las dependencias (en particular, la recepción y la devolución de tarjetas magnéticas a las instalaciones);
 
-  - gestión de las máquinas portátiles
+  - gestión de los equipos portátiles
 
   - gestión de documentos sensibles (posesión, todas las autorizaciones la eliminación de los locales);
 
