@@ -129,4 +129,11 @@ Las contraseñas son a menudo el talón de Aquiles de los sistemas de informaci�
 
 Esta norma tiene por objeto eliminar cuentas genéricas, anonimas; la idea es que sea más fácil atribuir una acción en los sistemas relacionado con un individuo específico. Esto es especialmente útil en el caso de un incidente.
 
+Por supuesto, esta regla no le impide retener cuentas técnicas (denominado cuentas de servicio) que no se atribuyen a un individuo específico.
+
+####9.- Establecer reglas para la eleccion y tamaño de las contraseñas.
+
+Un listado de buenas practicas para la seleccion y tamaño de las contraseñas se pueden encontrar en el siguiente link []
+
+De estas reglas, las mas criticas son hacer que los usuarios tengan conciencia de los riesgos involucrados en la eleccion de claves que sean demasiado facil de adivinar y los riesgos de volver a utilizar la misma contraseña, especialmente para cuentas de email personales e institucionales.
 
