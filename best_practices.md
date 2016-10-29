@@ -137,3 +137,16 @@ Un listado de buenas practicas para la seleccion y tamaño de las contraseñas s
 
 De estas reglas, las mas criticas son hacer que los usuarios tengan conciencia de los riesgos involucrados en la eleccion de claves que sean demasiado facil de adivinar y los riesgos de volver a utilizar la misma contraseña, especialmente para cuentas de email personales e institucionales.
 
+####10.- Puesta en marcha de metodos tecnicos que permitan normas de autenticacion a seguir.
+
+Los siguientes métodos permiten reglas de autenticación y contraseñsa que se deben seguir:
+
+  - Bloqueo de cuentas cada 6 meses hasta que la contraseña ha sido cambiada;
+  - Bloqueo de cualquier configuración de una máquina que permite la puesta en marcha en modo "inicio de sesión automático" (es decir, sin una contraseña) o desde una cuenta de invitado.
+  - Verificar que las contraseñas elegidas no son fáciles de resolver.
+  
+####11.- No almacene contraseñas a la vista en archivos o dentro de los sistemas de informacion.
+
+Para simplificar las cosas, los usuarios y los administradores frecuentemente suelen escribir sus contraseñas a la vista en los archivos almacenados en sus ordenadores o se envian a sí mismos a través de correo electrónico. Estas practicas deben ser prohibidas. 
+
+Claves e información secreta almacenada en maquinas de usuarios son la primera cosa que los hackers buscarán y utilizaran.
