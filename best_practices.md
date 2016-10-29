@@ -31,6 +31,13 @@ Tambien en lo posible disponer de un servidor syslog en donde se vayan reportand
   - Los usuarios con privilegios suficientes para acceder a los directorios de trabajo de los administradores o, en particular, de todos los usuarios;
   - Los usuarios con una máquina que no es administrado por el departamento de TI y por lo tanto no se gestiona de acuerdo con las politicas de seguridad de la organizacion. (ejemplo, un equipo que no se encuentra dentro del dominio por lo tanto no cuenta con actualizaciones de AV, parches, actualizaciones, etc)
   
+- Esta lista debe mantenerse actualizada.
+
+También es importante contar con una lista de usuarios con privilegios suficientes para leer los mensajes de correo electrónico de gestión de la empresa o particular de todos los usuarios. Sin embargo, la compilación de una lista de
+las personas que en realidad tienen acceso a esta información puede ser a veces extremadamente difícil. Si dicha lista no se puede compilar de forma fiable, se necesita un registro de acceso al buzón que se creará y la lista de los pacientes que acudieron a los buzones más sensibles verificados periódicamente (ver regla 26).
+
+En un sistema Windows, la mayor parte de esta información se puede obtener mediante el análisis de la configuración de Active Directory
+  
 
     
 
