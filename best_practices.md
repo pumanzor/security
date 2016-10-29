@@ -166,3 +166,32 @@ A pesar de que hasta hace pocos años, los piratas informáticos tenian como obj
 ####14.- Implementar un nivel uniforme de seguridad en todo el parque informático.
 
 En concreto, como mínimo, es vital desactivar los servicios innecesarios y restringir los privilegios de las cuenta de usuario. El uso de un firewall personal en cada máquina cliente, configurado como mínimo para bloquear las conexiones entrantes no solicitados, es en general indispensable.
+
+A nivel de aplicaciones, lo siguiente debe ser configurado tan meticulosamente como sea posible: 
+
+  - clientes de correo electrónico entrantes: (forzar el envío y recepción de mensajes de correo electrónico en texto sin formato en lugar de HTML es una buena práctica, por ejemplo), los navegadores (bloqueo por defecto de determinados contenidos y activando solamente aquellos que sean indispensables caso a caso), o suites de oficina (desactivar la capacidad de ejecutar macros).
+  
+En cuanto a este último punto, cabe señalar que si bien el bloqueo de ciertos contenido, como JavaScript y Flash, es esencial desde el punto de vista de la seguridad, a menudo se percibe como difícil o incluso imposible de desplegar, ya que estas tecnologías son necesarios para acceder a la información. Sin embargo, es importante que estas tecnologías  al menos, se desactiven en máquinas en las que su uso no es estrictamente necesario.
+
+####Técnicamente prevenir la conexión de los medios de comunicación portátiles, excepto cuando sea estrictamente necesario.
+
+Los medios portátiles (Discos duros USB, pendrive) son un método preferido para la propagación de malware y filtracion de datos.
+
+Por tanto, su uso debe mantenerse al mínimo. A menudo no es realista prevenir completamente la conexión de algun medio portátil en las máquinas de la organizacion. El enfoque correcto es identificar esas máquinas para las cuales se requiere la conexión de un medio portátil y autorizar la conexión a ellos en forma autonoma.
+
+En sistemas Microsoft desde Windows XP en adelante, es posible restringir la capacidad de ejecutar programas utilizando varios criterios, a través de politicas de restricción de software. 
+
+Tal política se puede establecer en su lugar con el fin de limitar el riesgo de accidente en la importación de un virus por ej, especialmente a través de una memoria USB.
+
+####16.- Utilice una herramienta de gestión de inventario TI, lo que permitira la implementación de políticas de seguridad y actualizaciones de los equipos de su red.
+
+El uso de una herramienta informática de gestión de inventiario es vital para asegurar que los equipos de la red sean monitoreados.
+
+Usted tendrá que incluir el mayor número posible de máquinas de TI dentro de los que son gestionados por la herramienta en cuestión.
+
+####17.- Administrar equipos portátiles con una política de seguridad que es al menos tan estrictas como para el equipamiento de escritorio.
+
+Si hay alguna diferencia en la forma de como las máquinas de escritorio y portátiles son administrados, el actual nivel de seguridad de la red será la del eslabón más débil.
+
+Los equipos portatiles
+
