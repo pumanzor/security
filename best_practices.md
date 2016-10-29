@@ -83,3 +83,7 @@ Las medidas de seguridad en una organización o empresa, por lo tanto, no pueden
 Esta regla es frecuentemente percibida como una restricción inaceptable e incluso retrógrada por un gran número de usuarios. Sin embargo, a menos que esto se cumpla, la tarea de un hacker se hace  mucho más fácil. 
 
 De hecho, por cada cien dispositivos personales conectados a la red de una empresa, se ha estimado que estadísticamente al menos diez de ellos han sido comprometidos por malware genérico (dejando a un lado los ataques dirigidos).
+
+Por lo tanto, es importante prohibir o prevenir el acceso a la red y a los sistemas de informacion. Esta prohibicion debe aplicarse en primer lugar a un nivel organizacional, incluso si no hay reglas tecnicas para prevenirlas, los usuarios deberian adoptar este tipo de practicas, por ejemplo a traves de una carta que determine el uso de los recursos de TI.
+
+En la mayor medida posible, esta prohibicion debe ser complementada por medidas tecnicas, sin embargo a veces puede resultar dificil de implementar (ej, control sistematico de acceso a la red, la desactivacion de los puertos USB).
