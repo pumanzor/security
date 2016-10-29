@@ -155,8 +155,7 @@ Es también importante no utilizar los mecanismos automáticos de almacenamiento
 
 Si existe un gran número de contraseñas que obligan a usar una solución de almacenamiento centralizada, un sistema cuya seguridad ha sido validado debe ser utilizado para tal fin.
 
-####12.- Sistemáticamente cambiar la configuración de autenticación predeterminada (contraseña, certificados)
-en los dispositivos de red (switches, routers, servidores, impresoras).
+####12.- Sistemáticamente cambiar la configuración de autenticación predeterminada (contraseña, certificados) en los dispositivos de red (switches, routers, servidores, impresoras).
 
 Las configuraciones por default se conocen de forma sistematica por los atacantes, por lo general son bastantes triviales;  ejemplo clave igual al nombre de usuario, claves compartida por varios dispositivos en el mismo rango, etc).
 
