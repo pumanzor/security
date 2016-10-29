@@ -1,5 +1,9 @@
 ##Mejores practicas de seguridad en una red de computadores
 
+###Conoecer acerca de su sistemas de informacion y sus usuarios.
+
+Conocer su sistema de información es un requisito previo e importante para hacerlo seguro. De hecho, si su sistema de información incluyen equipos que se omiten de los inventarios regulares, este equipo se convertirá en obsoleto rápidamente y será un objetivo para un atacante
+
 ####1.- Tener un mapa de la arquitectura de red actualizado y lo mas preciso posible
 
 La preparacion de un mapa de la arquitectura de red es el primer paso para adquirir un mayor y extensivo conocimiento 
