@@ -58,5 +58,7 @@ Los procedimientos deben como mínimo establecer:
 
   - gestión del control de las autorizaciones de personal.
 
-    
+Es importante que los cambios de personal se gestionen debidamente y a tiempo, sobre todo los usuarios que vayan dejando la organizacion o los de paso transitorio.
+
+Los privilegios asociados a determinadas cuentas de usuario a menudo aumentan con los movimientos internos, que dan lugar a la asignación de nuevos derechos sin borrar los que ya no se aplican.
 
