@@ -1,6 +1,6 @@
 ##Mejores practicas de seguridad en una red de computadores
 
-###Conoecer acerca de su sistemas de informacion y sus usuarios.
+###Conocer acerca de su sistemas de informacion y sus usuarios.
 
 Conocer su sistema de información es un requisito previo e importante para hacerlo seguro. De hecho, si su sistema de información incluyen equipos que se omiten de los inventarios regulares, este equipo se convertirá en obsoleto rápidamente y será un objetivo para un atacante
 
@@ -65,4 +65,10 @@ Los procedimientos deben como mínimo establecer:
 Es importante que los cambios de personal se gestionen debidamente y a tiempo, sobre todo los usuarios que vayan dejando la organizacion o los de paso transitorio.
 
 Los privilegios asociados a determinadas cuentas de usuario a menudo aumentan con los movimientos internos, que dan lugar a la asignación de nuevos derechos sin borrar los que ya no se aplican.
+
+##Control de la Red.
+
+4.- Limitar el número de puntos de acceso a Internet a sistemas y usuarios que sean extrictamente necesarios.
+
+Usted debe ser capaz de identificar con precisión los puntos de acceso a Internet (ADSL, dedicados, etc.) y las interconexiones con redes de asociados, ademas debe limitar éstas al mínimo estrictamente necesario para que sea más fácil centralizar y estandarizar la vigilancia del tráfico
 
