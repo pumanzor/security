@@ -228,7 +228,7 @@ Mecanismos de proteccion basados en clave compartida deben ser prohibidos donde 
 
 También se deben evitar el uso de dispositivos PLC (Powerline Communications) sin utilizar los mecanismos de protección equivalentes a las recomendadas anteriormente. En efecto, el perímetro cubierto por la red PLC es difícil de determinar con precisión.
 
-###Sistematicamente utilizar aplicaciones y protocolos seguros.
+####23.- Sistematicamente utilizar aplicaciones y protocolos seguros.
 
 El uso de protocolos seguros, incluyendo la red interna, contribuye a la defensa en profundidad y complica la tarea de un hacker quien ya haya comprometido un equipo en la red y quien busca extender su control sobre esa red.
 
