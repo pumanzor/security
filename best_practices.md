@@ -33,8 +33,9 @@ Tambien en lo posible disponer de un servidor syslog en donde se vayan reportand
   
 - Esta lista debe mantenerse actualizada.
 
-También es importante contar con una lista de usuarios con privilegios suficientes para leer los mensajes de correo electrónico de gestión de la empresa o particular de todos los usuarios. Sin embargo, la compilación de una lista de
-las personas que en realidad tienen acceso a esta información puede ser a veces extremadamente difícil. Si dicha lista no se puede compilar de forma fiable, se necesita un registro de acceso al buzón que se creará y la lista de los pacientes que acudieron a los buzones más sensibles verificados periódicamente (ver regla 26).
+También es importante contar con una lista de usuarios con privilegios suficientes para leer los mensajes de correo electrónico de gestión de la empresa o particular de todos los usuarios. 
+
+Sin embargo, la compilación de una lista de las personas que en realidad tienen acceso a esta información puede ser a veces extremadamente difícil. Si dicha lista no se puede compilar de forma fiable, se necesita un registro de acceso al buzón que se creará y la lista de los usuarios que acudieron a los buzones más sensibles verificandolo periódicamente.
 
 En un sistema Windows, la mayor parte de esta información se puede obtener mediante el análisis de la configuración de Active Directory
   
