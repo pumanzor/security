@@ -224,5 +224,10 @@ El uso de tecnologias inalambricas dentro de una red de una organizacion no se r
 
 Ademas, es importante dar prioridad al uso de cifrado WIFI que se basa en WPA Empresarial (WPA2 EAP-TLS con cifrado CCMP), que permite a los equipos ser autenticados por medio de certificados y 802.1X.
 
-Mecanismos de proteccion basados en clave compartida deben ser prohibidos donde proveedores externos de servicios o un excesivo numero de usuarios han requerido acceso a esta red WIFI
-  
+Mecanismos de proteccion basados en clave compartida deben ser prohibidos donde proveedores externos de servicios o un excesivo numero de usuarios han requerido acceso a esta red WIFI.
+
+También se deben evitar el uso de dispositivos PLC (Powerline Communications) sin utilizar los mecanismos de protección equivalentes a las recomendadas anteriormente. En efecto, el perímetro cubierto por la red PLC es difícil de determinar con precisión.
+
+###Sistematicamente utilizar aplicaciones y protocolos seguros.
+
+
