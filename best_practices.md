@@ -230,4 +230,11 @@ También se deben evitar el uso de dispositivos PLC (Powerline Communications) s
 
 ###Sistematicamente utilizar aplicaciones y protocolos seguros.
 
+El uso de protocolos seguros, incluyendo la red interna, contribuye a la defensa en profundidad y complica la tarea de un hacker quien ya haya comprometido un equipo en la red y quien busca extender su control sobre esa red.
+
+Procolos inseguros (telnet, ftp, pop,smtp, http) deben ser como regla general no permitidos en una red de una compañia u organizacion y deberian ser reemplzados por sus equivalentes seguros (SSH, sftp, pop3s, smtps, https).
+
+Por otra parte, es importante que las aplicaciones empresariales sean desarrolladas tomando en cuenta los riesgos de seguridad.
+
+
 
