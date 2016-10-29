@@ -121,6 +121,12 @@ Desafortunadamente, sin embargo , el departamento de TI frecuentemente mantiene 
   - En el ámbito de la autenticación, asegurar que no haya ninguna contraseña (ya sea para el sistema o para el software) sea compartida con el resto de los sistemas de información.
   - En el ámbito de aplicación, asegurando que estos sistemas no utilizan recursos compartido con el resto de los sistemas de información
 
+###Autenticacion de usuarios.
 
+Las contraseñas son a menudo el talón de Aquiles de los sistemas de información. De hecho, aunque las organizaciones a menudo formular una política de contraseñas, sólo en raras ocasiones se aplica esta manera uniforme en todo el parque informático.
+
+####8.- Identificar a cada individuo cuando acceda a los sistemas por su nombre
+
+Esta norma tiene por objeto eliminar cuentas genéricas, anonimas; la idea es que sea más fácil atribuir una acción en los sistemas relacionado con un individuo específico. Esto es especialmente útil en el caso de un incidente.
 
 
