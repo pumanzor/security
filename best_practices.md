@@ -201,3 +201,20 @@ Los equipos portatiles necesitaran ser administrados usando al  menos las mismas
 
 La pérdida o robo de un dispositivo móvil o de un equipo portátil (o medios) puede tener graves consecuencias para la empresa u organizacion: a menos que este cifrada, los datos almacenados en estos equipos (activos tecnológicos de la empresa, base de datos del cliente), en efecto pueden verse comprometidos, aun cuando la máquina está apagada o el usuario haya terminado la sesión. Por esta razón, es importante cifrar los datos sensibles.
 
+El cifrado se puede llevar a cabo en todo el sistema, en una sub.seccion del sistema o en algunos archivos sensibles. Los mecanismos de cifrado de disco completo son los mas efectivos desde el punto de vista de la seguridad y no requiere que el usuario identifique los archivos a cifrar. 
+
+###Asegurar la red Interna
+
+Es importante no sólo poner en práctica las medidas de proteccion perimetrales, tales como firewalls y servidores proxy. De hecho, aunque éstos son indispensables (véase la pto 7), existen varias maneras que estas pueden ser burladas por los piratas informáticos. 
+
+####20.- Auditar  con frecuencia la configuración de Active Directory central (Active Directory en Windows  o entornos LDAP, por ejemplo)
+
+####21.- Segmentar redes - Para las máquinas o servidores que contienen información que es de importancia estratégica para la empresa u organizacion, crear una sub-red protegida por una puerta de enlace de interconexión específica.
+
+Es importante tener en cuenta esta regla antes de tiempo cuando la red está siendo diseñada o implementada. De hecho, dependiendo de la extensión de la red y su complejidad, con frecuencia puede ser muy difícil realizar esta tarea en una etapa posterior. 
+
+En redes donde es complejo realizar segmentacion se recomienda:
+
+  - Tener en cuenta y aprovechar la instancia para realizarla en cualquier posterior ampliación o modificacion de red.
+  - Participar en el planeamiento estratégico con respecto a la arquitectura de la red, que en sentido estricto, queda fuera de ambito.
+  
