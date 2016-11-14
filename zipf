@@ -1,0 +1,4 @@
+BEGIN {printf "%20s%7s%7s%10s\n", "WORD","RANK","FREQ","C"} 
+      {printf "%20s%7d%7d%10d\n", $2, NR, $1, NR*$1} 
+      
+tr A-Z a-z < archivo.txt | tr -sc a-z '\n' | sort |uniq -c | sort -rn | awk -f zipf.awk > test.txt
