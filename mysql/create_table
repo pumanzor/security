@@ -31,3 +31,17 @@ letras y las palabras que aparezcan en más del 50% de los registros.
 
 FOREIGN KEY: Clave foránea, es un índice por el cual podemos relacionar 2 tablas. Este valor debe existir en ambas
 tablas, por ejemplo el código postal de la tabla ‘usuarios’ y la tabla ‘población’.
+
+
+Explicacion de las opciones:
+
+NOT NULL | NULL: Establecemos si el valor de la columna debe rellenarse obligatoriamente o no.
+
+AUTO_INCREMENT: Establece un valor incial para un incremento posterior con la inserción de cada nuevo registro.
+
+COMMENT: Comentario a modo informativo de la columna.
+
+COLUMN_FORMAT: Establece la ocupación de la columna, FIXED para un valor fijo, DYNAMIC para un valor variable y DEFAULT
+para una coupación por defecto.
+
+STORAGE: Posibilidad de almacenamiento en memoria o disco.
