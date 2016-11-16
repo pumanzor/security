@@ -90,6 +90,18 @@ describe alumnos
 
 insert into alumnos (rut,nombre, apellidos, telefono, edad, sexo, profesion) VALUES (su_rut,'su_nombre','su_apellido',su_telefono,su_edad,'su_genero','su_prof');
 
+###12.- ver el contenido de una tabla
+
+select * from alumnos;
+
+###13.- actualizar una fila de una tabla
+
+UPDATE alumnos SET apellidos='otro_apellido' WHERE id='X';
+
+###14.- Eliminar una fila
+
+delete from alumnos where id = '1';
+
 
 ###xx.- Importar datos desde csv
 
