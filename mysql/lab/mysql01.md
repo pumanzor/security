@@ -20,7 +20,8 @@ mysql> create database cursociber;
 
 ###4.- Creamos el usuario “usuariox” para conectar al server desde localhost usando el password clave
 grant usage on *.* to usuariox@localhost identified by ‘clave’;
-5.- creamos los privilegios en cusociber.* para el usuario “usuariox”
+
+###5.- creamos los privilegios en cusociber.* para el usuario “usuariox”
 mysql> grant all privileges on cursociber.* to usuario@localhost ;
 
 ###6.- listar todos los usuarios;
