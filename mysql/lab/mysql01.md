@@ -103,7 +103,7 @@ UPDATE alumnos SET apellidos='otro_apellido' WHERE id='X';
 delete from alumnos where id = '1';
 
 
-###xx.- Importar datos desde csv
+###15.- Importar datos desde csv
 
 LOAD DATA INFILE 'c:/tmp/discounts.csv' 
 INTO TABLE discounts 
@@ -111,5 +111,13 @@ FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
+
+###16.- hacer un backup de la DB creada
+
+###17.- establecer un sistema de respaldo que realice backups todos los dias a las 03:00 AM
+
+###18.- una vez realizado el backup, eliminar la base de datos y restaurarlo desde el archivo guardado.
+
+###19.- que sucede con los usuarios y privilegios?
 
 
