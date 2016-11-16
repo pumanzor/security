@@ -22,6 +22,7 @@ mysql> create database cursociber;
 grant usage on *.* to usuariox@localhost identified by ‘clave’;
 5.- creamos los privilegios en cusociber.* para el usuario “usuariox”
 mysql> grant all privileges on cursociber.* to usuario@localhost ;
+
 6.- listar todos los usuarios;
 
 select user from mysql.user;
@@ -30,7 +31,26 @@ select user from mysql.user;
 
 REVOKE ALL PRIVILEGES on cursociber.* from usuariox@localhost;
 
-8.- que sucede si alguien revoca todos los privilegios para el usuario root?
+8.- que sucede si alguien revoca todos los privilegios para el usuario root o peor aun cambia la clave del administrador?
+
+restaurar la clave de root
+
+systemctl stop mysql
+mysqld_safe --skip-grant-tables &
+
+mysql -u root
+mysql> use mysql;
+mysql> update user set password=PASSWORD("nuevaclave") where User='root';
+mysql> flush privileges;
+mysql> quit.
+
+kill -9 PID PID2
+
+systemctl start mysql
+
+mysql -uroot -p
+
+restaurar todos los privilegios
 
 systemctl stop mysql
 mysqld_safe --skip-grant-tables &
