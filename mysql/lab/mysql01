@@ -22,3 +22,12 @@ mysql> create database cursociber;
 grant usage on *.* to usuariox@localhost identified by ‘clave’;
 5.- creamos los privilegios en cusociber.* para el usuario “usuariox”
 mysql> grant all privileges on cursociber.* to usuario@localhost ;
+6.- listar todos los usuarios;
+
+select user from mysql.user;
+
+7.- revocar privilegios de un usuario
+
+REVOKE ALL PRIVILEGES on cursociber.* from usuariox@localhost;
+
+
