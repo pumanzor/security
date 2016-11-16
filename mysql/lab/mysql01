@@ -1,0 +1,24 @@
+Lab 1 _ Gestor base de datos MYSQL
+
+1.- Instalar Mysql en Linux
+
+apt-get install mysql-server
+
+en el momento de la instalación va a solicitar la clave de administrador de mysql
+
+con esta clave era posible gestionar cualquier acción dentro de mysql, eliminar, crear, modificar bases de datos tablas, crear/eliminar usuarios, etc
+
+2.- Verificar donde queda instalado por default los archivos del server y los archivos de configuración
+
+/etc/mysql
+/var/lib/mysql
+
+3.- Crear una base de datos desde línea de comando
+Primero conectar con el cliente mysql
+Mysql -uroot -p
+mysql> create database cursociber;
+
+4.- Creamos el usuario “usuariox” para conectar al server desde localhost usando el password clave
+grant usage on *.* to usuariox@localhost identified by ‘clave’;
+5.- creamos los privilegios en cusociber.* para el usuario “usuariox”
+mysql> grant all privileges on cursociber.* to usuario@localhost ;
