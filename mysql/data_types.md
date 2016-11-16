@@ -34,3 +34,30 @@ TIMESTAMP: Almacena una fecha y hora UTC. El rango de valores oscila entre ‘19
 
 YEAR: Almacena un año dado con 2 o 4 dígitos de longitud, por defecto son 4. El rango de valores oscila entre 1901 y
 2155 con 4 dígitos. Mientras que con 2 dígitos el rango es desde 1970 a 2069  (70-69).
+
+##Diferentes tipos de dato con formato string
+###Listado de cada uno de los tipos de dato con formato string en MySQL, su ocupación en disco y valores.
+
+CHAR: Ocupación fija cuya longitud comprende de 1 a 255 caracteres.
+
+VARCHAR: Ocupación variable cuya longitud comprende de 1 a 255 caracteres.
+
+TINYBLOB: Una longitud máxima de 255 caracteres. Válido para objetos binarios como son un archivo de texto, imágenes, 
+archivos de audio o vídeo. No distingue entre minúculas y mayúsculas.
+
+BLOB: Una longitud máxima de 65.535 caracteres. Válido para objetos binarios como son un archivos de texto, imágenes,archivo de audio o vídeo. No distingue entre minúculas y mayúsculas.
+
+MEDIUMBLOB: Una longitud máxima de 16.777.215 caracteres. Válido para objetos binarios como son un archivo de texto, imágenes, archivos de audio o vídeo. No distingue entre minúculas y mayúsculas.
+
+LONGBLOB: Una longitud máxima de 4.294.967.298 caracteres. Válido para objetos binarios como son un archivos de texto, imágenes, archivos de audio o vídeo. No distingue entre minúculas y mayúsculas.
+
+SET: Almacena 0, uno o varios valores una lista con un máximo de 64 posibles valores.
+
+ENUM: Igual que SET pero solo puede almacenar un valor.
+TINYTEXT: Una longitud máxima de 255 caracteres. Sirve para almecenar texto plano sin formato. Distingue entre minúculas y mayúsculas.
+
+TEXT:Una longitud máxima de 65.535 caracteres. Sirve para almecenar texto plano sin formato. Distingue entre minúculas y mayúsculas.
+
+MEDIUMTEXT:Una longitud máxima de 16.777.215 caracteres. Sirve para almecenar texto plano sin formato. Distingue entre minúculas y mayúsculas.
+
+LONGTEXT: Una longitud máxima de 4.294.967.298 caracteres. Sirve para almecenar texto plano sin formato. Distingue entre minúculas y mayúsculas.
