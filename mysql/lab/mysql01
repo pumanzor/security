@@ -30,4 +30,22 @@ select user from mysql.user;
 
 REVOKE ALL PRIVILEGES on cursociber.* from usuariox@localhost;
 
+8.- que sucede si alguien revoca todos los privilegios para el usuario root?
+
+systemctl stop mysql
+mysqld_safe --skip-grant-tables &
+mysql -uroot
+update mysql.user set grant_priv = 'Y' where user = 'root'; commit; flush privileges;
+ GRANT ALL ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
+flush privileges;
+quit;
+
+kill -9 PID PID2
+
+systemctl start mysql
+
+mysql -uroot -p
+
+
+
 
