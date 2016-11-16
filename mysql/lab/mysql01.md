@@ -121,3 +121,5 @@ ENCLOSED BY '"'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
+###21.- realice todos los pasos anteriores pero utilizando phpmyadmin
+
