@@ -11,3 +11,23 @@ CREATE TABLE IF NOT EXISTS `alumnos` (
   KEY `nombre` (`nombre`),
   FULLTEXT KEY `apellidos` (`apellidos`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='tabla de alumnos';
+
+------------------explicacion de algunos parametros ---------------------
+
+PRIMARY KEY: Solo se puede crear una primary key por tabla, es la clave primaria que identifica de manera única cada 
+registro/fila de la tabla. Por ejemplo el documento de identidad DNI de una persona.
+
+INDEX|KEY: Ambas son sinónimas, puede haber una o varias. Establecen los íncides de la tabla con los cuales se pueden 
+agilizar las búsquedas en la base de datos. De esta manera se evita la búsqueda de un parámetro por cada columna de la tabla.
+Es como un índice de un libro con el que nos evitamos recorrer cada página.
+
+UNIQUE: Es una restricción por la cual el valor de dicha columna debe ser único y diferente al del valor
+de dicha columna de resto de registros. Por ejemplo se suele usar con las columnas declaradas como primary key.
+
+FULLTEXT: Es un íncide que solo funciona con las columnas con formato char, varchar, text y con alamcenamiento 
+MyISAM. Este índice facilita las grandes búsquedas sobre texto y realiza automáticamente comparaciones de texto 
+sobre una cadena dada. Realiza búsquedas más afinadas que la sentencia LIKE. Se ignoran las palabras con menos de 4 
+letras y las palabras que aparezcan en más del 50% de los registros.
+
+FOREIGN KEY: Clave foránea, es un índice por el cual podemos relacionar 2 tablas. Este valor debe existir en ambas
+tablas, por ejemplo el código postal de la tabla ‘usuarios’ y la tabla ‘población’.
