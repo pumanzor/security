@@ -1,0 +1,13 @@
+CREATE TABLE IF NOT EXISTS `alumnos` (
+  `rut` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Clave primaria',
+  `nombre` varchar(50) NOT NULL COMMENT 'nombre alumno',
+  `apellidos` varchar(100) NOT NULL COMMENT 'Apellidos',
+  `telefono` int(9) NOT NULL COMMENT 'móvil',
+  `edad` int(3) DEFAULT NULL,
+  `sexo` char(1) NOT NULL,
+  `profesion` text NOT NULL,
+  PRIMARY KEY (`rut`),
+  UNIQUE KEY `telefono` (`telefono`),
+  KEY `nombre` (`nombre`),
+  FULLTEXT KEY `apellidos` (`apellidos`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COMMENT='tabla de alumnos';
