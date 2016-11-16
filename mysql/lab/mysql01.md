@@ -102,6 +102,7 @@ UPDATE alumnos SET apellidos='otro_apellido' WHERE id='X';
 
 delete from alumnos where id = '1';
 
+###15.- Establezca privilegios para que en forma remota los demas compañeros puedan insertar filas en su tabla alumnos, solo debe conceder el comando INSERT.
 
 ###16.- hacer un backup de la DB creada
 
@@ -111,9 +112,7 @@ delete from alumnos where id = '1';
 
 ###19.- que sucede con los usuarios y privilegios?
 
-###20.- Establezca privilegios para que en forma remota los demas compañeros puedan insertar filas en su tabla alumnos, solo debe conceder el comando INSERT.
-
-###21.- Busque la forma de Importar datos desde csv
+###20.- Busque la forma de Importar datos desde csv
 
 LOAD DATA INFILE 'c:/tmp/archivo.csv' 
 INTO TABLE discounts 
