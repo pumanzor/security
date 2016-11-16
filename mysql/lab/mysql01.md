@@ -66,8 +66,29 @@ systemctl start mysql
 
 mysql -uroot -p
 
-###9.- Insertar datos a una tabla
+###9.- crear una tabla
 
+https://github.com/pumanzor/security/blob/master/mysql/create_table
+
+copiar y pegar definicion de la tabla
+
+luego desde el shell ejecutar
+
+mysql -uroot -p cursociber < tabla.sql
+
+###10.- ver el contenido de la tabla
+
+mysql -uroot -p
+
+use cursociber
+
+show tables
+
+describe alumnos
+
+###11.- insertar datos en una tabla
+
+insert into alumnos (rut,nombre, apellidos, telefono, edad, sexo, profesion) VALUES (su_rut,'su_nombre','su_apellido',su_telefono,su_edad,'su_genero','su_prof');
 
 
 ###xx.- Importar datos desde csv
