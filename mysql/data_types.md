@@ -1,5 +1,5 @@
-Tipos de dato numéricos
-Listado de cada uno de los tipos de dato numéricos en MySQL, su ocupación en disco y valores.
+##Tipos de dato numéricos
+###Listado de cada uno de los tipos de dato numéricos en MySQL, su ocupación en disco y valores.
 
 INT (INTEGER): Ocupación de 4 bytes con valores entre -2147483648 y 2147483647 o entre 0 y 4294967295.
 
@@ -19,8 +19,8 @@ de decimales.
 DOUBLE (REAL): Almacena número de coma flotante con precisión doble. Igual que FLOAT, la diferencia es el rango 
 de valores posibles.BIT (BOOL, BOOLEAN): Número entero con valor 0 o 1.
 
-Tipos de dato con formato fecha
-Listado de cada uno de los tipos de dato con formato fecha en MySQL, su ocupación en disco y valores.
+##Tipos de dato con formato fecha
+###Listado de cada uno de los tipos de dato con formato fecha en MySQL, su ocupación en disco y valores.
 
 DATE: Válido para almacenar una fecha con año, mes y día, su rango oscila entre  ‘1000-01-01′ y ‘9999-12-31′.
 
