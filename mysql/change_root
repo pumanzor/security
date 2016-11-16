@@ -1,0 +1,8 @@
+service mysql stop
+mysqld_safe --skip-grant-tables &
+mysql -u root
+update user set password=PASSWORD("ElNuevoPassword") where user='root';
+flush privileges;
+quit;
+service mysql stop
+service mysql start
