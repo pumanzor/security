@@ -12,21 +12,21 @@ filtrando stopwords y aplicando stemming.
 
 Por ejemplo, supongamos que tenemos una colección de 3 documentos, representados aquí con frases:
 
-- El perro corre rápido.
-- El niño juega con el perro en el parque.
-- El niño nada rápidamente.
+1.- El perro corre rápido.
+2.- El niño juega con el perro en el parque.
+3.- El niño nada rápidamente.
 
 Al momento de representarlos en la forma de un motor de búsquda, primero filtramos las stopwords:
 
-- perro corre rápido.
-- niño juega perro parque.
-- niño nada rápidamente.
+1.- perro corre rápido.
+2.- niño juega perro parque.
+3.- niño nada rápidamente.
 
 Enseguida, aplicamos stemming, obteniendo lso documentos en forma más “aplicable” en motores de búsqueda.
 
-- perr corr rapid
-- niñ jug perr parque
-- niñ nad rapid
+1.- perr corr rapid
+2.- niñ jug perr parque
+3.- niñ nad rapid
 
 Por último creamos un índice invertido relacionando palabras con los documentos en las que se encuentran:
 
