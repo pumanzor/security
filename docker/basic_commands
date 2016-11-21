@@ -1,0 +1,15 @@
+
+docker images
+
+docker pull mysql
+
+docker run -d --name apache -p 8888:80 httpd
+
+    Para ejecutar una máquina en segundo plano -d
+    Si queremos asignar un nombre a una máquina --name
+    Mapear un puerto de nuestra máquina con el contenedor -p in:out
+
+docker exec -ti apache /bin/bash
+
+docker commit apache mi-apache
+
