@@ -67,3 +67,18 @@ Ahora, en vez de tener el índice en una tabla como la anterior, podemos crear u
 |jug|	0	|1|	0|
 |parque|	0	|1	|0|
 |nad|	0|	0	|1|
+
+Con el índice expresado en esta forma, ahora podemos representar a un documento usando su respectiva columna. Esto es un vector de términos. Si vemos la tabla de arriba, las filas expresan los términos y los documentos en los que se encuentran, mientras que si vemos las columnas nos damos cuenta de los términos que están en cada documento, todo en forma de vectores:
+
+- Vector de “niñ”: [0 1 1]
+- Vector del documento 3: [0 0 1 1 0 0 1]
+
+Esta representación nos permite aplicar el  modelo de búsqueda booleano. Con él, podemos responder a búsquedas que usen operadores booleanos (AND, OR, NOT) usando simple lógica booleana. Por ejemplo, para la consulta del ejemplo de arriba “niño perro”, haríamos lo siguiente:
+
+- niñ = [ 0 1 1 ]
+- perr = [1 1 0]
+- niñ AND perr = [0 1 1] AND [1 1 0] = [0 1 0]
+
+El resultado indica que el único documento que cumple los requisitos es el de la segunda columna (la que tiene el 1), y por tanto, revisando en nuestro índice, es el documento 2.
+
+Como se pude ver, la creación de un índice nos ayuda a encontrar documentos relevantes de forma rápida. Naturalmente, el modelo booleano es simple, y de seguro muchos de ustedes ya notaron sus debilidades. Por ejemplo, si buscamos solamente “perro”, fácilmente obtenemos como resultado los documentos 1 y 2, pero quizá uno sea mucho más relevante respecto a perros y otro vagamente los mencione, en cuyo caso necesitamos ordenar los resultados por relevancia. 
