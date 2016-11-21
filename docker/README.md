@@ -1,4 +1,4 @@
-http://severalnines.com/blog/mysql-docker-building-container-image
+
 
 docker pull mysql
 
