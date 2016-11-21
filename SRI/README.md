@@ -21,3 +21,21 @@ Al momento de representarlos en la forma de un motor de búsquda, primero filtra
 - perro corre rápido.
 - niño juega perro parque.
 - niño nada rápidamente.
+
+Enseguida, aplicamos stemming, obteniendo lso documentos en forma más “aplicable” en motores de búsqueda.
+
+- perr corr rapid
+- niñ jug perr parque
+- niñ nad rapid
+
+Por último creamos un índice invertido relacionando palabras con los documentos en las que se encuentran:
+
+Palabra	Documento
+  
+  perr	  1,2
+  corr	  1
+  rapid	  1,3
+  niñ	    2,3
+  jug	    2
+  parque	2
+  nad 	  3
