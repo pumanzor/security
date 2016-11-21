@@ -30,16 +30,15 @@ Enseguida, aplicamos stemming, obteniendo lso documentos en forma más “aplica
 
 Por último creamos un índice invertido relacionando palabras con los documentos en las que se encuentran:
 
-Palabra	Documento
+|Palabra	|Documento|
   
-  perr	  1,2
-  corr	  1
-  rapid	  1,3
-  niñ	    2,3
-  jug	    2
-  parque	2
-  nad 	  3
-  
+| perr	|  1,2|
+| corr	 | 1|
+| rapid	|  1,3|
+| niñ	   | 2,3|
+| jug	   | 2|
+| parque	|2|
+| nad 	  |3|  
   
   Una vez creado el índice, éste puede ser usado para responder consultas simples, regresando el documento en donde los términos de la consulta están incluídos.
 
