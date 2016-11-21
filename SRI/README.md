@@ -39,3 +39,10 @@ Palabra	Documento
   jug	    2
   parque	2
   nad 	  3
+  
+  
+  Una vez creado el índice, éste puede ser usado para responder consultas simples, regresando el documento en donde los términos de la consulta están incluídos.
+
+  Algo importante a notar aquí es que la consulta siempre tiene que pasar por el mismo procesamiento aplicado a los documentos. Esto no es solamente aplicable en este caso de búsqueda booleana (si un documento contiene o no un término). Por tanto, si alguien busca “perro”, tenemos que aplicarle filtros y encontrar la raíz de la palabra (stemming) antes de buscarlo en el índice, o de otra forma nunca encontraremos documentos relevantes.
+
+  Si por ejemplo alguien busca “niño perro” (poniendo un ejemplo extremadamente simple para ilustrar), la consulta que un sistema verá es “nin perr”. Ahora bien, es necesario saber si el usuario quiere encontrar los documentos donde ambos términos aparezcan, o bien aquellos en los que cualquiera de los dos términos aparezcan. En el primer caso, necesitamos un operador AND, mientras que en el segundo, requerimos un operador OR.
