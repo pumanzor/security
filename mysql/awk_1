@@ -1,0 +1,5 @@
+awk '{print substr($0, index($0,$7)) }'
+
+sed -e 's/^/"/g' 911.txt > 911.1.txt
+
+sed -e 's/$/"/g' 911.1.txt > 911.2.txt
