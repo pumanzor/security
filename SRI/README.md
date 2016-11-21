@@ -1,1 +1,12 @@
+stemming, el cual es un paso importante en el preproceso de documentos, ya que nos permite trabajar con las raíces de las 
+palabras y no con sus derivaciones, reduciendo el número de vocablos con el que tenemos que trabajar y al mismo 
+tiempo “juntando” palabras que posiblemente tengan alguna relación (como “caminar” y “caminante”). Ahora es momento de 
+usarlo para crear un índice que nos ayude a encontrar documentos fácilmente.
 
+
+Si pensamos en libros, un índice nos ayuda a encontrar algo en específico, buscando la página en donde está el tema que
+buscamos. Bajo esa premisa, en un libro un índice invertido relaciona palabras con las páginas en las que se encuentra, 
+aunque si vemos los índices que hay al final, lo que se muestra ahí son ciertas palabras específicas, o bien temas, junto 
+con la(s) página(s) en la(s) que son mencionados. La idea es la misma que en el libro, pero en vez de escribir temas o
+palabras clave solamente, en el índice invertido de un motor de búsqueda incluímos todas las palabras del documento, 
+filtrando stopwords y aplicando stemming.
