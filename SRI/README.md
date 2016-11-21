@@ -57,3 +57,13 @@ Y como resultado tenemos que solamente el documento 2 cumple con los requisitos 
 En el caso de que la consulta sea “documentos en los que aparezca cualquiera de los dos términos”, entonces encontramos la unión de los resultados, en este caso todos los documentos.
 
 Ahora, en vez de tener el índice en una tabla como la anterior, podemos crear una columna para cada documento e indicar en ella si una palabra está presente o no. Para ello, en vez de usar un “sí” o “no”, expresamos con 1 si la palabra está contenida en el documento y con 0 en caso contrario.
+
+|Documento1|	Documento 2|	Documento 3|
+|----------|-------------|-------------|
+|perr|	1|	1|	0|
+|corr|1	|0|	0|
+|rapid|	1|	0|	1|
+|niñ|	0	|1|	1|
+|jug|	0	|1|	0|
+|parque|	0	|1	|0|
+|nad|	0|	0	|1|
