@@ -1,3 +1,5 @@
+##Indice invertido, busqueda booleana y vector de terminos
+
 Stemming es un paso importante en el preproceso de documentos, ya que nos permite trabajar con las raíces de las 
 palabras y no con sus derivaciones, reduciendo el número de vocablos con el que tenemos que trabajar y al mismo 
 tiempo “juntando” palabras que posiblemente tengan alguna relación (como “caminar” y “caminante”) y de esa forma usarlo para crear un índice que nos ayude a encontrar documentos fácilmente.
