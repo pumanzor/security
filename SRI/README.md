@@ -46,3 +46,15 @@ Palabra	Documento
   Algo importante a notar aquí es que la consulta siempre tiene que pasar por el mismo procesamiento aplicado a los documentos. Esto no es solamente aplicable en este caso de búsqueda booleana (si un documento contiene o no un término). Por tanto, si alguien busca “perro”, tenemos que aplicarle filtros y encontrar la raíz de la palabra (stemming) antes de buscarlo en el índice, o de otra forma nunca encontraremos documentos relevantes.
 
   Si por ejemplo alguien busca “niño perro” (poniendo un ejemplo extremadamente simple para ilustrar), la consulta que un sistema verá es “nin perr”. Ahora bien, es necesario saber si el usuario quiere encontrar los documentos donde ambos términos aparezcan, o bien aquellos en los que cualquiera de los dos términos aparezcan. En el primer caso, necesitamos un operador AND, mientras que en el segundo, requerimos un operador OR.
+  
+  Buscando en el índice que creamos, si se buscan documentos que tengan los dos términos, necesitamos encontrar la intersección de los documentos en donde “nin” aparece y en donde “perr” aparece. Entonces, obtenemos de nuestro índice la siguiente información:
+
+- niñ = {2,3}
+- perr = {1,2}
+- niñ \cap perr = {2,3} \cap {1,2} = {2}
+
+Y como resultado tenemos que solamente el documento 2 cumple con los requisitos impuestos por la consulta.
+
+En el caso de que la consulta sea “documentos en los que aparezca cualquiera de los dos términos”, entonces encontramos la unión de los resultados, en este caso todos los documentos.
+
+Ahora, en vez de tener el índice en una tabla como la anterior, podemos crear una columna para cada documento e indicar en ella si una palabra está presente o no. Para ello, en vez de usar un “sí” o “no”, expresamos con 1 si la palabra está contenida en el documento y con 0 en caso contrario.
