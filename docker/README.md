@@ -19,7 +19,7 @@ deb https://apt.dockerproject.org/repo debian-jessie main
 
 docker pull mysql
 
-docker run --detach --env MYSQL_ROOT_PASSWORD=456 --name mysql --publish 3306:3306 -d mysql
+docker run --detach --env MYSQL_ROOT_PASSWORD=456 --name servermysql --publish 3306:3306 -d mysql
 
 docker exec -it mysql bash
 
