@@ -7,13 +7,13 @@ apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E8
 
 deb https://apt.dockerproject.org/repo debian-jessie main
 
- apt-get update
- apt-cache policy docker-engine
- apt-get install docker-engine
+- apt-get update
+- apt-cache policy docker-engine
+- apt-get install docker-engine
  
- service docker start
+service docker start
  
-  docker run hello-world
+docker run hello-world
   
  ----------------------
 
