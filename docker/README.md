@@ -57,6 +57,15 @@ para saber el rango que me asigno en la tarjeta de red de la maquina fisica ejec
 
 ip a | grep docker | grep inet
 
+cada vez que se reinicia un contenedor, docker asgian en forma dinamica la direccion ip del contenedor
+
+- docker stop test-mysql
+- docker start test-mysql
+- docker inspect test-mysql |grep IPAddress
+ -       "IPAddress": "172.17.0.4",
+
+
+
 
  
  --------------
