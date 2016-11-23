@@ -65,6 +65,8 @@ cada vez que se reinicia un contenedor, docker asgian en forma dinamica la direc
  -       "IPAddress": "172.17.0.4",
 
 
+Our IP address just changed to 172.17.0.21. If you had an application that connects to this container via the old IP address, the application would not get connected anymore. Docker introduces another way to link your container with another container, to ensure whatever IP address assigned to it will get updated in the linked container. Let’s say we deploy a Wordpress application (which has no MySQL installed on that image), and want to link with our existing MySQL container, test-mysql. Here is what you should do:
+
 
 
  
