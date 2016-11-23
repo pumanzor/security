@@ -47,6 +47,17 @@ para ver los ejecutar
 
 docker logs test-mysql
 
+entonces desde la maquina fisica me puede conectar con el cliente mysql, mysql -uroot -p -h 172.17.xx
+
+para obtener la direccion ip del contenedor ejecutar
+
+docker inspect test-mysql |grep IPAddress
+
+para saber el rango que me asigno en la tarjeta de red de la maquina fisica ejecutar:
+
+ip a | grep docker | grep inet
+
+
  
  --------------
 
