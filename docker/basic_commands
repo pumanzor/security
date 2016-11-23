@@ -13,3 +13,11 @@ docker exec -ti apache /bin/bash
 
 docker commit apache mi-apache
 
+
+
+----------------------
+eliminar todas las imagenes
+
+docker rmi $(docker images -q)
+
+
