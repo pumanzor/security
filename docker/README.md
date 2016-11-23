@@ -87,3 +87,9 @@ crear db y crear tabla
 
 docker run --detach --env MYSQL_ROOT_PASSWORD=456 --name mimysql --publish 3306:3306 -d okservermysql
 
+
+-------------------
+
+mkdir /webdata
+sudo docker run -it --name webapp3 -v /webdata:/var/www/html php:5.6-apache /bin/bash
+
