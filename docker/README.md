@@ -25,9 +25,13 @@ Los contenedores y las máquinas virtuales tienen beneficios similares de aislam
 
 Docker requiere un S.O. de 64 bits independientemente de la versión de Debian. Además, el kernel debe ser como mínimo version 3.10 o superior.
 
+Primer paso actualizar indice de repositorios e instalar dependencias
+
 - apt-get update
 - apt-get install apt-transport-https ca-certificates
 - apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+
+Crear dentro de source.list.d el archivo docker.list apuntando al repo de docker oficial con la version jessie (si disponemos de wheezy cambiarlo por este codigo).
 
 - touch /etc/apt/sources.list.d/docker.list
 - vi /etc/apt/sources.list.d/docker.list
@@ -36,10 +40,11 @@ agregar esta linea en docker.list
 
 deb https://apt.dockerproject.org/repo debian-jessie main
 
+Actualizar nuevamente el indice de packetes de software e instalar docker
+
 - apt-get update
-- apt-cache policy docker-engine
 - apt-get install docker-engine
- 
+
 service docker start
 
 Para comprobar que la instalacion quedo bien, ejecutar
