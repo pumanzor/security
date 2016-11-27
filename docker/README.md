@@ -59,12 +59,24 @@ En forma predeterminada docker crea 3 tipos de redes en la maquina host tras la 
 
 > docker network ls
 
- NETWORK ID          NAME                DRIVER              SCOPE
- c1f8fd284dc9        bridge              bridge              local               
- 8969a2bc6879        host                host                local               
- dcbcd42731d4        none                null                local 
+  NETWORK ID          NAME                DRIVER              SCOPE
+  c1f8fd284dc9        bridge              bridge              local               
+  8969a2bc6879        host                host                local               
+  dcbcd42731d4        none                null                local 
  
+Cada network driver tiene sus propias caracteristicas, que se explican a continuacion:
 
+###Host Network
+
+Host network añade un contenedor en la pila de red del host de la máquina. Imagine que los contenedores se ejecutan en la misma interfaz de red de la máquina host. Posee las siguientes características:
+
+- Las interfaces de red del contenedor serán idénticas al host de la máquina.
+- Sólo una red de host por máquina anfitriona. No se pueden crear más.
+- Debe especificar explícitamente "--net = host" en la línea de comandos "docker run" para asignar un contenedor a esta red
+- Container linking, “--link mysql-container:mysql” no soportado
+- Port mapping, “-p 3307:3306” no soportado.
+
+Let’s create a container on the host network with “--net=host”:
 
 ###Comandos Basicos
 
