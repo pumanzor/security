@@ -8,6 +8,14 @@ Un contenedor incluye la aplicacion de software y todas sus dependencias PERO co
 
 Los contenedores Docker no están ligados a ninguna infraestructura específica: se ejecutan en cualquier computadora, en cualquier infraestructura y en cualquier nube.
 
+###Maquina Virtual
+
+Las máquinas virtuales incluyen la aplicación, los binarios, bibliotecas necesarios, y todo un sistema operativo invitado que puede llegar a decenas de GB.
+
+###Diferencias en un contendor docker y una VM
+
+
+
 ###Instalacion en Debian 8 Jessie
 
 ####Pre-requisitos
