@@ -12,10 +12,11 @@ Los contenedores Docker no están ligados a ninguna infraestructura específica:
 
 Las máquinas virtuales incluyen la aplicación, los binarios, bibliotecas necesarios, y todo un sistema operativo invitado que puede llegar a decenas de GB.
 
-###Comparacion entre un contendor docker y una VM.
+###Comparacion entre una VM y un contendor docker.
+
+Los contenedores y las máquinas virtuales tienen beneficios similares de aislamiento y asignación de recursos, pero un enfoque arquitectónico diferente permite a los contenedores ser más portátiles y eficientes.
 
 ![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/docker.png)
-
 
 
 ###Instalacion en Debian 8 Jessie
