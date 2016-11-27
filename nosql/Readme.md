@@ -18,3 +18,28 @@ De igual forma, identifica algunas características principales, tales como:
 - No tienen esquemas fijos y permite la migración del esquema sin tener que ser reiniciadas o paradas.
 - Suelen tener un sistema de consultas propio en vez de usar un lenguaje de consultas estándar.
 - Tienen propiedades ACID en un nodo del clúster y son “eventualmente consistentes” en el clúster. 
+
+Por otro lado, los sistemas relacionales operan bajo las Propiedades ACID definidas para las transacciones. En su defecto, las bases de datos NoSQL son repositorios de almacenamiento más optimistas, y siguen el Modelo BASE:
+
+* Basic availability: el almacén funciona la mayoría del tiempo incluso ante fallos gracias al almacenamiento distribuido y replicado.
+* Soft-sate: los almacenes no tienen porque ser consistentes ni sus réplicas en todo momento.
+* Eventual consistency: la consistencia se da eventualmente. 
+
+Hace años atras en un primer intento para conceptualizar el término NoSQL se definió como una nueva generación de sistemas de bases de datos que tenía al menos una de las siguientes propiedades:
+
+- El modelo de datos subyacente no es relacional.
+- Los sistemas están diseñados desde el principio como escalable horizontalmente y verticalmente.
+- El sistema es de código abierto.
+- El sistema es esquema-libre o sólo tiene restricciones de esquema suaves.
+- Debido a la arquitectura distribuida, el sistema admite un método de replicación de datos simple.
+- El sistema proporciona una API sencilla.
+- El sistema generalmente utiliza un modelo de consistencia diferente. 
+
+El término NoSQL se debe enfocar como un conjunto de características para diferentes almacenes de datos, sin un dominio homogéneo. Actualmente existen diferentes categorías de frameworks NoSQL, dentro de los cuales se identifican:
+
+- Llave/ Valor: almacena datos en pares llave / valor. Son muy eficientes por su desempeño y alta escalabilidad, pero son difíciles de consultar y de implementar problemas del mundo real-
+- Columnas: almacenan datos en estructuras tabulares, pero las columnas pueden variar en el tiempo y cada fila puede tener solamente un subconjunto de columnas. 
+- Orientado a Documentos: tal como llave / valor, pero permiten almacenar mas valores por cada llave. Un valor tipo documento podría ser por ejemplo un XML o un fragmento JSON. Este es un buen paradigma para programadores dado su facilidad, especialmente por el uso de lenguajes de script, implementa mapeo uno a uno para relaciones entre los objetos de código y los objetos (documentos) en el sistema. 
+- Grafos: almacena objetos y relaciones en nodos y vértices de un grafo. Para situaciones que se ajusten a este modelo, como datos jerárquicos, esta solución podría ser más rápida que las otras.
+
+En la actualidad las bases de datos NoSQL se emplean para el almacenamiento de datos que manejan un gran volumen, no estructurados, sobre aplicaciones web, y ya se encuentran implementaciones en sistemas de búsquedas como Amazon, Google, Yahoo o Facebook.
