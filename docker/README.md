@@ -14,7 +14,7 @@ Las máquinas virtuales incluyen la aplicación, los binarios, bibliotecas neces
 
 ###Comparacion entre un contendor docker y una VM.
 
-
+![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/docker.png)
 
 
 
