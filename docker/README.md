@@ -2,6 +2,12 @@
 
 Docker es una tecnologia que permite ejecutar aplicaciones de software aisladas dentro de contenedores.
 
+###Que es un contenedor?
+
+Un contenedor incluye la aplicacion de software y todas sus dependencias PERO comparte el kernel con otros contenedores, y se ejecutan como procesos aislados en el espacio de usuario en el sistema operativo anfitrion. 
+
+Los contenedores Docker no están ligados a ninguna infraestructura específica: se ejecutan en cualquier computadora, en cualquier infraestructura y en cualquier nube.
+
 ###Instalacion en Debian 8 Jessie
 
 ####Pre-requisitos
