@@ -12,7 +12,9 @@ Los contenedores Docker no están ligados a ninguna infraestructura específica:
 
 Las máquinas virtuales incluyen la aplicación, los binarios, bibliotecas necesarios, y todo un sistema operativo invitado que puede llegar a decenas de GB.
 
-###Diferencias en un contendor docker y una VM
+###Comparacion entre un contendor docker y una VM.
+
+
 
 
 
