@@ -1,13 +1,15 @@
-apt-get update
+##Que es Docker?
 
-apt-get install apt-transport-https ca-certificates
+Docker es una tecnologia que permite ejecutar aplicaciones de software aisladas dentro de contenedores.
 
-apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+###Instalacion en Debian
 
+- apt-get update
+- apt-get install apt-transport-https ca-certificates
+- apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
 
-touch /etc/apt/sources.list.d/docker.list
-
-nano /etc/apt/sources.list.d/docker.list
+- touch /etc/apt/sources.list.d/docker.list
+- vi /etc/apt/sources.list.d/docker.list
 
 agregar esta linea en docker.list
 
@@ -19,9 +21,9 @@ deb https://apt.dockerproject.org/repo debian-jessie main
  
 service docker start
  
-docker run hello-world
-  
- ----------------------
+- docker run hello-world
+
+----------------------
  
  
  
