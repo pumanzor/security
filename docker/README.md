@@ -53,6 +53,19 @@ Para comprobar que la instalacion quedo bien, ejecutar
 
 Este comando descarga una imagen de prueba y la ejecuta en un contenedor. Cuando el contenedor se ejecuta, imprime un mensaje informativo y luego termina
 
+###Networking
+
+En forma predeterminada docker crea 3 tipos de redes en la maquina host tras la instalacion
+
+> docker network ls
+
+ NETWORK ID          NAME                DRIVER              SCOPE
+ c1f8fd284dc9        bridge              bridge              local               
+ 8969a2bc6879        host                host                local               
+ dcbcd42731d4        none                null                local 
+ 
+
+
 ###Comandos Basicos
 
 Ver o listar todas las imagenes instaladas
