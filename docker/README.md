@@ -4,6 +4,10 @@ Docker es una tecnologia que permite ejecutar aplicaciones de software aisladas 
 
 ###Instalacion en Debian 8 Jessie
 
+####Pre-requisitos
+
+Docker requiere un S.O. de 64 bits independientemente de la versión de Debian. Además, el kernel debe ser como mínimo version 3.10 o superior.
+
 - apt-get update
 - apt-get install apt-transport-https ca-certificates
 - apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
@@ -25,7 +29,7 @@ Para comprobar que la instalacion quedo bien, ejecutar
  
 - docker run hello-world
 
-Con lo anterior se deberia generar por pantalla un mensaje que nos dice "Hello from docker"
+Este comando descarga una imagen de prueba y la ejecuta en un contenedor. Cuando el contenedor se ejecuta, imprime un mensaje informativo y luego termina
 
 ###Comandos Basicos
 
