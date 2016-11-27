@@ -6,6 +6,11 @@ de Bases de Datos – RDBMS, en aspectos como:
     No tienen schemas, no permiten JOINs, no intentan garantizar ACID y escalan horizontalmente.
     Tanto las bases de datos NoSQL como las relacionales son tipos de Almacenamiento Estructurado. 
     
+    
+El 95% de la información que se está generando actualmente en la red se corresponde con información no estructurada y las bases de datos relacionales tradicionales no son adecuadas para el manejo de esta información. Los nuevos sistemas de gestión de datos desarrollados para su manejo, que utilizan infraestructuras de supercomputación altamente distribuidas, reciben habitualmente el nombre de NoSQL. Este curso explorará algunos ejemplos significativos de las principales taxonomías de los almacenes de datos NoSQL: de clave-valor (Cassandra), orientados a documentos (CouchDB) o grafos (Neo4j). 
+
+
+    
 La principal diferencia radica en cómo guardan los datos (por ejemplo, almacenamiento de un recibo):
 
 - En una RDBMS, la información a persistir se tendría que partir en diferentes tablas y luego, en la capa de aplicación, usar un lenguaje de programación que realice el respectivo mapeo para transformar estos datos en objetos de la vida real [2].
@@ -21,7 +26,7 @@ De igual forma, identifica algunas características principales, tales como:
 
 Por otro lado, los sistemas relacionales operan bajo las Propiedades ACID definidas para las transacciones. En su defecto, las bases de datos NoSQL son repositorios de almacenamiento más optimistas, y siguen el Modelo BASE:
 
-* Basic availability: el almacén funciona la mayoría del tiempo incluso ante fallos gracias al almacenamiento distribuido y replicado.
+* Basic Availability: el almacén funciona la mayoría del tiempo incluso ante fallos gracias al almacenamiento distribuido y replicado.
 * Soft-sate: los almacenes no tienen porque ser consistentes ni sus réplicas en todo momento.
 * Eventual consistency: la consistencia se da eventualmente. 
 
