@@ -2,7 +2,7 @@
 
 Docker es una tecnologia que permite ejecutar aplicaciones de software aisladas dentro de contenedores.
 
-###Instalacion en Debian
+###Instalacion en Debian 8 Jessie
 
 - apt-get update
 - apt-get install apt-transport-https ca-certificates
@@ -20,12 +20,22 @@ deb https://apt.dockerproject.org/repo debian-jessie main
 - apt-get install docker-engine
  
 service docker start
+
+Para comprobar que la instalacion quedo bien, ejecutar
  
 - docker run hello-world
 
-----------------------
- 
- 
+Con lo anterior se deberia generar por pantalla un mensaje que nos dice "Hello from docker"
+
+###Comandos Basicos
+
+Ver o listar todas las imagenes instaladas
+
+> docker images --all
+
+Ver o listar todos los contenedores instalados (ejecutandose o no)
+
+> docker ps -a
  
 docker run --name=test-mysql mysql
 
