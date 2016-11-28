@@ -78,7 +78,7 @@ Host network añade un contenedor en la pila de red del host de la máquina. Ima
 
 Ejemplo , crear un contenedor con --net=host
 
-docker run --name=mysqltest --net=host -e MYSQL_ROOT_PASSWORD=clave -v /storage/datadir:/var/lib/mysql -d mysql
+docker run -d --name=mysqltest --net=host --env="MYSQL_ROOT_PASSWORD=mypassword" -v /storage/datadir:/var/lib/mysql mysql
 
 
 Let’s create a container on the host network with “--net=host”:
