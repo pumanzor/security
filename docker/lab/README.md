@@ -15,13 +15,14 @@
 - Realice lo anterior pero utilizando la opcion --net=host
 
 
-2.- Construir una imagen de Docker: el objetivo de este punto es crear un contenedor, instalar y configurar algunas aplicaciones utiles dentro del mismo, exportarlo y luego importarlo en otra maquina.
+2.- Construir una imagen de Docker: el objetivo de este punto es crear un contenedor, instalar y configurar algunas aplicaciones utiles dentro del mismo y luego cargar esta imagen en otra maquina con docker.
 
 - Seleccione algun contenedor de su interes para este punto, puede seleccionarlo desde
 
   - http://hub.docker.com
   
 - Construya la imagen, agregue software y luego haga el commit
-- Exporte la imagen
+- Guarde la imagen con
+    - docker save mi_imagen > mi_imagen.tar
 - Enviala a su compañero via scp
 - Ejecute esta imagen en el PC destino
