@@ -151,17 +151,17 @@ Bajar una imagen
  Under the ‘STATUS’ column, you can see the status was “Exited (1) 6 minutes ago”. If a program ended while returning a non-zero value, it means that the program was terminated with some kind of error. So, what happened? The MySQL image was successfully downloaded but Docker failed to run it as container because the environment is not properly set up. This is stated in the error lines.
  
  
-para ver logs ejecutar
+para ver logs y registros ejecutar
 
 > docker logs test-mysql
 
-Para un contenedor
+Detener la ejecucion de un contenedor
 
-docker stop CONT_ID or NAME_CONT
+> docker stop CONT_ID or NAME_CONT
 
 Iniciar un contenedor
 
-docker start CONT_ID or NAME_CONT
+> docker start CONT_ID or NAME_CONT
 
 Eliminar un contenedor
 
@@ -175,14 +175,13 @@ Eliminar todas las imagenes
 
 > docker rmi $(docker images -q)
  
-
 Para obtener la direccion ip del contenedor ejecutar
 
 > docker inspect test-mysql |grep IPAddress
 
 Para saber el rango que me asigno en la tarjeta de red de la maquina fisica ejecutar:
 
-ip a | grep docker | grep inet
+> ip a | grep docker | grep inet
 
 cada vez que se reinicia un contenedor, docker asgian en forma dinamica la direccion ip del contenedor
 
@@ -193,6 +192,15 @@ cada vez que se reinicia un contenedor, docker asgian en forma dinamica la direc
 
 
 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  -
 ----trash-------------------
