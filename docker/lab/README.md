@@ -14,6 +14,8 @@
 - Realice pruebas de escritura en la carpeta /srv/webdata y verifique que lo anterior se refleja en los 2 contenedores.
 - Realice lo anterior pero utilizando la opcion --net=host
 
+Preg. en que situaciones ud utilizaria la opcion de puertos distintos y direcciones ipv4 distintas?
+
 
 2.- Construir una imagen de Docker: el objetivo de este punto es crear un contenedor, instalar y configurar algunas aplicaciones utiles dentro del mismo y luego cargar esta imagen en otra maquina con docker.
 
@@ -46,6 +48,8 @@ Luego exporte el contenedor
 
 - Que diferencias existen entre utilizar save y export?
 
-####Informe de Lab docker debe contener capturas de pantalla de los puntos realizados y conclusiones acerca de la actividad.
+- Que otras funcionalidades u opciones ud podria aplicar en el caso de contenedores que se exportan localmente o en el sitio de docker.com?
+
+####Informe de Lab docker debe contener capturas de pantalla (o copy&paste desde consola) de los puntos realizados y conclusiones acerca de la actividad.
 
 plazo 7 de Dic.2016
