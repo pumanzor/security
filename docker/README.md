@@ -121,6 +121,32 @@ En este punto, la arquitectura quedaria
 
 ![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/image03.png)
 
+###DataStorage
+
+Hay varias maneras de almacenar datos utilizados por MySQL que se ejecutan en contenedores Docker. Docker puede gestionar el almacenamiento de los datos de su base de datos escribiendo los archivos en disco en el sistema host o utilizando su propia gestión interna de volumenes. Si ejecuta el comando inspect, observe la directiva "Volumes" y observe por defecto que el directorio de datos de MySQL (/var/lib/mysql) está montado en el volumen interno de Docker.
+
+La otra forma es crear un directorio de datos en el sistema host (fuera del contenedor) y montarlo en un directorio visible desde el interior del contenedor. Esto coloca los archivos de base de datos en una ubicación conocida en el sistema host y facilita que las herramientas y las aplicaciones del sistema host accedan a los archivos. La desventaja es que el usuario necesita asegurarse de que el directorio existe, y que por ejemplo permisos de directorio y otros mecanismos de seguridad en el sistema host esten configurados correctamente.
+
+Cree un directorio de datos de un volumen en el lado del host:
+
+> mkdir -p /srv/datastorage/mysql/data
+> mkdir -p /srv/datastorage/mysql/conf
+
+ docker run \
+ --detach \
+ --name=test-mysql \
+ --env="MYSQL_ROOT_PASSWORD=mypassword" \
+ --publish 6603:3306 \
+ --volume=/srv/datastorage/mysql/conf:/etc/mysql/conf.d \
+ --volume=/srv/datastorage/mysql/data:/var/lib/mysql \
+ mysql
+
+
+![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/image00.png)
+
+
+
+
 
 
 ###Comandos Basicos
