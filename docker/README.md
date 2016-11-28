@@ -117,6 +117,9 @@ De forma predeterminada, Docker utiliza iptables para gestionar el reenvío de p
  target     prot opt source               destination
  DNAT       tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:3307 to:172.17.0.2:3306
 
+En este punto, la arquitectura quedaria
+
+![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/image03.png)
 
 
 
