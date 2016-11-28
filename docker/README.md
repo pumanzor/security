@@ -99,12 +99,21 @@ La red default bridge docker0 es creada automáticamente por Docker durante la i
 
 Por ejemplo. si no especifica explícitamente el parámetro "--net" en el comando "docker run", Docker creará el contenedor bajo la red docker0 predeterminada:
 
-> docker run \
-  --name=mysql-bridge \
-  -p 3307:3306 \
-  -e MYSQL_ROOT_PASSWORD=mypassword \
-  -v /srv/storage/datadir:/var/lib/mysql \
-  -d mysql
+> docker run --name=mysql-bridge -p 3307:3306 -e MYSQL_ROOT_PASSWORD=mypassword -v /srv/storage/datadir:/var/lib/mysql -d mysql
+
+De forma predeterminada, Docker utiliza iptables para gestionar el reenvío de paquetes al bridge. Cada conexión saliente parecerá originarse de una de las direcciones IP propias de la máquina host. A continuación se muestran las cadenas NAT de la máquina después de que se inició el contenedor anterior:
+
+ [machine-host]$ iptables -L -n -t nat
+ Chain POSTROUTING (policy ACCEPT)
+ target     prot opt source               destination
+ MASQUERADE  all  --  172.17.0.0/16        0.0.0.0/0
+ MASQUERADE  tcp  --  172.17.0.2           172.17.0.2           tcp dpt:3306
+ 
+ Chain DOCKER (2 references)
+ target     prot opt source               destination
+ DNAT       tcp  --  0.0.0.0/0            0.0.0.0/0            tcp dpt:3307 to:172.17.0.2:3306
+
+
 
 
 comandos Basicos
