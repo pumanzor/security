@@ -76,6 +76,11 @@ Host network añade un contenedor en la pila de red del host de la máquina. Ima
 - Container linking, “--link mysql-container:mysql” no soportado
 - Port mapping, “-p 3307:3306” no soportado.
 
+Ejemplo , crear un contenedor con --net=host
+
+docker run --name=mysqltest --net=host -e MYSQL_ROOT_PASSWORD=clave -v /storage/datadir:/var/lib/mysql -d mysql
+
+
 Let’s create a container on the host network with “--net=host”:
 
 ###Comandos Basicos
