@@ -1,6 +1,6 @@
 ##Laboratorio Docker - Guia 1
 
-'1.-' Crear un volumen de datos compartido entre varios contenedores docker utilizando como servicio una aplicacion web, para ello mapear el http en puertos distintos o en direcciones IPv4 distintas, para ello use las diferentes opciones de configuracion de docker.
+1.- Crear un volumen de datos compartido entre varios contenedores docker utilizando como servicio una aplicacion web, para ello mapear el http en puertos distintos o en direcciones IPv4 distintas, para ello use las diferentes opciones de configuracion de docker.
 
 - crear una carpeta donde se almacenaran los datos a compartir en la maquina host (anfitrion)
 - instalar un contenedor con apache y php
