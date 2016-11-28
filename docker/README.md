@@ -145,10 +145,6 @@ Cree un directorio de datos de un volumen en el lado del host:
 ![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/image00.png)
 
 
-
-
-
-
 ###Comandos Basicos
 
 Ver o listar todas las imagenes instaladas
