@@ -45,3 +45,7 @@ Luego exporte el contenedor
 - Realice el ejercicio anterior pero con el comando "save"
 
 - Que diferencias existen entre utilizar save y export?
+
+####Informe de Lab docker debe contener capturas de pantalla de los puntos realizados y conclusiones acerca de la actividad.
+
+plazo 7 de Dic.2016
