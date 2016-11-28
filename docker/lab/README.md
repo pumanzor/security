@@ -41,3 +41,7 @@ Luego exporte el contenedor
   - docker run -it --name webapp  web1 /bin/bash
   
 - Verifique que los datos creados anteriormente persisten.
+
+- Realice el ejercicio anterior pero con el comando "save"
+
+- Que diferencias existen entre utilizar save y export?
