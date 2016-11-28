@@ -5,11 +5,11 @@
 
 - Crear una carpeta donde se almacenaran los datos a compartir en la maquina host (anfitrion)
 - Instalar un contenedor con apache y php
-  - docker run -it --name webapp -v /webdata:/var/www/html php:5.6-apache -p81:80 /bin/bash
+  - docker run -it --name webapp -v /srv/webdata:/var/www/html php:5.6-apache -p81:80 /bin/bash
 
 - Actualizar el indice de repositorios e instalar algunas herramientas utiles, nano, vi, net-tools
 - Crear otro contenedor apuntando al mismo directorio compartido
-  - docker run -it --name webapp2 -v /webdata:/var/www/html php:5.6-apache -p82:80 /bin/bash
+  - docker run -it --name webapp2 -v /srv/webdata:/var/www/html php:5.6-apache -p82:80 /bin/bash
 - Actualizar el indice de repositorios e instalar algunas herramientas utiles, nano, vi, net-tools
 - Realice pruebas de escritura en la carpeta /srv/webdata y verifique que lo anterior se refleja en los 2 contenedores.
 - Realice lo anterior pero utilizando la opcion --net=host
@@ -19,9 +19,9 @@
 
 - Seleccione algun contenedor de su interes para este punto, puede seleccionarlo desde
 
-  - http://hub.docker.com
+  - http://hub.docker.com , ejemplo php:5.6-apache
   
-- Construya la imagen, agregue software y luego haga el commit
+- Instale el contenedor con php:5.6-apache desde consola
 
   - docker run -it --name webapp  php:5.6-apache /bin/bash
   - escriba algunos datos en el directorio inicial,
