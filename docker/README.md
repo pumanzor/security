@@ -123,7 +123,7 @@ En este punto, la arquitectura quedaria
 
 
 
-comandos Basicos
+###Comandos Basicos
 
 Ver o listar todas las imagenes instaladas
 
@@ -132,42 +132,55 @@ Ver o listar todas las imagenes instaladas
 Ver o listar todos los contenedores instalados (ejecutandose o no)
 
 > docker ps -a
- 
-docker run --name=test-mysql mysql
+
+Crear un contenedor y ejecutarlo
+
+docker run -it --name webapp php:5.6-apache -p81:80 /bin/bash
 
     run - Run a command in a new container.
     --name - Give a name to the container. If you don’t specify this, Docker will generate a random name.
-    mysql - The image name as stated on the Docker Hub page
+    php:5.6-apache  - The image name as stated on the Docker Hub page
  
- o tambien
+Bajar una imagen
  
  docker pull mysql
  
- por ejemplo da un error verificar con
  
- docker ps -a
+> docker ps -a
  
  Under the ‘STATUS’ column, you can see the status was “Exited (1) 6 minutes ago”. If a program ended while returning a non-zero value, it means that the program was terminated with some kind of error. So, what happened? The MySQL image was successfully downloaded but Docker failed to run it as container because the environment is not properly set up. This is stated in the error lines.
  
  
-- docker rm test-mysql
-- docker run --name=test-mysql --env="MYSQL_ROOT_PASSWORD=mypassword" mysql 
+para ver logs ejecutar
 
-enviara todo por pantalla ya que esta en modo foreground, para enviarlo a bg ejecutar con detach mode
+> docker logs test-mysql
 
-docker run --detach --name=test-mysql --env="MYSQL_ROOT_PASSWORD=mypassword" mysql
+Para un contenedor
 
-para ver los ejecutar
+docker stop CONT_ID or NAME_CONT
 
-docker logs test-mysql
+Iniciar un contenedor
 
-entonces desde la maquina fisica me puede conectar con el cliente mysql, mysql -uroot -p -h 172.17.xx
+docker start CONT_ID or NAME_CONT
 
-para obtener la direccion ip del contenedor ejecutar
+Eliminar un contenedor
 
-docker inspect test-mysql |grep IPAddress
+> docker rm CONT_ID
 
-para saber el rango que me asigno en la tarjeta de red de la maquina fisica ejecutar:
+Eliminar una imagen
+
+> docker rmi IMAGE_ID
+
+Eliminar todas las imagenes
+
+> docker rmi $(docker images -q)
+ 
+
+Para obtener la direccion ip del contenedor ejecutar
+
+> docker inspect test-mysql |grep IPAddress
+
+Para saber el rango que me asigno en la tarjeta de red de la maquina fisica ejecutar:
 
 ip a | grep docker | grep inet
 
@@ -179,31 +192,14 @@ cada vez que se reinicia un contenedor, docker asgian en forma dinamica la direc
  -       "IPAddress": "172.17.0.4",
 
 
-Our IP address just changed to 172.17.0.21. If you had an application that connects to this container via the old IP address, the application would not get connected anymore. Docker introduces another way to link your container with another container, to ensure whatever IP address assigned to it will get updated in the linked container. Let’s say we deploy a Wordpress application (which has no MySQL installed on that image), and want to link with our existing MySQL container, test-mysql. Here is what you should do:
-
-
 
  
- --------------
-
-docker pull mysql
-
-docker run --detach --env MYSQL_ROOT_PASSWORD=456 --name servermysql --publish 3306:3306 -d mysql
-
-docker exec -it mysql bash
-
-apt-get update
-
-apt-get install vim nano
-
-crear db y crear tabla
-
-
-docker run --detach --env MYSQL_ROOT_PASSWORD=456 --name mimysql --publish 3306:3306 -d okservermysql
-
-
--------------------
+ -
+----trash-------------------
 
 mkdir /webdata
 sudo docker run -it --name webapp3 -v /webdata:/var/www/html php:5.6-apache /bin/bash
+
+- docker rm test-mysql
+- docker run --name=test-mysql --env="MYSQL_ROOT_PASSWORD=mypassword" mysql 
 
