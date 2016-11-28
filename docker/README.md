@@ -81,7 +81,7 @@ Ejemplo , crear un contenedor con --net=host
 docker run -d --name=mysqltest --net=host --env="MYSQL_ROOT_PASSWORD=mypassword" -v /storage/datadir:/var/lib/mysql mysql
 
 
-![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/docker.png)
+![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/image01.png)
 
 
 
