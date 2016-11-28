@@ -132,7 +132,7 @@ Cree un directorio de datos de un volumen en el lado del host:
 > mkdir -p /srv/datastorage/mysql/data
 > mkdir -p /srv/datastorage/mysql/conf
 
-> docker run -d --name=test-mysql --env="MYSQL_ROOT_PASSWORD=clave" -p 6603:3306 -v=/srv/datastorage/mysql/conf:/etc/mysql/conf.d -v=/srv/datastorage/mysql/data:/var/lib/mysql mysql
+> docker run -d --name=test-mysql --env="MYSQL_ROOT_PASSWORD=clave" -p 6603:3306 -v /srv/datastorage/mysql/conf:/etc/mysql/conf.d -v /srv/datastorage/mysql/data:/var/lib/mysql mysql
 
 
 ![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/image00.png)
