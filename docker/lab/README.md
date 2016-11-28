@@ -22,7 +22,22 @@
   - http://hub.docker.com
   
 - Construya la imagen, agregue software y luego haga el commit
-- Guarde la imagen con
-    - docker save mi_imagen > mi_imagen.tar
+
+  - docker run -it --name webapp  php:5.6-apache /bin/bash
+  - escriba algunos datos en el directorio inicial,
+    - touch abc
+    - touch 123456
+  - salir y verifique el id del container
+    - docker ps -a
+Luego exporte el contenedor
+
+  - docker export CONT_ID | gzip > web1.tar.gz
+  
 - Enviala a su compañero via scp
-- Ejecute esta imagen en el PC destino
+
+- Inicie el contenedor en el PC destino
+
+  - zcat web1.gz | docker import - web1
+  - docker run -it --name webapp  web1 /bin/bash
+  
+- Verifique que los datos creados anteriormente persisten.
