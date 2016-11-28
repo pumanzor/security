@@ -81,9 +81,33 @@ Ejemplo , crear un contenedor con --net=host
 docker run -d --name=mysqltest --net=host --env="MYSQL_ROOT_PASSWORD=mypassword" -v /storage/datadir:/var/lib/mysql mysql
 
 
-Let’s create a container on the host network with “--net=host”:
 
-###Comandos Basicos
+###Bridge network
+
+Bridging permite que múltiples redes se comuniquen de forma independiente mientras se mantienen separadas en el mismo host físico. Imagine que esto es similar a otra red interna dentro de la máquina host. 
+
+Sólo los contenedores de la misma red se pueden comunicar entre si , incluyendo la máquina host. Si la máquina anfitriona puede llegar al mundo exterior, también lo pueden hacer los contenedores.
+
+Hay 2 tipos de bridge networks:
+
+    Default bridge (docker0)
+    User-defined bridge
+
+Default bridge (docker0)
+
+La red default bridge docker0 es creada automáticamente por Docker durante la instalación. Se puede verificar esto utilizando el comando "ifconfig" o "ip a". El rango de IP predeterminado es 172.17.0.1/16 y se puede cambiar dentro de /etc/default/docker (Debian) o /etc/sysconfig/docker (RedHat). Consulte la documentación de Docker si desea cambiar esto.
+
+Por ejemplo. si no especifica explícitamente el parámetro "--net" en el comando "docker run", Docker creará el contenedor bajo la red docker0 predeterminada:
+
+> docker run \
+  --name=mysql-bridge \
+  -p 3307:3306 \
+  -e MYSQL_ROOT_PASSWORD=mypassword \
+  -v /srv/storage/datadir:/var/lib/mysql \
+  -d mysql
+
+
+comandos Basicos
 
 Ver o listar todas las imagenes instaladas
 
