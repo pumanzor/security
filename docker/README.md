@@ -199,6 +199,45 @@ Para listar todos los volumen docker dentro de un sistema, use el comando:
 
 Lo anterior retornara una lista de todos los volumenes docker que han sido creados en el host.
 
+
+
+###Inspeccionar un volumen
+
+Para inspeccionar un volumen con nombre, utilice el comando:
+
+docker volume inspect [volume name]
+
+Lo anterior retornara informacion acerca del volumen, incluyendo su punto de montaje (el directorio donde "vive") en el sistema host.
+
+Por ejemplo, para obtener más información sobre el volumen de datos que creamos anteriormente, el comando es:
+
+> docker volume inspect data-volume
+
+
+###Remover un Volume
+
+Para remover un volumen con nombre, use el comando:
+
+> docker volume rm [volume name]
+
+No podrá eliminar un volumen si está siendo utilizado por un contenedor existente. Antes de quitar el volumen, tendrá que detener y eliminar el contenedor con los comandos:
+
+> docker stop [container name or ID]
+
+> docker rm [container name or ID]
+
+Por ejemplo, para eliminar el volumen "datavolume", primero necesitaremos detener y elimimar el contenedor "container-test" el cual esta usando el volumen: 
+
+> docker stop container-test
+
+> docker rm container-test
+
+Entonces el volumen "datavolume" puede ser eliminado con:
+
+> docker volume rm datavolume
+
+------------------
+
 ###Comandos Basicos
 
 Ver o listar todas las imagenes instaladas
