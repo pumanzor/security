@@ -177,6 +177,27 @@ Por ejemplo, para crear un volumen denominado datavolumen, el comando es:
 
 docker volume create --name datavolume
 
+###Iniciar un contenedor con un volumen
+
+To launch a container which will use a volume you have created with docker volume create, add the following argument to the docker run command:
+
+Para iniciar un contenedor que utilice un volumen que se haya creado con el comando volume create, agregue el siguiente argumento al comando docker run:
+
+> -v [volume name]:[container directory] 
+
+For example, to run a container from the centos image named my-volume-test and map the volume data-volume to the container's /data directory, the command is:
+
+Por ejemplo, para ejecutar un contenedor con el nombre "vol-test" desde la imagen centos y asignarle el volumen "data-volume"  al directorio /data del contenedor, el comando es:
+
+docker run -itd --name vol-test -v data-volume:/data centos /bin/bash
+
+###Listar Volumes
+
+Para listar todos los volumen docker dentro de un sistema, use el comando:
+
+> docker volume ls
+
+Lo anterior retornara una lista de todos los volumenes docker que han sido creados en el host.
 
 ###Comandos Basicos
 
