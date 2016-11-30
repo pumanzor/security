@@ -159,6 +159,24 @@ Montar un volumen es una buena solución si desea:
 
 Los volumenes Docker existen fuera de las capas RW y RO del UFS  (Union File System). El volumen es una carpeta que es compartida entre el contenedor y la maquina host. Los volumenes pueden ser compartidos entre contenedores.
 
+Un volumen Docker vive fuera de un contenedor, es decir en la maquina host (maquina anfitriona).
+
+Desde el contenedor, el volumen actúa como una carpeta que puede utilizar para almacenar y recuperar datos. Es simplemente un punto de montaje para un directorio en el host.
+
+Hay varias maneras de crear y administrar volúmenes de Docker. Cada método tiene sus propias ventajas y desventajas.
+
+###Usando el comando "docker volume create"
+
+El comando "volume create" creara un volumen con nombre. El nombre permitira localizar y asignar facilmente los volumenes de Docker en los contenedores
+
+Para crear un volumen, utilice el comando:
+
+docker volume create --name [nombre del volumen]
+
+Por ejemplo, para crear un volumen denominado datavolumen, el comando es:
+
+docker volume create --name datavolume
+
 
 ###Comandos Basicos
 
