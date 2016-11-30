@@ -310,10 +310,10 @@ cada vez que se reinicia un contenedor, docker asigna en forma dinamica la direc
  
  
  
+##DOcker UI
  
  
- 
- 
+ docker run -d -p 9000:9000 --name dockerui --privileged -v /var/run/docker.sock:/var/run/docker.sock kevan/dockerui
  
  
  
