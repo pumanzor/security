@@ -139,6 +139,27 @@ Cree un directorio de datos de un volumen en el lado del host:
 ![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/image00.png)
 
 
+###Docker File System
+
+Para entender los volúmenes de Docker, es importante entender primero cómo funciona el sistema de archivos Docker.
+
+Una imagen Docker es una colección de layers o capas en modo sólo lectura. Cuando se inicia un contenedor desde una imagen, Docker añade una capa de lectura y escritura a la parte superior de esa pila de capas de sólo lectura. Docker llama a esto UFS.
+
+Cada vez que se cambia un archivo, Docker hace una copia del archivo desde las capas de sólo lectura hasta la capa superior de lectura y escritura. Esto deja el archivo original (solo lectura) sin cambios.
+
+Cuando se elimina un contenedor, se pierde la capa superior de lectura y escritura. Esto significa que los cambios realizados después de que el contenedor se inició se han ido.
+
+Un volumen permite que los datos persistan, incluso cuando se elimina un contenedor. Los volúmenes son también una manera conveniente de compartir datos entre el host y el contenedor.
+
+Montar un volumen es una buena solución si desea:
+
+- Empujar datos a un contenedor.(PUSH)
+- Extraer datos de un contenedor. (PULL)
+- Compartir datos entre contenedores.
+
+Los volumenes Docker existen fuera de las capas RW y RO del UFS  (Union File System). El volumen es una carpeta que es compartida entre el contenedor y la maquina host. Los volumenes pueden ser compartidos entre contenedores.
+
+
 ###Comandos Basicos
 
 Ver o listar todas las imagenes instaladas
