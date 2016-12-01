@@ -58,7 +58,7 @@ Luego exporte el contenedor
   
   luego hacer commit con los cambios realizados en el container
   
-  - docker commit <CONTAINER ID> busytest
+  - docker commit CONTAINER_ID busytest
   
   luego verifique q se haya creado la imagen "busytest"
   
