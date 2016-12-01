@@ -46,6 +46,37 @@ Luego exporte el contenedor
 
 - Realice el ejercicio anterior pero con el comando "save"
 
+  -En primer lugar instale una imagen liviana, ejemplo busybox
+  
+  - docker pull busybox
+  - docker run -it --name test1 busybox sh
+  
+  - luego crear algunos archivos dentro del contenedor con el comando touch o instale alguna aplicacion co apt-get
+  - touch 1234
+  - apt-get update
+  - apt-get install nano
+  
+  luego hacer commit con los cambios realizados en el container
+  
+  - docker commit <CONTAINER ID> busytest
+  
+  luego verifique q se haya creado la imagen "busytest"
+  
+  - docker images --all
+  
+  luego para que los datos persistan en la imagen utilice el comando save y posteriormente envialo via scp al equipo de su compañero
+  
+  - docker save busytest > imagensave.tar
+  - scp imagensave.tar usuario_dest@IP:/home/usuario_dest
+
+  en el equipo destino levante la imagen guardad
+  
+  - docker load < imagensave.tar
+  
+  por ultimo ejecute el contenedor utilizando a imagen restaurada.
+  
+  - docker run -it --name imagen busytest sh
+
 - Que diferencias existen entre utilizar save y export?
 
 - Que otras funcionalidades u opciones ud podria aplicar en el caso de contenedores que se exportan localmente o en el sitio de docker.com?
