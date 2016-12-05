@@ -20,6 +20,7 @@ dd bs=64k if=2016-11-25-raspbian-jessie.img of=/dev/mmcblk0
 git clone https://github.com/adafruit/Adafruit_Python_DHT
 
 apt-get update
+
 apt-get install build-essential python-dev
 
 cd Adafruit_Python_DHT
