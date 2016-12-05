@@ -17,10 +17,12 @@ dd bs=64k if=2016-11-25-raspbian-jessie.img of=/dev/mmcblk0
 
 ###Bajar librerias de sensores
 
-https://github.com/adafruit/Adafruit_Python_DHT
+git clone https://github.com/adafruit/Adafruit_Python_DHT
 
 apt-get update
 apt-get install build-essential python-dev
+
+cd Adafruit_Python_DHT
 
 python setup.py install
 
@@ -29,6 +31,10 @@ python setup.py install
 apt-get install python-pip
 
 pip install paho-mqtt
+
+
+
+------------------
 
 http://www.hivemq.com/blog/mqtt-essentials/page/2/
 
