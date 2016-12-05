@@ -29,5 +29,7 @@ python setup.py install
 apt-get install python-pip
 pip install paho-mqtt
 
+http://www.hivemq.com/blog/mqtt-essentials/page/2/
+
 
 
