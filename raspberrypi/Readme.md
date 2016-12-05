@@ -14,3 +14,9 @@ apt-get install build-essential python-dev
 python setup.py install
 
 
+
+apt-get install python-pip
+pip install paho-mqtt
+
+
+
