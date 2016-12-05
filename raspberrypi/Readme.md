@@ -1,5 +1,9 @@
 ##Raspberry pi files
 
+
+
+mount -o loop,offset=$((122880*512)) raspbian_image_file_here.img /myfolder
+
 https://github.com/adafruit/Adafruit_Python_DHT
 
 apt-get update
