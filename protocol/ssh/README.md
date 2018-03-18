@@ -35,5 +35,14 @@ Este paquete de software incluye muchas herramientas:
 * una utilidad para reunir las claves de host SSH públicas de varios hosts, ssh-keyscan.
 
 
+### Casos de uso
+
+#### Administración remota de shell
+
+La administración remota es el uso más frecuente de SSH. Consiste en conectarse de manera remota a un host (computador, servidor, equipo, laptop.etc) distante y luego la apertura de una sesión de shell remoto post autenticación exitosa.
+
+La ventaja obvia de SSH es su seguridad. Considerando que telnet no proporciona autenticación de servidor
+ni un canal encriptado y autenticado, SSH lo hace, siempre y cuando se sigan unas reglas basicas de seguridad.
+
 
 
