@@ -18,11 +18,21 @@ SSH existe 2 versiones: SSHv1 y SSHv2. SSHv1 tiene vulnerabilidades estructurale
 
 SSH es principalmente un protocolo de comunicacion, no es ni un unix shell o terminal ni un interprte de comandos.
 
-OpenSSH es la 
-is mainly a communication protocol. It is neither a Unix shell, nor a terminal, nor a command
-interpreter.
+> OpenSSH es la implementación más comúnmente encontrada del protocolo SSH. Más que un protocolo, es una caja de herramientas que ofrece una gran cantidad de características.
 
-OpenSSH es la implementación más comúnmente encontrada del protocolo SSH. Más que un protocolo, es una caja de herramientas que ofrece una gran cantidad de características.
+### Presentación de OpenSSH
+
+OpenSSH es desarrollado y mantenido por el proyecto OpenBSD. Es, hasta la fecha, la referencia de implementación del protocolo SSH encontrado en una gran cantidad de sistemas, incluidos servidores (Unix,GNU / Linux, Windows), máquinas cliente y dispositivos de red.
+
+Este paquete de software incluye muchas herramientas:
+
+* el servidor, sshd.
+* varios clientes, dependiendo de la finalidad:
+    - conexiones de shell remotas: ssh;
+    - transferencias de archivos y descargas: scp, sftp;
+* una herramienta de generación de claves, ssh-keygen;
+* un servicio de keyring (llavero), ssh-agent y ssh-add;
+* una utilidad para reunir las claves de host SSH públicas de varios hosts, ssh-keyscan.
 
 
 
