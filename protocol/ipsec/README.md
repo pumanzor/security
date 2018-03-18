@@ -95,6 +95,21 @@ Recuerde que existen dos métodos para autenticar un túnel IPSEC:
 - Al usar firmas RSA Digital, se utiliza una Autoridad de Certificación (CA) (o third party) para veridicar una firma digital. Esto proporciona una solución más escalable que las claves precompartidas.
 
 
+### Protocolos IPSEC
+
+IPSEC utiliza uno de dos encabezados de protocolo para proteger datos:
+
+- Authentication Header (AH)
+- Encapsulation Security Payload (ESP)
+
+
+Authentication Header (AH), o protocolo IP 51 (Iana), no proporciona confidencialidad de los datos. No cifre ningún dato en absoluto. Sin embargo, AH proporciona servicios de autenticación e integridad. Debido a que AH no realiza cifrado, es un estándar más rápido que ESP.
+
+AH usa un algoritmo hash para calcular un valor hash en la carga útil y encabezado de un paquete, asegurando la integridad de este. Sin embargo, esto causa un problema muy específico ya que no funcionará a través de un dispositivo NAT.
+
+NAT cambia el encabezado IP de un paquete durante la traducción, pero el valor hash no ha cambiado; por lo tanto, el dispositivo receptor creerá que el paquete ha sido alterado en tránsito y por ende rechazara el paquete.
+
+
 
 
 
