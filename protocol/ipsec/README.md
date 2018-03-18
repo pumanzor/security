@@ -76,13 +76,24 @@ Dos algoritmos HMAC se usan comúnmente:
 
 Otra preocupación al enviar datos a través de Internet es la fuente o el origen de esos datos ya que es posible enmascarar o falsificar la identidad o dirección.
 
-Para que se establezca un túnel IPSEC VPN, ambos lados del túnel deben estar autenticados, para lograr esto, una clave pre-compartidad (pre-shared key) o una firma RSA digital deben ser ser configuradas al momento de crear el tunel.
+Para que se establezca un túnel IPSEC VPN, ambos lados del túnel deben estar autenticados, para lograr esto, una clave pre-compartidad (pre-shared key) o una firma RSA digital debe ser ser configurada al momento de crear el tunel.
 
-Al usar claves precompartidas, se usa una cadena de texto secreta en cada dispositivo para autenticarse el uno al otro. Esta cadena debe ser previamente acordada e idéntica en cada dispositivo, luego a partir de esta clave se genera un hash dentro de una firma digital.
+Al usar claves precompartidas, se utiliza una cadena de texto secreta en cada dispositivo para autenticarse el uno al otro. Esta cadena debe ser previamente acordada e idéntica en cada dispositivo, luego a partir de esta cadena de texto se genera un hash de una firma digital.
 
-Al usar firmas RSA Digital, se utiliza una Autoridad de Certificación (CA) para verificar este tipo de firmas
+En el caso de utilizar firmas RSA Digital en vez de la opcion anterior, se debe requerir una Autoridad de Certificación (CA) para verificar este tipo de firmas
 
-para que el tunel se establesca y pase a modo activo una de las 2 opciones anteriores debe ser configurada correctamente.
+Luego para que el tunel se establezca y pase a modo activo una de las 2 opciones anteriores debe ser configurada correctamente.
+
+
+
+### Autoridades de certificación (CA)
+
+Recuerde que existen dos métodos para autenticar un túnel IPSEC:
+
+- Al usar claves precompartidas (pre-shared key), se usa una cadena de texto secreta en cada dispositivo para autenticarse el uno al otro. Esta cadena debe ser previamente acordada e idéntica en cada dispositivo. Esta cadena se convierte en hash de una firma digital.
+
+- Al usar firmas RSA Digital, se utiliza una Autoridad de Certificación (CA) (o third party) para veridicar una firma digital. Esto proporciona una solución más escalable que las claves precompartidas.
+
 
 
 
