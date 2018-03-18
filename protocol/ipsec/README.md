@@ -147,6 +147,41 @@ Los conjuntos de políticas IKE se crean para negociar varios parámetros los cu
 - El SA Lifetime, medido en segundos o en kilobytes enviados
 
 
+Las políticas IKE a menudo se conocen como "Internet Security Association and Key Management Protocol o (ISAKMP) y múltiples políticas IKE pueden ser creadas en un tunel VPN. 
+
+Durante el proceso de negociación, los peers VPN comparten su lista configurada de políticas IKE. La SA solo se establecerá si hay coincidencia exacta entre los peers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## trash
 -------------------------
 
