@@ -138,12 +138,13 @@ Antes de que se pueda establecer una SA varios parametros se deben negociar entr
 
 El protocolo de intercambio de claves de Internet (IKE) controla este proceso de negociación utilizando el puerto UDP 500.
 
-Los conjuntos de políticas IKE se crean para negociar varios parámetros, que incluyen:
-• El algoritmo de cifrado (como DES, 3DES o AES)
-• El algoritmo hash (como MD5 o SHA-1)
-• El método de autenticación (como claves compartidas o firmas RSA)
-• El grupo Diffie-Hellman (D-H) para crear y compartir claves
-• El SA Lifetime, medido en segundos o en kilobytes enviados
+Los conjuntos de políticas IKE se crean para negociar varios parámetros los cuales incluyen:
+
+- El algoritmo de cifrado (como DES, 3DES o AES)
+- El algoritmo hash (como MD5 o SHA-1)
+- El método de autenticación (como claves compartidas o firmas RSA)
+- El grupo Diffie-Hellman (D-H) para crear y compartir claves
+- El SA Lifetime, medido en segundos o en kilobytes enviados
 
 
 ## trash
