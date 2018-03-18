@@ -58,10 +58,31 @@ Además, la fuerza de una clave está determinada por el grupo DH utilizado para
 - Group 5 – 2048 bits
 
 
+### Integridad de datos y Hashing
 
+Los datos enviados a través de Internet no solo pueden ser robados, sino que también pueden ser maliciosamente alterados.
+Para combatir esto en PISEC se emplea un algoritmo hash que calcula y agrega un valor hash específico a medida que se envía cada paquete. 
 
+Una vez que se reciben los datos en el receptor, se calcula nuevamente a través del mismo algoritmo de hash acordado en la fases de negociacion por cada paquete recibido. Si el valor de hash es diferente, el paquete fue alterado en tránsito.
 
+Para realizar lo anterior se utiliza el código de autenticación de mensajes hash (HMAC). HMAC utiliza una clave secreta al momento de computar el valor del hash, evitando así que un atacante altere el paquete y luego re-compute el hash correcto.
 
+Dos algoritmos HMAC se usan comúnmente:
+
+- HMAC-MD5 (Message-Digest 5) – 128-bit hashed key
+- HMAC-SHA1 (Secure Hash Algorithm) – 160-bit hashed key
+
+### Autenticación
+
+Otra preocupación al enviar datos a través de Internet es la fuente o el origen de esos datos ya que es posible enmascarar o falsificar la identidad o dirección.
+
+Para que se establezca un túnel IPSEC VPN, ambos lados del túnel deben estar autenticados, para lograr esto, una clave pre-compartidad (pre-shared key) o una firma RSA digital deben ser ser configuradas al momento de crear el tunel.
+
+Al usar claves precompartidas, se usa una cadena de texto secreta en cada dispositivo para autenticarse el uno al otro. Esta cadena debe ser previamente acordada e idéntica en cada dispositivo, luego a partir de esta clave se genera un hash dentro de una firma digital.
+
+Al usar firmas RSA Digital, se utiliza una Autoridad de Certificación (CA) para verificar este tipo de firmas
+
+para que el tunel se establesca y pase a modo activo una de las 2 opciones anteriores debe ser configurada correctamente.
 
 
 
