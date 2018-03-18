@@ -1,3 +1,30 @@
+## IPSEC
+
+Una red privada virtual (VPN) proporciona un túnel seguro a través de una red publica (y por lo tanto, insegura). Una VPN proporciona un mecanismo para las organizaciones conectar usuarios y oficinas, sin incurrir en altos costos en la contratacion de una linea dedicada de datos privados
+
+
+Las VPN se usan con mayor frecuencia sobre Internet, proporcionando a los usuarios acceso a correo electrónico, documentos, impresoras ysistemas como si realmente estuvieran en su oficina central.
+
+Las VPN generalmente se usan con dos propósitos:
+
+- VPN cliente: conecta a los usuarios domésticos o "itinerantes" a una oficina.
+- VPN de site 2 site: conecta 2 o mas oficinas remotas a una oficina principal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+## trash
+-------------------------
+
 ##Security at the Network Layer: IPSec
 
 ###Provides Layer 3 security (RFC 2401)
