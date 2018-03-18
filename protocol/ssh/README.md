@@ -116,3 +116,13 @@ Ejemplo, como generar par de llaver publica/privada en Openssh Linux
 
     ECDSA
     ssh-keygen -t ecdsa -b 256 
+    
+con la accion anterior ssh-keygen generara 2 archivos: la llave privada y la llave publica esta ultima tendra como extension .pub
+
+> como saber que tipo de llave es uno u otro archivo?, ejecute el comando file * dentro del directorio donde ejecuto el comando ssh-keygen
+
+    file *
+
+    id_ecdsa:        PEM EC private key
+    id_ecdsa.pub:    OpenSSH ECDSA public key
+
