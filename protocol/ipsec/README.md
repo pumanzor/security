@@ -151,15 +151,20 @@ Las políticas IKE a menudo se conocen como "Internet Security Association and K
 
 Durante el proceso de negociación, los peers VPN comparten su lista configurada de políticas IKE. La SA solo se establecerá si hay coincidencia exacta entre los peers.
 
+Existen dos fases en este proceso de negociación:
 
+IKE fase 1: la cual establece el túnel inicial (denominado IKE o ISAKMP SA). en esta etapa los peers son autenticados, algoritmos de autenticacion y hashing se negocian y las claves se intercambian en función de los conjuntos de políticas IKE. 
 
+Dos modos se pueden utilizar para la negociación de la Fase 1:
 
+- Modo principal: más lento, pero más seguro
+- Modo agresivo: más rápido, pero menos seguro
 
+IKE fase 2: establece el túnel IPSEC (IPSEC SA), que detalla los parámetros AH o ESP para proteger los datos. Estos parámetros están contenidos en el IPSEC transform Set.
 
+#### ren resumen
 
-
-
-
+IKE fase 1 negocia los parámetros para el túnel (intercambio de claves) en sí, mientras que IKE Phase 2 negocia los parámetros para los datos que atraviesan ese túnel.
 
 
 
