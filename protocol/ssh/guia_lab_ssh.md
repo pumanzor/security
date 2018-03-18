@@ -10,10 +10,10 @@ Comandos utiles
 Generar claves privada y publica con ECDSA
 
 
-ssh-keygen -t dsa -b 256
+    ssh-keygen -t dsa -b 256
 
 Generar claves privada y publica con algoritmo ED25519 (no necesita ingresar tamaño en bits, por default es 256bits)
 
-ssh-keygen -t ed25519
+    ssh-keygen -t ed25519
 
 
