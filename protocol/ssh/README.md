@@ -76,3 +76,16 @@ elementos mostrados, inicios de sesión, contraseñas, archivos vistos o editado
 > La autenticidad del servidor siempre se comprobará antes de acceder a el. Esto se logra a través de
 autenticación preliminar de la máquina al verificar la huella digital de la clave pública del servidor (fingerprint) o
 verificar el certificado del servidor (mediante PKI).
+
+-------
+
+Con OpenSSH, el cliente puede lograr este control de diferentes maneras:
+
+- Asegúrese de que la huella digital de clave pública SSH del servidor (fingerprint) sea la correcta , es puede obtener mediante la ejecucion del comando ssh-keygen -lf llave_publica
+
+- Agregando manualmente la clave pública del servidor SSH en el archivo known_hosts del cliente.
+- Verificar la firma del certificado SSH presentado por el servidor con un certificado de confianza o autoridad de Certificación CA.
+
+La validación explícita de la clave de host por parte del usuario se puede especificar utilizando el Atributo StrictHostKeyChecking en el archivo de configuracion sshd_config:
+
+    StrictHostKeyChecking ask
