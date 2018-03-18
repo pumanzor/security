@@ -110,6 +110,25 @@ AH usa un algoritmo hash para calcular un valor hash en la carga útil y encabez
 NAT cambia el encabezado IP de un paquete durante la traducción, pero el valor hash no ha cambiado; por lo tanto, el dispositivo receptor creerá que el paquete ha sido alterado en tránsito y por ende rechazara el paquete.
 
 
+Encapsulation Security Payload (ESP) (ESP), o protocolo IP 50 (IANA), realiza servicios de confidencialidad, autenticación e integridad. Por lo tanto, ESP realiza cifrado y es intrínsecamente más seguro que AH. 
+
+ESP introduce un header y un trailer al paquete, ademas también utiliza un algoritmo hash para la integridad de datos. Sin embargo, el hash no incluye el header IP del paquete y por lo tanto, el ESP (generalmente) funcionará
+a través de un dispositivo NAT.
+
+ESP y AH pueden usarse por separado o usarse conjuntamente.
+
+### Modos transporte y tunel
+
+Cada protocolo IPSEC (AH o ESP) puede operar en uno de dos modos:
+
+- Modo transporte: los encabezados IP originales se dejan intactos. Este modo se utiliza cuando se requiera asegurar la comunicación de un dispositivo con otro dispositivo de manera individual.
+
+- Modo túnel: todo el paquete original está codificado y / o cifrado, incluyendo tanto la carga útil como los encabezados originales. Una IP temporal en el header se aplica al paquete durante el tránsito. Se usa para canalizar el tráfico desde
+un sitio a otro.
+
+
+ESP en modo Túnel puede experimentar dificultades NAT similares a AH. Esto puede se solucionado implementando NAT Traversal (NAT-T).
+
 
 
 
