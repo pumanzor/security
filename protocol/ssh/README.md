@@ -44,5 +44,13 @@ La administración remota es el uso más frecuente de SSH. Consiste en conectars
 La ventaja obvia de SSH es su seguridad. Considerando que telnet no proporciona autenticación de servidor
 ni un canal encriptado y autenticado, SSH lo hace, siempre y cuando se sigan unas reglas basicas de seguridad.
 
+#### Transferencias y descargas de archivos.
+
+El segundo uso más común de SSH es la transferencia de archivos, tanto para la carga (cliente a servidor) y para la descarga (servidor a cliente).
+
+SSH proporciona dos mecanismos para este fin: SCP y SFTP. SFTP es más elaborado que SCP ya que permite la navegación en un árbol de archivos, mientras que SCP simplemente permite la transferencia de datos. En ambos casos, la seguridad se basa principalmente en SSH, que proporciona el canal de comunicación seguro.
+
+Desde el punto de vista de la red, el uso de SCP / SFTP simplifica la configuración de las reglas de filtrado en comparacion con FTP ya que permite multiplexar el canal de datos y el canal de control en la misma conexion SSH, por lo que no hay necesidad de una regla de apertura de puerto dinámico, como se requiere con FTP.
+
 
 
