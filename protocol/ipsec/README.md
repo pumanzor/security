@@ -11,6 +11,18 @@ Las VPN generalmente se usan con dos propósitos:
 - VPN de site 2 site: conecta 2 o mas oficinas remotas a una oficina principal.
 
 
+¿Qué es IPSEC?
+
+IPSEC, abreviatura de IP Security, es un conjunto de protocolos, estándares y algoritmos para asegurar el tráfico a través de una red que no es de confianza, como Internet por ej.
+
+IPSEC proporciona tres servicios principales:
+
+- Confidencialidad: evita el robo de datos, mediante el cifrado.
+- Integridad: garantiza que los datos no se manipulen ni alteren en transito utilizando un algoritmo de hash.
+- Autenticación: confirma la identidad del host que envía los datos, utilizando claves precompartidas o una Autoridad de certificación (CA).
+- Anti-replay: evita la duplicación de paquetes cifrados, al asignar un número de secuencia único.
+
+El estándar IPSEC se describe en RFC 2401
 
 
 
