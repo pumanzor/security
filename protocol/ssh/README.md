@@ -11,11 +11,18 @@ SSH o Secure SHell es un procolo que trabaja en la capa 7 del modelo OSI y que t
 
 ------
 
-SSH se encuentra estandizada desde el 2006 por el set de RFCs 4250 al 4254 en donde se especifica los protocolos de comunicacion y los mecanismos de cifrado que el protocolo debe soportar.
+SSH se encuentra estandarizada desde el 2006 por el set de RFCs 4250 al 4254 en donde se especifica los protocolos de comunicacion y los mecanismos de cifrado que debe soportar.
 
 SSH existe 2 versiones: SSHv1 y SSHv2. SSHv1 tiene vulnerabilidades estructurales que han sido corregidas en la siguiente version
 , por lo tanto esta version se encuentra obsoleta.
 
+SSH es principalmente un protocolo de comunicacion, no es ni un unix shell o terminal ni un interprte de comandos.
+
+OpenSSH es la 
+is mainly a communication protocol. It is neither a Unix shell, nor a terminal, nor a command
+interpreter.
+
+OpenSSH es la implementación más comúnmente encontrada del protocolo SSH. Más que un protocolo, es una caja de herramientas que ofrece una gran cantidad de características.
 
 
 
