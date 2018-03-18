@@ -95,3 +95,24 @@ OpenSSH aplica de forma predeterminada, un modelo de seguridad de Confianza en e
 
 Si el usuario valida este fingerprint o huella digital, ssh lo registrara en el archivo known_hosts para permitir la validación automática de las siguientes conexiones.
 
+
+#### Generación de claves: tamaños y algoritmos
+
+SSH puede manejar varios algoritmos criptográficos y tamaños de clave. Algunos de ellos no cumplen con los requisitos de seguridad deseados a la fecha.
+
+En la práctica, las claves (fingerprint) de un host SSH (utilizadas para autenticar un servidor SSH) raramente se renuevan. Es
+por lo tanto, importante elegir una clave lo suficientemente larga desde el principio.
+
+La implementación de DSA en OpenSSH admite claves de hasta 1024 bits de longitud. Tales llaves son ahora
+consideradas inseguras y su uso es fuertemente desaconsejado.
+
+Los algoritmos que ud debiera utilizar para cumplir con los requisitos actuales de seguridad son RSA y ECDSA y como minino el tamaño de la llave para RSA debe ser de 2048 mientras que para ECDSA es 256 bits.
+
+--------
+Ejemplo, como generar par de llaver publica/privada en Openssh Linux
+
+    RSA
+    ssh-keygen -t rsa-b 2048 
+
+    ECDSA
+    ssh-keygen -t ecdsa -b 256 
