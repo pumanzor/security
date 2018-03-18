@@ -11,7 +11,7 @@ Las VPN generalmente se usan con dos propósitos:
 - VPN de site 2 site: conecta 2 o mas oficinas remotas a una oficina principal.
 
 
-¿Qué es IPSEC?
+### ¿Qué es IPSEC?
 
 IPSEC, abreviatura de IP Security, es un conjunto de protocolos, estándares y algoritmos para asegurar el tráfico a través de una red que no es de confianza, como Internet por ej.
 
@@ -23,6 +23,21 @@ IPSEC proporciona tres servicios principales:
 - Anti-replay: evita la duplicación de paquetes cifrados, al asignar un número de secuencia único.
 
 El estándar IPSEC se describe en RFC 2401
+
+### Confidencialidad y Encriptación
+
+Los datos enviados en texto claro a través de Internet pueden ser interceptados y robados. Debido a esto, los datos confidenciales deben ser cifrados cuando se envían a través de una red o dominio no confiable.
+
+Las claves son valores generados que se utilizan para cifrar y descifrar datos. Mientras mas larga la clave, más segura es esa clave. La longitud de una clave se mide en bits.
+
+Existen dos "tipos" de claves:
+
+- Claves simétricas: se pueden utilizar para cifrar y descifrar datos. Más específicamente, la misma clave se utiliza para cifrar un paquete (en el origen) y luego descifrar ese paquete (en el destino). El cifrado de llave simetrica es eficiente, pero no escala bien en entornos grandes.
+
+Las claves simétricas no se comparten abiertamente durante la transmisión de datos, y en su lugar deben ser instaladas en cada máquina antes de la transferencia de datos. Esto puede ser logrado usando una variedad de métodos (ineficientes e inseguros): por ejemplo ; correo electrónico, 
+
+
+- Claves asimétricas: requieren una clave separada para el cifrado (la clave pública) y descifrado (la clave privada). Las claves públicas se intercambian abiertamente entre dispositivos para cifrar datos durante la transferencia. Las claves privadas nunca se intercambian.
 
 
 
