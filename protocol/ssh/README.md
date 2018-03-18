@@ -126,3 +126,26 @@ con la accion anterior ssh-keygen generara 2 archivos: la llave privada y la lla
     id_ecdsa:        PEM EC private key
     id_ecdsa.pub:    OpenSSH ECDSA public key
 
+#### Autenticación y control de acceso de usuario
+
+#### Autenticacion de usuario
+Se pueden usar varios mecanismos para autenticar a los diferentes usuarios. La autenticación del usuario debe realizarse con uno de los siguientes mecanismos por orden de preferencia:
+
+- Criptografía asimétrica ECDSA;
+- Criptografía asimétrica RSA;
+- Criptografía simétrica (tickets de Kerberos desde GSSAPI);
+- módulos de autenticación que no exponen ni la contraseña del usuario ni su hash (de terceros) Módulos PAM o BSD Auth);
+- verificación de contraseñas en una base de datos (como passwd / shadow) o un directorio.
+
+> En todos los casos, la autenticación con contraseña no se debe usar para usuarios altamente privilegiados.
+
+Mecanismos de criptografía asimétrica (ECDSA, RSA) son proporcionados directamente por el toolbox de OpenSSH. 
+
+Los dueños de las llaves publicas que se encuentren listados dentro del archivo
+
+    authorized_keys
+    
+de la cuenta del usuario le sera concedido el acceso al sistema bajo esta cuenta.
+
+Las cuentas de usuario siempre tienen derechos en el sistema, sin importar cuán mínimos sean. Su acceso debe ser autenticado y los ataques de fuerza bruta deben ser mitigados.
+
