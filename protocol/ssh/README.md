@@ -89,3 +89,9 @@ Con OpenSSH, el cliente puede lograr este control de diferentes maneras:
 La validación explícita de la clave de host por parte del usuario se puede especificar utilizando el Atributo StrictHostKeyChecking en el archivo de configuracion sshd_config:
 
     StrictHostKeyChecking ask
+    
+    
+OpenSSH aplica de forma predeterminada, un modelo de seguridad de Confianza en el primer uso (Trust of first Use ,TOFU) - durante la primera conexión, si el cliente no puede autenticar el host remoto es decir no encuentra el fingerprint del server en su archivo known_hosts, ssh solicita al usuario que verifique el fingerprint del servidor
+
+Si el usuario valida este fingerprint o huella digital, ssh lo registrara en el archivo known_hosts para permitir la validación automática de las siguientes conexiones.
+
