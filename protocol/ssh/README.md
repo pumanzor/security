@@ -53,4 +53,9 @@ SSH proporciona dos mecanismos para este fin: SCP y SFTP. SFTP es más elaborado
 Desde el punto de vista de la red, el uso de SCP / SFTP simplifica la configuración de las reglas de filtrado en comparacion con FTP ya que permite multiplexar el canal de datos y el canal de control en la misma conexion SSH, por lo que no hay necesidad de una regla de apertura de puerto dinámico, como se requiere con FTP.
 
 
+#### Reenvío de flujo (Flow forwarding)
 
+El reenvío de flujo SSH también se usa comúnmente. Consiste en encapsular flujos de TCP / IP directamente
+en el túnel SSH, para permitir (entre otras cosas) el transporte seguro de un protocolo no segur o para proporcionar acceso a servicios protegidos por un gateway.
+
+> La implementación de túneles SSH solo se aplicará a los protocolos que no brinden mecanismos de seguridad robustos y que pueden beneficiarse de ello (por ejemplo: X11, VNC). Esta recomendación no está exenta de usar protocolos de seguridad de bajo nivel adicionales, como IPsec.
