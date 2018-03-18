@@ -73,3 +73,6 @@ SSH depende en gran medida de la criptografía asimétrica para la autenticació
 - exposición a ataques de "hombre en el medio" que permite recuperar todos los datos intercambiados (pulsaciones de teclas,
 elementos mostrados, inicios de sesión, contraseñas, archivos vistos o editados.).
 
+> La autenticidad del servidor siempre se comprobará antes de acceder a el. Esto se logra a través de
+autenticación preliminar de la máquina al verificar la huella digital de la clave pública del servidor (fingerprint) o
+verificar el certificado del servidor (mediante PKI).
