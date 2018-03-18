@@ -59,3 +59,17 @@ El reenvío de flujo SSH también se usa comúnmente. Consiste en encapsular flu
 en el túnel SSH, para permitir (entre otras cosas) el transporte seguro de un protocolo no segur o para proporcionar acceso a servicios protegidos por un gateway.
 
 > La implementación de túneles SSH solo se aplicará a los protocolos que no brinden mecanismos de seguridad robustos y que pueden beneficiarse de ello (por ejemplo: X11, VNC). Esta recomendación no está exenta de usar protocolos de seguridad de bajo nivel adicionales, como IPsec.
+
+
+### Mejores prácticas para usar OpenSSH
+
+#### Criptografía
+
+##### Autenticación
+SSH depende en gran medida de la criptografía asimétrica para la autenticación. Si no se garantiza la autenticación del servidor, se pueden producir numerosos impactos de seguridad:
+
+- riesgo de robo de datos a través de la suplantación del servidor (imposibilidad de verificar la identidad del servidor)
+
+- exposición a ataques de "hombre en el medio" que permite recuperar todos los datos intercambiados (pulsaciones de teclas,
+elementos mostrados, inicios de sesión, contraseñas, archivos vistos o editados.).
+
