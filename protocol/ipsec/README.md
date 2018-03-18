@@ -130,6 +130,15 @@ un sitio a otro.
 ESP en modo Túnel puede experimentar dificultades NAT similares a AH. Esto puede se solucionado implementando NAT Traversal (NAT-T).
 
 
+Asociaciones de seguridad IKE e IPSEC
+Los pares VPN IPSEC establecen una Security Association (SA), una "conexión" o
+"Política" entre los dos puntos finales del túnel VPN. Una SA es unidireccional
+túnel virtual entre los pares de VPN. Por lo tanto, para una comunicación completa a
+ocurrir, se deben establecer dos SA, una para cada dirección.
+Antes de que se pueda establecer la SA, se deben negociar varios parámetros
+entre pares VPN, y las claves deben ser creadas e intercambiadas. los
+El protocolo de intercambio de claves de Internet (IKE) controla este proceso de negociación.
+en el puerto UDP 500.
 
 
 ## trash
