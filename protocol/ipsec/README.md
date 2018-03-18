@@ -40,6 +40,23 @@ Las claves simétricas no se comparten abiertamente durante la transmisión de d
 - Claves asimétricas: requieren una clave separada para el cifrado (la clave pública) y descifrado (la clave privada). Las claves públicas se intercambian abiertamente entre dispositivos para cifrar datos durante la transferencia. Las claves privadas nunca se intercambian.
 
 
+El intercambio de claves públicas mediante el algoritmo Diffie-Hellman (DH) es el estándar más común utilizado para crear e intercambiar claves en medios inseguros. DH no se usa para cifrar datos, sino para generar las claves que se utilizan para cifrar y descifrar datos.
+
+Una variedad de estándares y protocolos populares utilizan el intercambio de claves DH, incluyendo SSL (Secure Socket Layer), SSH (Secure Shell) e IPSEC. Las claves públicas generadas cifran la carga útil de datos (payload) usando uno de varios
+Algoritmos de cifrado disponibles:
+
+
+- DES (Data Encryption Standard) – 56-bit key
+- 3DES (Triple Data Encryption Standard) – 168-bit key
+- AES (Advanced Encryption Standard) - 128, 192, or 256-bit key
+- Blowfish – up to a 448-bit key
+
+Además, la fuerza de una clave está determinada por el grupo DH utilizado para generar esa clave. Hay varios grupos DH:
+
+- Group 1 – 768 bits
+- Group 2 – 1024 bits
+- Group 5 – 2048 bits
+
 
 
 
