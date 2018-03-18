@@ -140,6 +140,13 @@ entre pares VPN, y las claves deben ser creadas e intercambiadas. los
 El protocolo de intercambio de claves de Internet (IKE) controla este proceso de negociación.
 en el puerto UDP 500.
 
+Los conjuntos de políticas IKE se crean para negociar varios parámetros, que incluyen:
+• El algoritmo de cifrado (como DES, 3DES o AES)
+• El algoritmo hash (como MD5 o SHA-1)
+• El método de autenticación (como claves compartidas o firmas RSA)
+• El grupo Diffie-Hellman (D-H) para crear y compartir claves
+• El SA Lifetime, medido en segundos o en kilobytes enviados
+
 
 ## trash
 -------------------------
