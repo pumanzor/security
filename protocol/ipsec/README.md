@@ -162,9 +162,23 @@ Dos modos se pueden utilizar para la negociación de la Fase 1:
 
 IKE fase 2: establece el túnel IPSEC (IPSEC SA), que detalla los parámetros AH o ESP para proteger los datos. Estos parámetros están contenidos en el IPSEC transform Set.
 
-#### ren resumen
+#### en resumen
 
 IKE fase 1 negocia los parámetros para el túnel (intercambio de claves) en sí, mientras que IKE Phase 2 negocia los parámetros para los datos que atraviesan ese túnel.
+
+
+La opercaion de IPSEC en una VPN se puede describes en los siguientes pasos:
+
+1. Cualquier tráfico que debe ser asegurado y enviado a través del túnel es identificado como tráfico interesante, usualmente usando una lista de acceso.
+
+2. IKE (Internet Key Exchange) la Fase 1 es iniciada. Los peers son autenticados, las claves se intercambian y los conjuntos de políticas IKE son negociados - Si tiene éxito, se establece IKE SA.
+
+3. IKE (Internet Key Exchange) la Fase 2 se inicia. IPSEC transform sets son negociadas y si tienen éxito, se establece el IPSEC SA.
+
+4. Los datos se transfieren utilizando la política de seguridad acordada.
+
+5. La sesión se cancela una vez que vence el SA Lifetime
+
 
 
 
