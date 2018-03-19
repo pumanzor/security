@@ -19,5 +19,9 @@ Generar claves privada y publica con algoritmo ED25519 (no necesita ingresar tam
 Configurar un tunel remoto mediante SSH port forwarding
 
     ssh -f -N -R 9000:localhost:3000 user@ip_server_SSH
+    
+ej.
+
+    ssh -R 8888:localhost:22 191.45.42.182 -luser
 
 
