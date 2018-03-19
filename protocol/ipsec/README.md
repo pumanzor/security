@@ -53,9 +53,15 @@ Algoritmos de cifrado disponibles:
 
 Además, la fuerza de una clave está determinada por el grupo DH utilizado para generar esa clave. Hay varios grupos DH:
 
-- Group 1 – 768 bits
-- Group 2 – 1024 bits
-- Group 5 – 2048 bits
+- DH Group 1—768-bit modulus
+- DH Group 2—1024-bit modulus
+- DH Group 5—1536-bit modulus
+- DH Group 14—2048-bit modulus
+- DH Group 19—256-bit modulus elliptic curve
+- DH Group 20—384-bit modulus elliptic curve
+- DH Group 24—2048-bit modulus with 256-bit prime order subgroup
+
+Debido a que el módulo para cada grupo DH es de un tamaño diferente, los participantes deben estar de acuerdo para usar el mismo grupo
 
 
 ### Integridad de datos y Hashing
