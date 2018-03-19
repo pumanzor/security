@@ -167,7 +167,7 @@ IKE fase 2: establece el túnel IPSEC (IPSEC SA), que detalla los parámetros AH
 IKE fase 1 negocia los parámetros para el túnel (intercambio de claves) en sí, mientras que IKE Phase 2 negocia los parámetros para los datos que atraviesan ese túnel.
 
 
-La opercaion de IPSEC en una VPN se puede describes en los siguientes pasos:
+La operacion de IPSEC en una VPN se puede resumir en los siguientes pasos:
 
 1. Cualquier tráfico que debe ser asegurado y enviado a través del túnel es identificado como tráfico interesante, usualmente usando una lista de acceso.
 
@@ -183,7 +183,7 @@ La opercaion de IPSEC en una VPN se puede describes en los siguientes pasos:
 
 
 
-
+--------------------------------------
 
 
 
