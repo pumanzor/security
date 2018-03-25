@@ -3,9 +3,9 @@
 All integer values used in QUIC, including length, version, and type, are in little-endian byte order, and not in network byte order. QUIC does not enforce alignment of types in dynamically sized frames.
 
 A few terms that are used throughout this document are defined below.
-* "Client": The endpoint initiating a QUIC connection.
-* "Server": The endpoint accepting incoming QUIC connections.
-* "Endpoint": The client or server end of a connection.
+* "Client": El endpoint que inicia a QUIC connection.
+* "Server": El endpoint que acepta conexiones entrantes QUIC.
+* "Endpoint": El cliente o servidor al final de una conexión..
 * "Stream": A bi-directional flow of bytes across a logical channel within a QUIC connection.
 * "Connection": A conversation between two QUIC endpoints with a single encryption context that multiplexes streams within it.
 * "Connection ID": The identifier for a QUIC connection.
