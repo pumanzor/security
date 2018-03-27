@@ -1,6 +1,6 @@
 $TTL    300
 @                       1D IN SOA       example.cl. hostmaster.example.cl. (
-                                        2016100501     ; serial
+                                        2018030501     ; serial
                                         3H              ; refresh
                                         15M             ; retry
                                         4W              ; expiry
@@ -12,6 +12,6 @@ $TTL    300
 
 $ORIGIN example.cl.
                 IN    	A	      19.19.19.19
-ns      600     IN      A       19.19.19.20
-www     120     IN      A       19.19.19.21
-mail	  120     IN	    A	      19.19.19.22 
+ns      600     IN      A             19.19.19.20
+www     120     IN      A             19.19.19.21
+mail	120     IN	A	      19.19.19.22 
