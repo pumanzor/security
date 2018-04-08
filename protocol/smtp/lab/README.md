@@ -16,12 +16,14 @@
 * 1 Servidor DNS bind9 (para configurar los registros TXT)
 * 1 cliente de email (window$, mailutils)
 
-#### Instalacion de postfix y mailutils
+--------
+### Servidor que recibe los emails
+
+#### Instalacion de postfix y spf
 
 * apt-get install postfix postfix-policyd-spf-perl
-* apt-get install mailutils
 
-#### Configuracionde SPF en postfix (del servidor que recepcionara los correos electronicos, dstdomain.com) (*)
+#### Configuracionde SPF en postfix.
 
   - en /etc/postfix/main.cf
 
@@ -45,15 +47,33 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
 #### Configurar el servidor smtp que enviara los email. (srcdomain.com)
 
+- instalar postfix
+
   - en el archivo /etc/postfix/main.cf
 
 > myhostname = srcdomain.com
 
   - lo anterior es el dominio con el cual los email vendran marcados como el origen, es decir debe ser el mismo dominio de correo que sera configurado en el servidor DNS apuntando al registro TXT en donde se hace la comprobacion dominio con IP origen
 
+Agregar al final del archivo /etc/postfix/main.cf
+
+smtp_generic_maps = hash:/etc/postfix/generic
+
+crear el archivo
+
+    /etc/postfix/generic
+
+root@name_server   root@srcdomain.com
+
+crear la db de generic
+
+postmap /etc/postfix/generic
+
 * reiniciar el servicio:
 
 > service postfix restart 
+
+comprobar que el servicio se encuentra operativo, netstat -atn o systemctl status
 
 #### Configuracion del registro TXT en server DNS
 
