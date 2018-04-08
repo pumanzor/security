@@ -96,16 +96,16 @@ comprobar que el servicio se encuentra operativo, netstat -atn o systemctl statu
 
 * ej https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/db.srcdomain.com
 
-    $TTL    30
-    @                       1D IN SOA       srcdomain.com. hostmaster.srcdomain.com. (
-                                            2018040901      ; serial
-                                            3H              ; refresh
-                                            15M             ; retry
-                                            4W              ; expiry
-                                            600 )           ; minimum
-
-                            1D IN NS      ns.srcdomain.com.
-			                      IN MX 10	    server.srcdomain.com. 
+     $TTL    30
+     @                       1D IN SOA       srcdomain.com. hostmaster.srcdomain.com. (
+                                             2018040901      ; serial
+                                             3H              ; refresh
+                                             15M             ; retry
+                                             4W              ; expiry
+                                             600 )           ; minimum
+    
+                              1D IN NS      ns.srcdomain.com.
+	                      IN MX 10	    server.srcdomain.com. 
 
 
     $ORIGIN srcdomain.com. 
@@ -113,6 +113,7 @@ comprobar que el servicio se encuentra operativo, netstat -atn o systemctl statu
     ns      600     IN      A       192.168.125.45
     www     120     IN      A       192.168.125.46
     server	120     IN	    A       192.168.125.125
+
 
 * Incremente el numero serial y guarde los cambios, luego reinicie bind9
 
