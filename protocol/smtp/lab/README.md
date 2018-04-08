@@ -88,15 +88,16 @@ comprobar que el servicio se encuentra operativo, netstat -atn o systemctl statu
 
 ##### zona srcdomain
 
-* dentro de las configuraciones de la zona del dominio origen (srcdomain) se debe crear el siguiente registro TXT
+Dentro de las configuraciones de la zona del dominio origen (srcdomain) se debe crear el siguiente registro TXT
 
 > IN	TXT	"v=spf1 mx -all"
 
-* y crear el RR correspondiente al registro MX con la direccion IP del servidor de correo de origen
+y crear el RR correspondiente al registro MX con la direccion IP del servidor de correo de origen
 
-* ej https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/db.srcdomain.com
+ej https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/db.srcdomain.com
 
-     $TTL    30
+
+    $TTL    30
      @                       1D IN SOA       srcdomain.com. hostmaster.srcdomain.com. (
                                              2018040901      ; serial
                                              3H              ; refresh
