@@ -1,27 +1,27 @@
-##Email Security Lab
+## Email Security Lab
 
-###Objetivos
+### Objetivos
 * Aplicar reglas basicas de configuracion en un server smtp (restringir redes, no openrelay)
 * Implementar un sistema de transporte de email con soporte SPF (Sender Policy Framework)
 * Utilizar un servidor DNS Primario master para configurar registros TXT & SPF
 
-###Entregables
+### Entregables
 * Descripcion del laboratorio y los elementos utilizados (esquema, topologia)
 * Configuraciones de los sistemas empleados
 * Resultados de los experimentos con las diferentes configuraciones de SPF
 
-####Servidores a utilizar
+#### Servidores a utilizar
 
 * 2 Servidores SMTP postfix (1 como servidor que recibira el email y realizara la comprobacion con SPF , 1 servidor para enviar email desde algun cliente)
 * 1 Servidor DNS bind9 (para configurar los registros TXT)
-* 1 cliente de email (win, mailx)
+* 1 cliente de email (window$, mailutils)
 
-####Instalacion de postfix y mailx
+#### Instalacion de postfix y mailutils
 
 * apt-get install postfix postfix-policyd-spf-perl
-* apt-get install bsdmailx
+* apt-get install mailutils
 
-####Configuracionde SPF en postfix (del servidor que recepcionara los correos electronicos, dstdomain.com) (*)
+#### Configuracionde SPF en postfix (del servidor que recepcionara los correos electronicos, dstdomain.com) (*)
 
   - en /etc/postfix/main.cf
 
@@ -39,11 +39,11 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
 * reiniciar el servicio:
 
-> service postfix restart 
+> systemctl restart postfix 
 
 * Revisar que el servicio smtp se encuentra activo mediante "netstar -atn" o ps -aef|grep postfix
 
-####Configurar el servidor smtp que enviara los email. (srcdomain.com)
+#### Configurar el servidor smtp que enviara los email. (srcdomain.com)
 
   - en el archivo /etc/postfix/main.cf
 
@@ -55,13 +55,13 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
 > service postfix restart 
 
-####Configuracion del registro TXT en server DNS
+#### Configuracion del registro TXT en server DNS
 
 * Crear dos zonas en el dns primario
   
   - ej. scrdomain.com y dstdomain.com
 
-#####zona srcdomain
+##### zona srcdomain
 
 * dentro de las configuraciones de la zona del dominio origen (srcdomain) se debe crear el siguiente registro TXT
 
@@ -85,16 +85,16 @@ https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
 * en todos las computadores y server a utilizar use como dns primario la direccion IP del server que acaba de configurar , en Linux /etc/resolv.conf
 
-#####zona dstdomain
+##### zona dstdomain
 
 * Aqui se deben configurar los datos de la zona a la cual se enviara el correo electronico y por lo tanto el registro MX debe apuntar el servidor SMTP que esta haciendo la comprobacion del origen mediante SPF (*)
 
 
-####Envios de email y revision del sistema
+#### Envios de email y revision del sistema
 
 * Desde el server smtp srcdomain.com enviar un email hacia dstdomain.com utilizando algun cliente o desde la linea de comando 
 
-> mail user@dstdomain.com -v
+> mail user@dstdomain.com
 
 > Subject: test1
 
