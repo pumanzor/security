@@ -39,6 +39,11 @@
 
 https://github.com/pumanzor/security/blob/master/protocol/smtp/lab/master.cf
 
+
+    policy-spf  unix  -       n       n       -       -       spawn
+         user=policyd-spf argv=/usr/bin/policyd-spf
+     
+
 * reiniciar el servicio:
 
 > systemctl restart postfix 
