@@ -1,27 +1,27 @@
-##Que es Docker?
+## Que es Docker?
 
 Docker es una tecnologia que permite ejecutar aplicaciones de software aisladas dentro de contenedores.
 
-###Que es un contenedor?
+### Que es un contenedor?
 
 Un contenedor incluye la aplicacion de software y todas sus dependencias PERO comparte el kernel con otros contenedores, y se ejecutan como procesos aislados en el espacio de usuario en el sistema operativo anfitrion. 
 
 Los contenedores Docker no están ligados a ninguna infraestructura específica: se ejecutan en cualquier computadora, en cualquier infraestructura y en cualquier nube.
 
-###Maquina Virtual
+### Maquina Virtual
 
 Las máquinas virtuales incluyen la aplicación, los binarios, bibliotecas necesarios, y todo un sistema operativo invitado que puede llegar a decenas de GB.
 
-###Comparacion entre una VM y un contendor docker.
+### Comparacion entre una VM y un contendor docker.
 
 Los contenedores y las máquinas virtuales tienen beneficios similares de aislamiento y asignación de recursos, pero un enfoque arquitectónico diferente permite a los contenedores ser más portátiles y eficientes.
 
 ![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/docker.png)
 
 
-###Instalacion en Debian 8 Jessie
+### Instalacion en Debian 8 Jessie
 
-####Pre-requisitos
+#### Pre-requisitos
 
 Docker requiere un S.O. de 64 bits independientemente de la versión de Debian. Además, el kernel debe ser como mínimo version 3.10 o superior.
 
@@ -53,7 +53,7 @@ Para comprobar que la instalacion quedo bien, ejecutar
 
 Este comando descarga una imagen de prueba y la ejecuta en un contenedor. Cuando el contenedor se ejecuta, imprime un mensaje informativo y luego termina
 
-###Networking
+### Networking
 
 En forma predeterminada docker crea 3 tipos de redes en la maquina host tras la instalacion
 
@@ -86,7 +86,7 @@ Ahora, nuestra arquitectura de contenedor puede ser ilustrada de la siguiente fo
 
 
 
-###Bridge network
+### Bridge network
 
 Bridging permite que múltiples redes se comuniquen de forma independiente mientras se mantienen separadas en el mismo host físico. Imagine que esto es similar a otra red interna dentro de la máquina host. 
 
@@ -121,7 +121,7 @@ En este punto, la arquitectura quedaria
 
 ![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/image03.png)
 
-###DataStorage
+### DataStorage
 
 Hay varias maneras de almacenar datos utilizados por MySQL que se ejecutan en contenedores Docker. Docker puede gestionar el almacenamiento de los datos de su base de datos escribiendo los archivos en disco en el sistema host o utilizando su propia gestión interna de volumenes. Si ejecuta el comando inspect, observe la directiva "Volumes" y observe por defecto que el directorio de datos de MySQL (/var/lib/mysql) está montado en el volumen interno de Docker.
 
@@ -139,7 +139,7 @@ Cree un directorio de datos de un volumen en el lado del host:
 ![alt tag](https://github.com/pumanzor/security/blob/master/docker/img/image00.png)
 
 
-###Docker File System
+### Docker File System
 
 Para entender los volúmenes de Docker, es importante entender primero cómo funciona el sistema de archivos Docker.
 
@@ -201,7 +201,7 @@ Lo anterior retornara una lista de todos los volumenes docker que han sido cread
 
 
 
-###Inspeccionar un volumen
+### Inspeccionar un volumen
 
 Para inspeccionar un volumen con nombre, utilice el comando:
 
@@ -214,7 +214,7 @@ Por ejemplo, para obtener más información sobre el volumen de datos que creamo
 > docker volume inspect data-volume
 
 
-###Remover un Volume
+### Remover un Volume
 
 Para remover un volumen con nombre, use el comando:
 
@@ -238,7 +238,7 @@ Entonces el volumen "datavolume" puede ser eliminado con:
 
 ------------------
 
-###Comandos Basicos
+### Comandos Basicos
 
 Ver o listar todas las imagenes instaladas
 
