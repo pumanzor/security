@@ -1,4 +1,4 @@
-##Laboratorio Docker - Guia 1
+## Laboratorio Docker - Guia 1
 
 1.- Crear un volumen de datos compartido entre varios contenedores docker utilizando como servicio una aplicacion web, para ello mapear el http en puertos distintos o en direcciones IPv4 distintas, use las diferentes opciones de configuracion de docker a nivel de networking.
 
@@ -87,6 +87,6 @@ Luego exporte el contenedor
 > docker run -d -p 9000:9000 --name dockerui --privileged -v /var/run/docker.sock:/var/run/docker.sock kevan/dockerui
 
 
-####Informe de Lab docker debe contener capturas de pantalla (o copy&paste desde consola) de los puntos realizados y conclusiones acerca de la actividad.
+#### Informe de Lab docker debe contener capturas de pantalla (o copy&paste desde consola) de los puntos realizados y conclusiones acerca de la actividad.
 
 plazo 7 de Dic.2016
