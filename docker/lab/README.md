@@ -87,6 +87,5 @@ Luego exporte el contenedor
 > docker run -d -p 9000:9000 --name dockerui --privileged -v /var/run/docker.sock:/var/run/docker.sock kevan/dockerui
 
 
-#### Informe de Lab docker debe contener capturas de pantalla (o copy&paste desde consola) de los puntos realizados y conclusiones acerca de la actividad.
+#### Informe de Lab docker debe incluir las respuestas a la guia
 
-plazo 7 de Dic.2016
