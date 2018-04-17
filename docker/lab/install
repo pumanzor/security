@@ -6,3 +6,10 @@ add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(
 apt-get update
 apt-get install docker-ce
 
+
+
+-----------------
+
+from pkg
+
+https://download.docker.com/linux/debian/
